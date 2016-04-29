@@ -2,14 +2,18 @@ import UIKit
 
 @IBDesignable class OverlapView: UIView {
 
-    @IBInspectable var sourceColor = UIColor(red: 0.91, green: 0.29, blue: 0.21, alpha: 1.00)
-    @IBInspectable var destinationColor = UIColor(red: 0.13, green: 0.50, blue: 0.73, alpha: 1.00)
-    @IBInspectable var overlapColor = UIColor(red: 0.06, green: 0.69, blue: 0.41, alpha: 1.00)
-    @IBInspectable var rulerColor = UIColor(red: 0.74, green: 0.76, blue: 0.78, alpha: 1.00)
+//    @IBInspectable var sourceColor = UIColor(red: 0.91, green: 0.29, blue: 0.21, alpha: 1.00)
+//    @IBInspectable var destinationColor = UIColor(red: 0.13, green: 0.50, blue: 0.73, alpha: 1.00)
+//    @IBInspectable var overlapColor = UIColor(red: 0.06, green: 0.69, blue: 0.41, alpha: 1.00)
+//    @IBInspectable var rulerColor = UIColor(red: 0.74, green: 0.76, blue: 0.78, alpha: 1.00)
+    
+    @IBInspectable var sourceColor = UIColor.redColor()
+    @IBInspectable var destinationColor = UIColor.blueColor()
+    @IBInspectable var overlapColor = UIColor.darkGrayColor()
+    @IBInspectable var rulerColor = UIColor.lightGrayColor()
 
     var overlap: Overlap? {
         didSet {
-//            backgroundColor = UIColor.clearColor()
             setNeedsDisplay()
         }
     }

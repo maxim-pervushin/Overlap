@@ -9,19 +9,20 @@ class OverlapEditor {
 
     private (set) var interval1Editor = IntervalEditor() {
         didSet {
-            interval1Editor.updated = changed
+            connectHandlers()
         }
     }
 
     private (set) var interval2Editor = IntervalEditor() {
         didSet {
-            interval1Editor.updated = changed
+            connectHandlers()
         }
     }
 
     var updated: (Void -> Void)? = nil {
         didSet {
-            changed()
+            connectHandlers()
+            updated?()
         }
     }
 
@@ -44,7 +45,8 @@ class OverlapEditor {
         return Overlap(interval1: interval1, interval2: interval2)
     }
 
-    private func changed() {
-        updated?()
+    private func connectHandlers() {
+        interval1Editor.updated = updated
+        interval2Editor.updated = updated
     }
 }
