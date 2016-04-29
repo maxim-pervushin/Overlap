@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Overlaps-->
         <scene sceneID="Yl4-uZ-aBW">
             <objects>
                 <tableViewController id="UVs-ft-Y8Y" customClass="OverlapListViewController" customModule="Overlap" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,13 +32,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Destination Interval]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0p-az-Vhb">
                                                     <rect key="frame" x="8" y="82" width="576" height="16"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Source Interval]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuo-j1-phh">
                                                     <rect key="frame" x="8" y="8" width="576" height="16"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -84,7 +84,7 @@
                             <outlet property="delegate" destination="UVs-ft-Y8Y" id="2Xu-2h-NGW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="VkS-XI-Lse"/>
+                    <navigationItem key="navigationItem" title="Overlaps" id="VkS-XI-Lse"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wvR-6z-rB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,8 +93,9 @@
         <!--Navigation Controller-->
         <scene sceneID="ABa-5w-zv0">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3BE-Um-cdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="7lW-6U-85I" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vww-ct-bCR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Vww-ct-bCR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -102,7 +103,6 @@
                         <segue destination="UPO-rR-VJ1" kind="relationship" relationship="rootViewController" id="Pin-h7-V8X"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3BE-Um-cdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="707" y="-261"/>
         </scene>
@@ -156,19 +156,19 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99:99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb6-kh-brY">
                                         <rect key="frame" x="0.0" y="65" width="276" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99:99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsH-rQ-dVI">
                                         <rect key="frame" x="284" y="65" width="276" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUL-Zg-5wf">
                                         <rect key="frame" x="0.0" y="126" width="560" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22N-va-3G1" userLabel="Line View">
@@ -257,19 +257,19 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99:99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETa-Wq-xmG">
                                         <rect key="frame" x="0.0" y="65" width="276" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99:99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWQ-Vy-qPV">
                                         <rect key="frame" x="284" y="65" width="276" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="412-Is-Oa1">
                                         <rect key="frame" x="0.0" y="126" width="560" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHK-r0-I6r" userLabel="Line View">
@@ -372,7 +372,7 @@
             <objects>
                 <navigationController id="i07-Pz-e00" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Overlaps" id="v9E-KG-pGh"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L0L-iU-XTX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="L0L-iU-XTX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -418,7 +418,7 @@
             <objects>
                 <navigationController id="8Cu-1B-H9t" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" id="12d-KQ-oB4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Uy-Bc-g1x">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="9Uy-Bc-g1x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -434,7 +434,7 @@
         <scene sceneID="KU3-1B-CfD">
             <objects>
                 <tabBarController id="wEY-mL-hUS" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="1lR-RF-0tl">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="1lR-RF-0tl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

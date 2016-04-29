@@ -3,10 +3,16 @@ import Foundation
 struct Overlap {
     let interval1: Interval
     let interval2: Interval
-    
+
+    init(interval1: Interval, interval2: Interval) {
+        self.interval1 = interval1
+        self.interval2 = interval2
+    }
+
     init(_ timeZone1: NSTimeZone, _ interval1Start: Int, _ interval1End: Int, _ timeZone2: NSTimeZone, _ interval2Start: Int, _ interval2End: Int) {
-        self.interval1 = Interval(timeZone: timeZone1, start: interval1Start, end: interval1End)
-        self.interval2 = Interval(timeZone: timeZone2, start: interval2Start, end: interval2End)
+        let interval1 = Interval(timeZone: timeZone1, start: interval1Start, end: interval1End)
+        let interval2 = Interval(timeZone: timeZone2, start: interval2Start, end: interval2End)
+        self.init(interval1: interval1, interval2: interval2)
     }
     
     func overlapIntervalsInTimeZone(timeZone: NSTimeZone) -> [Interval] {

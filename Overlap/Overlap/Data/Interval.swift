@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Interval {
+public struct Interval: Equatable {
     let timeZone: NSTimeZone
     let start: Int
     let end: Int
@@ -32,4 +32,8 @@ public struct Interval {
             ]
         }
     }
+}
+
+public func ==(lhs: Interval, rhs: Interval) -> Bool {
+    return lhs.timeZone == rhs.timeZone && lhs.start == rhs.start && lhs.end == rhs.end
 }
