@@ -36,7 +36,7 @@ class EditOverlapViewController: UIViewController {
     }
 
     @IBAction func editSourceTimezone(sender: AnyObject) {
-        print("editSourceTimezone")
+        performSegueWithIdentifier("PickSourceTimezone", sender: self)
     }
 
     @IBAction func editDestinationStart(sender: AnyObject) {
@@ -47,26 +47,35 @@ class EditOverlapViewController: UIViewController {
         performSegueWithIdentifier("PickDestinationEnd", sender: self)
     }
 
-    @IBAction func tapGestureOnBackgroundView(sender: AnyObject) {
-        print("tapGestureOnBackgroundView")
-    }
-
     @IBAction func editDestinationTimezone(sender: AnyObject) {
-        print("editDestinationTimezone")
+        performSegueWithIdentifier("PickDestinationTimezone", sender: self)
     }
 
     // MARK: public
 
     var overlap: Overlap? {
-        didSet {
-            overlapView?.overlap = overlap
+        set {
+            editor.overlap = newValue
+        }
+        get {
+            return editor.overlap
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         editor.updated = reloadData
-//        overlap = Overlap(NSTimeZone(abbreviation: "MSK")!, 16, 9, NSTimeZone(abbreviation: "MSK")!, 8, 17)
+        overlap = Overlap.defaultOverlap()
+//        reloadData()
+        
+        if let overlapView = overlapView {
+            sourceStartButton?.setTitleColor(overlapView.sourceColor)
+            sourceEndButton?.setTitleColor(overlapView.sourceColor)
+            sourceTimezoneButton?.setTitleColor(overlapView.sourceColor)
+            destinationStartButton?.setTitleColor(overlapView.destinationColor)
+            destinationEndButton?.setTitleColor(overlapView.destinationColor)
+            destinationTimezoneButton?.setTitleColor(overlapView.destinationColor)
+        }
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -105,36 +114,72 @@ class EditOverlapViewController: UIViewController {
         }
     }
 
-
     // MARK: private
 
     private let editor = OverlapEditor()
 
     private func reloadData() {
-        if let updatedOverlap = editor.updatedOverlap {
-            saveButton?.enabled = true
-            overlapView?.overlap = updatedOverlap
-        } else {
-            saveButton?.enabled = true
-            overlapView?.overlap = nil
-        }
+        saveButton?.enabled = editor.hasChanges
+
+        overlapView?.overlap = overlap
         
         if let sourceStartTitle = editor.interval1Editor.start {
-            sourceStartButton?.setTitle("\(sourceStartTitle)", forState: .Normal)
-            sourceStartButton?.setTitle("\(sourceStartTitle)", forState: .Selected)
+            sourceStartButton?.setTitle("\(sourceStartTitle)")
         } else {
-            sourceStartButton?.setTitle("", forState: .Normal)
-            sourceStartButton?.setTitle("", forState: .Selected)
+            sourceStartButton?.setTitle("")
         }
         
-        if let sourceEndTitle = editor.interval1Editor.start {
-            sourceEndButton?.setTitle("\(sourceEndTitle)", forState: .Normal)
-            sourceEndButton?.setTitle("\(sourceEndTitle)", forState: .Selected)
+        if let sourceEndTitle = editor.interval1Editor.end {
+            sourceEndButton?.setTitle("\(sourceEndTitle)")
         } else {
-            sourceEndButton?.setTitle("", forState: .Normal)
-            sourceEndButton?.setTitle("", forState: .Selected)
+            sourceEndButton?.setTitle("")
         }
         
-//        saveButton?.enabled = editor.updatedOverlap != nil
+        if let
+            sourceTimeZone = editor.interval1Editor.timeZone,
+            localizedName = sourceTimeZone.localizedName(.Generic, locale: NSLocale.currentLocale()) {
+            sourceTimezoneButton?.setTitle(localizedName)
+        } else {
+            sourceTimezoneButton?.setTitle("")
+        }
+        
+        if let destinationStartTitle = editor.interval2Editor.start {
+            destinationStartButton?.setTitle("\(destinationStartTitle)")
+        } else {
+            destinationStartButton?.setTitle("")
+        }
+        
+        if let destinationEndTitle = editor.interval2Editor.end {
+            destinationEndButton?.setTitle("\(destinationEndTitle)")
+        } else {
+            destinationEndButton?.setTitle("")
+        }
+        
+        if let
+            destinationTimeZone = editor.interval2Editor.timeZone,
+            localizedName = destinationTimeZone.localizedName(.Generic, locale: NSLocale.currentLocale()) {
+            destinationTimezoneButton?.setTitle(localizedName)
+        } else {
+            destinationTimezoneButton?.setTitle("")
+        }
+    }
+}
+
+extension UIButton {
+    
+    func setTitle(title: String) {
+        setTitle(title, forState: .Normal)
+        setTitle(title, forState: .Selected)
+        setTitle(title, forState: .Disabled)
+        setTitle(title, forState: .Highlighted)
+        setTitle(title, forState: .Focused)
+    }
+    
+    func setTitleColor(color: UIColor) {
+        setTitleColor(color, forState: .Normal)
+        setTitleColor(color, forState: .Selected)
+        setTitleColor(color, forState: .Disabled)
+        setTitleColor(color, forState: .Highlighted)
+        setTitleColor(color, forState: .Focused)
     }
 }

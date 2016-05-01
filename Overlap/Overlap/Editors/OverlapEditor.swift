@@ -26,23 +26,22 @@ class OverlapEditor {
         }
     }
 
-    var originalOverlap: Overlap? = nil {
-        didSet {
-            if let originalOverlap = originalOverlap {
-                interval1Editor.originalInterval = originalOverlap.interval1
-                interval2Editor.originalInterval = originalOverlap.interval2
+    var overlap: Overlap? {
+        set {
+            interval1Editor.interval = newValue?.interval1
+            interval2Editor.interval = newValue?.interval2
+        }
+        get {
+            if let interval1 = interval1Editor.interval, interval2 = interval2Editor.interval {
+                return Overlap(interval1: interval1, interval2: interval2)
             } else {
-                interval1Editor.originalInterval = nil
-                interval2Editor.originalInterval = nil
+                return nil
             }
         }
     }
-
-    var updatedOverlap: Overlap? {
-        guard let interval1 = interval1Editor.updatedInterval, interval2 = interval2Editor.updatedInterval else {
-            return nil
-        }
-        return Overlap(interval1: interval1, interval2: interval2)
+    
+    var hasChanges: Bool {
+        return interval1Editor.hasChanges || interval2Editor.hasChanges
     }
 
     private func connectHandlers() {
