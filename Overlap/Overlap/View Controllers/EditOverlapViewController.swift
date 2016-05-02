@@ -12,12 +12,12 @@ class EditOverlapViewController: UIViewController {
     @IBOutlet weak var saveButton: UIBarButtonItem?
     @IBOutlet weak var overlapView: OverlapView?
     
-    @IBOutlet weak var sourceStartButton: UIButton?
-    @IBOutlet weak var sourceEndButton: UIButton?
-    @IBOutlet weak var sourceTimezoneButton: UIButton?
-    @IBOutlet weak var destinationStartButton: UIButton?
-    @IBOutlet weak var destinationEndButton: UIButton?
-    @IBOutlet weak var destinationTimezoneButton: UIButton?
+    @IBOutlet weak var sourceStartButton: EditButton?
+    @IBOutlet weak var sourceEndButton: EditButton?
+    @IBOutlet weak var sourceTimezoneButton: EditButton?
+    @IBOutlet weak var destinationStartButton: EditButton?
+    @IBOutlet weak var destinationEndButton: EditButton?
+    @IBOutlet weak var destinationTimezoneButton: EditButton?
 
     @IBAction func save(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
@@ -69,12 +69,27 @@ class EditOverlapViewController: UIViewController {
 //        reloadData()
         
         if let overlapView = overlapView {
-            sourceStartButton?.setTitleColor(overlapView.sourceColor)
-            sourceEndButton?.setTitleColor(overlapView.sourceColor)
-            sourceTimezoneButton?.setTitleColor(overlapView.sourceColor)
-            destinationStartButton?.setTitleColor(overlapView.destinationColor)
-            destinationEndButton?.setTitleColor(overlapView.destinationColor)
-            destinationTimezoneButton?.setTitleColor(overlapView.destinationColor)
+//            let sourceBackgroundColor = overlapView.sourceColor.colorWithAlphaComponent(0.3)
+
+            sourceStartButton?.setColor(overlapView.sourceColor)
+            sourceEndButton?.setColor(overlapView.sourceColor)
+            sourceTimezoneButton?.setColor(overlapView.sourceColor)
+
+//            sourceEndButton?.backgroundColor = sourceBackgroundColor
+//            sourceEndButton?.setTitleColor(overlapView.sourceColor)
+//            sourceTimezoneButton?.backgroundColor = sourceBackgroundColor
+//            sourceTimezoneButton?.setTitleColor(overlapView.sourceColor)
+
+//            let destinationBackgroundColor = overlapView.destinationColor.colorWithAlphaComponent(0.3)
+            destinationStartButton?.setColor(overlapView.destinationColor)
+            destinationEndButton?.setColor(overlapView.destinationColor)
+            destinationTimezoneButton?.setColor(overlapView.destinationColor)
+//            destinationStartButton?.backgroundColor = destinationBackgroundColor
+//            destinationStartButton?.setTitleColor(overlapView.destinationColor)
+//            destinationEndButton?.backgroundColor = destinationBackgroundColor
+//            destinationEndButton?.setTitleColor(overlapView.destinationColor)
+//            destinationTimezoneButton?.backgroundColor = destinationBackgroundColor
+//            destinationTimezoneButton?.setTitleColor(overlapView.destinationColor)
         }
     }
 
@@ -162,24 +177,5 @@ class EditOverlapViewController: UIViewController {
         } else {
             destinationTimezoneButton?.setTitle("")
         }
-    }
-}
-
-extension UIButton {
-    
-    func setTitle(title: String) {
-        setTitle(title, forState: .Normal)
-        setTitle(title, forState: .Selected)
-        setTitle(title, forState: .Disabled)
-        setTitle(title, forState: .Highlighted)
-        setTitle(title, forState: .Focused)
-    }
-    
-    func setTitleColor(color: UIColor) {
-        setTitleColor(color, forState: .Normal)
-        setTitleColor(color, forState: .Selected)
-        setTitleColor(color, forState: .Disabled)
-        setTitleColor(color, forState: .Highlighted)
-        setTitleColor(color, forState: .Focused)
     }
 }

@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		73BC6094C2703CBB3C84D863 /* PickTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC67DFD924C3C25D6BF8EE /* PickTimeViewController.swift */; };
+		73BC614A44D0A484B03DC83E /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */; };
 		73BC61AE3B8BC28A4453472F /* EditOverlapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6ABC942CC02C5720436F /* EditOverlapViewController.swift */; };
 		73BC61D215953837696ABB33 /* IntervalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6DB7EBA9F862E8FB5EB4 /* IntervalEditor.swift */; };
 		73BC635EFFCCD2C5E06CBC4A /* IntervalEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6205FB5B1894FFFB29CE /* IntervalEditorTests.swift */; };
 		73BC67255F451EF2396033A5 /* OverlapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC60D25256E1A1402EC63B /* OverlapListViewController.swift */; };
+		73BC67835E098C58CF928163 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6CC6D5CDE9E63FDF856E /* EditButton.swift */; };
 		73BC6BE36BED0841F2E37A58 /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
 		73BC6D5D9AC34F9A7C1A88DC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6D77970220B169177C99 /* RoundedView.swift */; };
 		73BC6DDD7065530677E7CACA /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
@@ -52,9 +54,11 @@
 /* Begin PBXFileReference section */
 		73BC60D25256E1A1402EC63B /* OverlapListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapListViewController.swift; sourceTree = "<group>"; };
 		73BC6205FB5B1894FFFB29CE /* IntervalEditorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalEditorTests.swift; sourceTree = "<group>"; };
+		73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
 		73BC67DFD924C3C25D6BF8EE /* PickTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickTimeViewController.swift; sourceTree = "<group>"; };
 		73BC6ABC942CC02C5720436F /* EditOverlapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditOverlapViewController.swift; sourceTree = "<group>"; };
 		73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditor.swift; sourceTree = "<group>"; };
+		73BC6CC6D5CDE9E63FDF856E /* EditButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		73BC6D77970220B169177C99 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		73BC6DB7EBA9F862E8FB5EB4 /* IntervalEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalEditor.swift; sourceTree = "<group>"; };
 		C55E1B0A1CB7B0CF0019D979 /* Overlap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overlap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +112,8 @@
 				C55E1B411CB7B1700019D979 /* OverlapCell.swift */,
 				C55E1B421CB7B1700019D979 /* OverlapView.swift */,
 				73BC6D77970220B169177C99 /* RoundedView.swift */,
+				73BC6CC6D5CDE9E63FDF856E /* EditButton.swift */,
+				73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,6 +346,8 @@
 				73BC61D215953837696ABB33 /* IntervalEditor.swift in Sources */,
 				73BC6BE36BED0841F2E37A58 /* OverlapEditor.swift in Sources */,
 				73BC6094C2703CBB3C84D863 /* PickTimeViewController.swift in Sources */,
+				73BC67835E098C58CF928163 /* EditButton.swift in Sources */,
+				73BC614A44D0A484B03DC83E /* HorizontalLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
