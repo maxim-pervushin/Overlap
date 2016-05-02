@@ -16,6 +16,7 @@ class IntervalEditorTests: XCTestCase {
         super.tearDown()
     }
 
+    /*
     func test_setOriginalInterval() {
         let editor = IntervalEditor()
         XCTAssertNil(editor.timeZone)
@@ -87,4 +88,5 @@ class IntervalEditorTests: XCTestCase {
         editor.timeZone = NSTimeZone.localTimeZone()
         XCTAssertTrue(updatedFlag)
     }
+    */
 }

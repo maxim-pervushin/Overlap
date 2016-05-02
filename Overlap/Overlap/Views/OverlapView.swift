@@ -28,9 +28,9 @@ import UIKit
 
         let width = bounds.width - startOffest - endOffest
 
-        let start = 0
-        let end = 24
-        let count = CGFloat(end - start)
+        let start = Double(0)
+        let end = Double(24 * 60)
+        let count = CGFloat(end - start) / 60
 
         func drawRuler() {
             CGContextSetLineWidth(ctx, 1 / UIScreen.mainScreen().scale)
@@ -45,7 +45,7 @@ import UIKit
                 let x = CGFloat(i) * width / count + startOffest
 
                 if 0 == i % 6 {
-                    let text = NSString(string: "\(i)")
+                    let text = NSString(string: "\(Int(i))")
                     let size = text.sizeWithAttributes(textAttributes)
 
                     text.drawAtPoint(CGPoint(x: x - size.width / 2, y: 0), withAttributes: textAttributes)
@@ -115,7 +115,7 @@ import UIKit
             for interval in overlap.overlapIntervalsInTimeZone(targetTimeZone) {
                 let startX = CGFloat(interval.start - start) * width / count + startOffest
                 let endX = CGFloat(interval.end - start) * width / count + startOffest
-                drawOverlap(startX, endX: endX, startText: "\(interval.start)", endText: "\(interval.end)")
+                drawOverlap(startX, endX: endX, startText: "\(interval.start.timeString())", endText: "\(interval.end.timeString())")
             }
 
             // Draw indicator #1

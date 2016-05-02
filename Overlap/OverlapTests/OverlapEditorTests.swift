@@ -18,7 +18,7 @@ class OverlapEditorTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
-
+/*
     func test_setOriginalOverlap() {
         let editor = OverlapEditor()
         XCTAssertNil(editor.updatedOverlap)
@@ -85,4 +85,5 @@ class OverlapEditorTests: XCTestCase {
         editor.interval1Editor.originalInterval = interval2
         XCTAssertTrue(updatedFlag)
     }
+    */
 }

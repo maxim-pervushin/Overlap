@@ -13,7 +13,7 @@ class HorizontalLineView: UIView {
 
     private var _frame: CGRect
 
-    override public var frame: CGRect {
+    override var frame: CGRect {
         set {
             setContentHuggingPriority(UILayoutPriorityDefaultLow, forAxis: .Horizontal)
             setContentHuggingPriority(UILayoutPriorityRequired, forAxis: .Vertical)
@@ -25,11 +25,11 @@ class HorizontalLineView: UIView {
         }
     }
 
-    override public func sizeThatFits(size: CGSize) -> CGSize {
+    override func sizeThatFits(size: CGSize) -> CGSize {
         return CGSizeMake(size.width, thickness)
     }
 
-    override public func intrinsicContentSize() -> CGSize {
+    override func intrinsicContentSize() -> CGSize {
         return CGSizeMake(UIViewNoIntrinsicMetric, thickness)
     }
 
@@ -38,7 +38,7 @@ class HorizontalLineView: UIView {
         super.init(frame: frame)
     }
 
-    required public init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         _frame = CGRectZero
         super.init(coder: aDecoder)
     }

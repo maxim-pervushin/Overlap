@@ -10,7 +10,7 @@ struct Overlap {
         self.interval2 = interval2
     }
 
-    init(_ timeZone1: NSTimeZone, _ interval1Start: Int, _ interval1End: Int, _ timeZone2: NSTimeZone, _ interval2Start: Int, _ interval2End: Int) {
+    init(_ timeZone1: NSTimeZone, _ interval1Start: Double, _ interval1End: Double, _ timeZone2: NSTimeZone, _ interval2Start: Double, _ interval2End: Double) {
         let interval1 = Interval(timeZone: timeZone1, start: interval1Start, end: interval1End)
         let interval2 = Interval(timeZone: timeZone2, start: interval2Start, end: interval2End)
         self.init(interval1: interval1, interval2: interval2)

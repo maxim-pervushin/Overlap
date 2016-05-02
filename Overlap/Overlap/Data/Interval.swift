@@ -2,18 +2,18 @@ import Foundation
 
 public struct Interval: Equatable {
     let timeZone: NSTimeZone
-    let start: Int
-    let end: Int
+    let start: Double
+    let end: Double
     
-    init(timeZone: NSTimeZone, start: Int, end: Int) {
+    init(timeZone: NSTimeZone, start: Double, end: Double) {
         self.timeZone = timeZone
         self.start = start < 0 ? 0 : start
         self.end = end > 24 ? 24 : end
     }
     
     func intervalInTimeZone(timeZone: NSTimeZone) -> Interval {
-        let sourceOffset = self.timeZone.secondsFromGMT / 60 / 60
-        let targetOffset = timeZone.secondsFromGMT / 60 / 60
+        let sourceOffset = Double(self.timeZone.secondsFromGMT) / 60 / 60
+        let targetOffset = Double(timeZone.secondsFromGMT) / 60 / 60
         return Interval(timeZone: timeZone, start: start - sourceOffset + targetOffset, end: end - sourceOffset + targetOffset)
     }
     

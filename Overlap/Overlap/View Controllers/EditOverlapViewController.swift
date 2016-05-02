@@ -101,25 +101,25 @@ class EditOverlapViewController: UIViewController {
             case "PickSourceStart":
                 pickTimeViewController.timePicked = {
                     (hours: Int, minutes: Int) -> Void in
-                    self.editor.interval1Editor.start = hours
+                    self.editor.interval1Editor.start = Double(hours * 60 + minutes)
                 }
                 break
             case "PickSourceEnd":
                 pickTimeViewController.timePicked = {
                     (hours: Int, minutes: Int) -> Void in
-                    self.editor.interval1Editor.end = hours
+                    self.editor.interval1Editor.end = Double(hours * 60 + minutes)
                 }
                 break
             case "PickDestinationStart":
                 pickTimeViewController.timePicked = {
                     (hours: Int, minutes: Int) -> Void in
-                    self.editor.interval2Editor.start = hours
+                    self.editor.interval2Editor.start = Double(hours * 60 + minutes)
                 }
                 break
             case "PickDestinationEnd":
                 pickTimeViewController.timePicked = {
                     (hours: Int, minutes: Int) -> Void in
-                    self.editor.interval2Editor.end = hours
+                    self.editor.interval2Editor.end = Double(hours * 60 + minutes)
                 }
                 break
             default:
@@ -138,13 +138,13 @@ class EditOverlapViewController: UIViewController {
 
         overlapView?.overlap = overlap
         
-        if let sourceStartTitle = editor.interval1Editor.start {
+        if let sourceStartTitle = editor.interval1Editor.start?.timeString() {
             sourceStartButton?.setTitle("\(sourceStartTitle)")
         } else {
             sourceStartButton?.setTitle("")
         }
         
-        if let sourceEndTitle = editor.interval1Editor.end {
+        if let sourceEndTitle = editor.interval1Editor.end?.timeString() {
             sourceEndButton?.setTitle("\(sourceEndTitle)")
         } else {
             sourceEndButton?.setTitle("")
@@ -158,13 +158,13 @@ class EditOverlapViewController: UIViewController {
             sourceTimezoneButton?.setTitle("")
         }
         
-        if let destinationStartTitle = editor.interval2Editor.start {
+        if let destinationStartTitle = editor.interval2Editor.start?.timeString() {
             destinationStartButton?.setTitle("\(destinationStartTitle)")
         } else {
             destinationStartButton?.setTitle("")
         }
         
-        if let destinationEndTitle = editor.interval2Editor.end {
+        if let destinationEndTitle = editor.interval2Editor.end?.timeString() {
             destinationEndButton?.setTitle("\(destinationEndTitle)")
         } else {
             destinationEndButton?.setTitle("")

@@ -17,6 +17,7 @@
 		73BC6BE36BED0841F2E37A58 /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
 		73BC6D5D9AC34F9A7C1A88DC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6D77970220B169177C99 /* RoundedView.swift */; };
 		73BC6DDD7065530677E7CACA /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
+		73BC6E9C58B8329E2D6E4A59 /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC61D6D71726FF303FD224 /* Double+Time.swift */; };
 		C55E1B0E1CB7B0CF0019D979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B0D1CB7B0CF0019D979 /* AppDelegate.swift */; };
 		C55E1B131CB7B0CF0019D979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B111CB7B0CF0019D979 /* Main.storyboard */; };
 		C55E1B151CB7B0CF0019D979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B141CB7B0CF0019D979 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		73BC60D25256E1A1402EC63B /* OverlapListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapListViewController.swift; sourceTree = "<group>"; };
+		73BC61D6D71726FF303FD224 /* Double+Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Time.swift"; sourceTree = "<group>"; };
 		73BC6205FB5B1894FFFB29CE /* IntervalEditorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalEditorTests.swift; sourceTree = "<group>"; };
 		73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
 		73BC67DFD924C3C25D6BF8EE /* PickTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickTimeViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,14 @@
 			path = Editors;
 			sourceTree = "<group>";
 		};
+		73BC6E0BB8AD8F0A5F615B40 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73BC61D6D71726FF303FD224 /* Double+Time.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C55E1B011CB7B0CF0019D979 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +189,7 @@
 				73BC6210C5ECC703CA3DAA30 /* Views */,
 				73BC688EEC28B84EAADC9B78 /* View Controllers */,
 				73BC6BC68CBFCC73C790F661 /* Editors */,
+				73BC6E0BB8AD8F0A5F615B40 /* Extensions */,
 			);
 			path = Overlap;
 			sourceTree = "<group>";
@@ -348,6 +359,7 @@
 				73BC6094C2703CBB3C84D863 /* PickTimeViewController.swift in Sources */,
 				73BC67835E098C58CF928163 /* EditButton.swift in Sources */,
 				73BC614A44D0A484B03DC83E /* HorizontalLineView.swift in Sources */,
+				73BC6E9C58B8329E2D6E4A59 /* Double+Time.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

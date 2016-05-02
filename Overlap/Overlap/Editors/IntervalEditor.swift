@@ -13,13 +13,13 @@ class IntervalEditor {
         }
     }
 
-    var start: Int? = nil {
+    var start: Double? = nil {
         didSet {
             changed()
         }
     }
 
-    var end: Int? = nil {
+    var end: Double? = nil {
         didSet {
             changed()
         }
@@ -64,13 +64,13 @@ class IntervalEditor {
         }
     }
     
-    private var originalStart: Int? = nil {
+    private var originalStart: Double? = nil {
         didSet {
             changed()
         }
     }
     
-    private var originalEnd: Int? = nil {
+    private var originalEnd: Double? = nil {
         didSet {
             changed()
         }
