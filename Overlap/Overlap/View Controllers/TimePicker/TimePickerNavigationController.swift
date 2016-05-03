@@ -12,8 +12,8 @@ class TimePickerNavigationController: UINavigationController {
             timePickerViewController?.hours = newValue
         }
         get {
-            if let timePickerViewController = timePickerViewController {
-                return timePickerViewController.hours
+            if let hours = timePickerViewController?.hours {
+                return hours
             }
             return 0
         }
@@ -24,8 +24,8 @@ class TimePickerNavigationController: UINavigationController {
             timePickerViewController?.minutes = newValue
         }
         get {
-            if let timePickerViewController = timePickerViewController {
-                return timePickerViewController.minutes
+            if let minutes = timePickerViewController?.minutes {
+                return minutes
             }
             return 0
         }

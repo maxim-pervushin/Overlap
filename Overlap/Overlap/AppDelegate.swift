@@ -23,6 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func applyAppearance() {
         
         // UITableView
-        UITableView.appearance().separatorColor = UIColor(red:0.93, green:0.94, blue:0.95, alpha:1.00).colorWithAlphaComponent(0.25)        
+        UITableView.appearance().separatorColor = UIColor(red:0.93, green:0.94, blue:0.95, alpha:1.00).colorWithAlphaComponent(0.25)
     }
 }

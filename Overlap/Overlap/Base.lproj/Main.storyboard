@@ -6,119 +6,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Overlaps-->
-        <scene sceneID="Yl4-uZ-aBW">
-            <objects>
-                <tableViewController id="UVs-ft-Y8Y" customClass="OverlapListViewController" customModule="Overlap" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="MUJ-rk-ZmY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
-                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OverlapCell" id="Kwr-QC-usg" customClass="OverlapCell" customModule="Overlap" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="110"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kwr-QC-usg" id="KDu-Px-g9d">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="o7s-pj-tca" customClass="OverlapView" customModule="Overlap" customModuleProvider="target">
-                                            <rect key="frame" x="12" y="31" width="576" height="47"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Source Interval]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuo-j1-phh">
-                                            <rect key="frame" x="12" y="12" width="576" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Destination Interval]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0p-az-Vhb">
-                                            <rect key="frame" x="12" y="82" width="576" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="G0p-az-Vhb" firstAttribute="leading" secondItem="KDu-Px-g9d" secondAttribute="leadingMargin" constant="4" id="2vz-As-0e5"/>
-                                        <constraint firstItem="o7s-pj-tca" firstAttribute="leading" secondItem="KDu-Px-g9d" secondAttribute="leadingMargin" constant="4" id="6fA-IM-Aeu"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="o7s-pj-tca" secondAttribute="trailing" constant="4" id="86T-WM-zUg"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="G0p-az-Vhb" secondAttribute="trailing" constant="4" id="GJB-Hl-1WL"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="G0p-az-Vhb" secondAttribute="bottom" constant="4" id="J5F-NN-NIO"/>
-                                        <constraint firstItem="G0p-az-Vhb" firstAttribute="top" secondItem="o7s-pj-tca" secondAttribute="bottom" constant="4" id="K0m-dE-myC"/>
-                                        <constraint firstItem="iuo-j1-phh" firstAttribute="leading" secondItem="KDu-Px-g9d" secondAttribute="leadingMargin" constant="4" id="V4c-GH-qxF"/>
-                                        <constraint firstItem="o7s-pj-tca" firstAttribute="top" secondItem="iuo-j1-phh" secondAttribute="bottom" constant="4" id="X8i-xa-bVH"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="iuo-j1-phh" secondAttribute="trailing" constant="4" id="Ynq-OU-cet"/>
-                                        <constraint firstItem="iuo-j1-phh" firstAttribute="top" secondItem="KDu-Px-g9d" secondAttribute="topMargin" constant="4" id="fiX-7Z-vmk"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="destinationIntervalLabel" destination="G0p-az-Vhb" id="PQ9-4c-PbM"/>
-                                    <outlet property="overlapView" destination="o7s-pj-tca" id="1sX-aq-Wes"/>
-                                    <outlet property="sourceIntervalLabel" destination="iuo-j1-phh" id="ME7-Vb-cHx"/>
-                                    <segue destination="7lW-6U-85I" kind="presentation" id="VF8-xW-Ez1"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SBn-hZ-l6y" customClass="OverlapCell" customModule="Overlap" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="138" width="600" height="110"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SBn-hZ-l6y" id="Ukb-ny-hgf">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3AZ-VK-AYG" customClass="OverlapView" customModule="Overlap" customModuleProvider="target">
-                                            <rect key="frame" x="12" y="31" width="576" height="47"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Source Interval]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yN-EI-e1w">
-                                            <rect key="frame" x="12" y="12" width="576" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Destination Interval]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQd-eC-poJ">
-                                            <rect key="frame" x="12" y="82" width="576" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="6yN-EI-e1w" firstAttribute="leading" secondItem="Ukb-ny-hgf" secondAttribute="leadingMargin" constant="4" id="7fH-yQ-1Ns"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="6yN-EI-e1w" secondAttribute="trailing" constant="4" id="Fwb-wE-oct"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="3AZ-VK-AYG" secondAttribute="trailing" constant="4" id="GV2-Yy-GDG"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="dQd-eC-poJ" secondAttribute="bottom" constant="4" id="HFk-dZ-TtQ"/>
-                                        <constraint firstItem="dQd-eC-poJ" firstAttribute="top" secondItem="3AZ-VK-AYG" secondAttribute="bottom" constant="4" id="LQj-yi-1vh"/>
-                                        <constraint firstItem="3AZ-VK-AYG" firstAttribute="top" secondItem="6yN-EI-e1w" secondAttribute="bottom" constant="4" id="NAb-2D-jrX"/>
-                                        <constraint firstItem="3AZ-VK-AYG" firstAttribute="leading" secondItem="Ukb-ny-hgf" secondAttribute="leadingMargin" constant="4" id="PK1-Pr-70m"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="dQd-eC-poJ" secondAttribute="trailing" constant="4" id="TK3-ZT-N8z"/>
-                                        <constraint firstItem="dQd-eC-poJ" firstAttribute="leading" secondItem="Ukb-ny-hgf" secondAttribute="leadingMargin" constant="4" id="VOo-ae-kW1"/>
-                                        <constraint firstItem="6yN-EI-e1w" firstAttribute="top" secondItem="Ukb-ny-hgf" secondAttribute="topMargin" constant="4" id="kgk-V8-4fh"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="destinationIntervalLabel" destination="dQd-eC-poJ" id="IQq-eA-mbA"/>
-                                    <outlet property="overlapView" destination="3AZ-VK-AYG" id="K8d-a4-9s6"/>
-                                    <outlet property="sourceIntervalLabel" destination="6yN-EI-e1w" id="i7g-VZ-Cm0"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="UVs-ft-Y8Y" id="xnk-z1-Whh"/>
-                            <outlet property="delegate" destination="UVs-ft-Y8Y" id="2Xu-2h-NGW"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Overlaps" id="VkS-XI-Lse"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wvR-6z-rB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-104" y="-261"/>
-        </scene>
         <!--Overlap List View Controller-->
         <scene sceneID="Fgy-3a-y4h">
             <objects>
@@ -134,7 +21,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qew-0I-pDQ">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <inset key="separatorInset" minX="5" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OverlapCell" id="HRj-jx-Ta8" customClass="OverlapCell" customModule="Overlap" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="110"/>
@@ -200,37 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZe-EH-vvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-136" y="444"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="a1E-y0-aT0">
-            <objects>
-                <viewController id="ie6-n2-HW2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pMR-uB-GP5"/>
-                        <viewControllerLayoutGuide type="bottom" id="dTT-oA-Cjg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CGs-rp-gy0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Js3-5G-ohN">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="dTT-oA-Cjg" firstAttribute="top" secondItem="Js3-5G-ohN" secondAttribute="bottom" id="2xS-z8-OJt"/>
-                            <constraint firstItem="Js3-5G-ohN" firstAttribute="top" secondItem="pMR-uB-GP5" secondAttribute="bottom" id="K4M-Uo-9ha"/>
-                            <constraint firstItem="Js3-5G-ohN" firstAttribute="leading" secondItem="CGs-rp-gy0" secondAttribute="leading" id="gwB-0t-Ik0"/>
-                            <constraint firstAttribute="trailing" secondItem="Js3-5G-ohN" secondAttribute="trailing" id="puT-1v-AOf"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RvA-K9-aFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-752" y="1147"/>
+            <point key="canvasLocation" x="-92" y="-293"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ABa-5w-zv0">
@@ -249,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="727" y="-293"/>
         </scene>
-        <!--Edit Overlap View Controller-->
+        <!--Overlap Editor View Controller-->
         <scene sceneID="hNh-We-907">
             <objects>
-                <viewController id="UPO-rR-VJ1" customClass="EditOverlapViewController" customModule="Overlap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UPO-rR-VJ1" customClass="OverlapEditorViewController" customModule="Overlap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="noZ-fe-ZbS"/>
                         <viewControllerLayoutGuide type="bottom" id="1sA-J0-tr0"/>
@@ -322,6 +179,7 @@
                                         </state>
                                         <connections>
                                             <action selector="editSourceStart:" destination="UPO-rR-VJ1" eventType="touchUpInside" id="00v-tg-sgG"/>
+                                            <segue destination="Jsa-RH-74V" kind="presentation" identifier="PickDestinationTimezone" id="hhJ-BT-yD7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNX-IA-Dt6" customClass="EditButton" customModule="Overlap" customModuleProvider="target">
@@ -503,57 +361,69 @@
                         <outlet property="sourceEndButton" destination="bge-nv-OfO" id="vjk-78-PrF"/>
                         <outlet property="sourceStartButton" destination="uLT-Gh-D7W" id="gc6-1f-4ob"/>
                         <outlet property="sourceTimezoneButton" destination="VNX-IA-Dt6" id="0sn-dD-3nR"/>
-                        <segue destination="YXf-01-lTF" kind="presentation" identifier="PickSourceTimezone" id="bAY-cO-8bY"/>
-                        <segue destination="YXf-01-lTF" kind="presentation" identifier="PickDestinationTimezone" id="c77-HL-Q2D"/>
                         <segue destination="0H4-rA-1ao" kind="presentation" identifier="PickSourceEnd" id="csY-4w-2K4"/>
                         <segue destination="0H4-rA-1ao" kind="presentation" identifier="PickDestinationStart" id="1Tq-Tl-jbr"/>
                         <segue destination="0H4-rA-1ao" kind="presentation" identifier="PickDestinationEnd" id="EdY-9a-1gI"/>
                         <segue destination="0H4-rA-1ao" kind="presentation" identifier="PickSourceStart" id="GOA-tc-T2c"/>
+                        <segue destination="Jsa-RH-74V" kind="presentation" identifier="PickSourceTimezone" id="c83-aV-ozs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjI-wU-aw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1451" y="-293"/>
         </scene>
-        <!--Pick Timezone View Controller-->
+        <!--Time Zone Picker View Controller-->
         <scene sceneID="ULi-jP-k4Q">
             <objects>
-                <viewController id="YXf-01-lTF" customClass="PickTimezoneViewController" customModule="Overlap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YXf-01-lTF" customClass="TimeZonePickerViewController" customModule="Overlap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZPS-du-9XT"/>
                         <viewControllerLayoutGuide type="bottom" id="OpH-fh-Ryk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cn3-w9-gQZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hyK-vY-lmF">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <searchBar contentMode="redraw" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkN-Cy-IqB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YXf-01-lTF" id="X8F-XI-2YH"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hyK-vY-lmF">
+                                <rect key="frame" x="0.0" y="44" width="600" height="492"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimezoneCell" textLabel="no0-vk-QSz" detailTextLabel="wCH-hb-P3p" style="IBUITableViewCellStyleSubtitle" id="sdf-RB-yE4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeZoneCell" textLabel="no0-vk-QSz" detailTextLabel="wCH-hb-P3p" style="IBUITableViewCellStyleSubtitle" id="sdf-RB-yE4" customClass="TimeZoneCell" customModule="Overlap" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sdf-RB-yE4" id="nlR-Xr-ORM">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="no0-vk-QSz">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="no0-vk-QSz">
                                                     <rect key="frame" x="15" y="5" width="32" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wCH-hb-P3p">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="wCH-hb-P3p">
                                                     <rect key="frame" x="15" y="25" width="31" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -562,21 +432,54 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="hyK-vY-lmF" firstAttribute="top" secondItem="ZPS-du-9XT" secondAttribute="bottom" id="KJN-Ms-qDK"/>
+                            <constraint firstItem="HkN-Cy-IqB" firstAttribute="leading" secondItem="cn3-w9-gQZ" secondAttribute="leading" id="JPC-ut-RBE"/>
+                            <constraint firstItem="hyK-vY-lmF" firstAttribute="top" secondItem="HkN-Cy-IqB" secondAttribute="bottom" id="LIj-PD-Ccx"/>
                             <constraint firstItem="hyK-vY-lmF" firstAttribute="leading" secondItem="cn3-w9-gQZ" secondAttribute="leading" id="Qo2-SD-vjf"/>
                             <constraint firstAttribute="trailing" secondItem="hyK-vY-lmF" secondAttribute="trailing" id="U9R-KE-Glr"/>
                             <constraint firstItem="OpH-fh-Ryk" firstAttribute="top" secondItem="hyK-vY-lmF" secondAttribute="bottom" id="XsN-3A-HfX"/>
+                            <constraint firstAttribute="trailing" secondItem="HkN-Cy-IqB" secondAttribute="trailing" id="bKW-9o-Lvj"/>
+                            <constraint firstItem="HkN-Cy-IqB" firstAttribute="top" secondItem="ZPS-du-9XT" secondAttribute="bottom" id="pOx-x4-tf8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Hs0-jP-MGG">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="2We-HJ-WxX">
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="YXf-01-lTF" id="iOz-k7-yek"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Pick" id="ZOL-Xn-9mo">
+                            <connections>
+                                <action selector="pickButtonAction:" destination="YXf-01-lTF" id="tdB-Ld-OPN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="HkN-Cy-IqB" id="x6e-vx-1tv"/>
                         <outlet property="tableView" destination="hyK-vY-lmF" id="QjW-cg-U93"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adZ-Fn-imY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2202" y="-184"/>
+            <point key="canvasLocation" x="3190" y="-937"/>
+        </scene>
+        <!--Time Zone Picker Navigation Controller-->
+        <scene sceneID="af7-1i-CVO">
+            <objects>
+                <navigationController id="Jsa-RH-74V" customClass="TimeZonePickerNavigationController" customModule="Overlap" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="3GG-zW-c1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YXf-01-lTF" kind="relationship" relationship="rootViewController" id="iRD-8W-SRD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TR0-wC-R3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2402" y="-937"/>
         </scene>
         <!--Time Picker View Controller-->
         <scene sceneID="Dad-dN-FlU">
@@ -623,7 +526,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3x-cf-sHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2453" y="664"/>
+            <point key="canvasLocation" x="3089" y="164"/>
         </scene>
         <!--Time Picker Navigation Controller-->
         <scene sceneID="8bc-nJ-SeI">
@@ -640,13 +543,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnb-CO-OwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="664"/>
+            <point key="canvasLocation" x="2339" y="164"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VF8-xW-Ez1"/>
-        <segue reference="c77-HL-Q2D"/>
         <segue reference="GOA-tc-T2c"/>
+        <segue reference="c83-aV-ozs"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.68627450980392157" green="0.71372549019607845" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
 </document>

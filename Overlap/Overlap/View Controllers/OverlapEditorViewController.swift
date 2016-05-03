@@ -5,13 +5,13 @@
 
 import UIKit
 
-class EditOverlapViewController: UIViewController {
+class OverlapEditorViewController: UIViewController {
 
     // MARK: @IB
 
     @IBOutlet weak var saveButton: UIBarButtonItem?
     @IBOutlet weak var overlapView: OverlapView?
-    
+
     @IBOutlet weak var sourceStartButton: EditButton?
     @IBOutlet weak var sourceEndButton: EditButton?
     @IBOutlet weak var sourceTimezoneButton: EditButton?
@@ -66,30 +66,14 @@ class EditOverlapViewController: UIViewController {
         super.viewDidLoad()
         editor.updated = reloadData
         overlap = Overlap.defaultOverlap()
-//        reloadData()
-        
-        if let overlapView = overlapView {
-//            let sourceBackgroundColor = overlapView.sourceColor.colorWithAlphaComponent(0.3)
 
+        if let overlapView = overlapView {
             sourceStartButton?.setColor(overlapView.sourceColor)
             sourceEndButton?.setColor(overlapView.sourceColor)
             sourceTimezoneButton?.setColor(overlapView.sourceColor)
-
-//            sourceEndButton?.backgroundColor = sourceBackgroundColor
-//            sourceEndButton?.setTitleColor(overlapView.sourceColor)
-//            sourceTimezoneButton?.backgroundColor = sourceBackgroundColor
-//            sourceTimezoneButton?.setTitleColor(overlapView.sourceColor)
-
-//            let destinationBackgroundColor = overlapView.destinationColor.colorWithAlphaComponent(0.3)
             destinationStartButton?.setColor(overlapView.destinationColor)
             destinationEndButton?.setColor(overlapView.destinationColor)
             destinationTimezoneButton?.setColor(overlapView.destinationColor)
-//            destinationStartButton?.backgroundColor = destinationBackgroundColor
-//            destinationStartButton?.setTitleColor(overlapView.destinationColor)
-//            destinationEndButton?.backgroundColor = destinationBackgroundColor
-//            destinationEndButton?.setTitleColor(overlapView.destinationColor)
-//            destinationTimezoneButton?.backgroundColor = destinationBackgroundColor
-//            destinationTimezoneButton?.setTitleColor(overlapView.destinationColor)
         }
     }
 
@@ -109,6 +93,7 @@ class EditOverlapViewController: UIViewController {
                     self.editor.interval1Editor.start = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
+
             case "PickSourceEnd":
                 if let hours = self.editor.interval1Editor.end?.hours {
                     timePicker.hours = hours
@@ -120,6 +105,7 @@ class EditOverlapViewController: UIViewController {
                     self.editor.interval1Editor.end = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
+
             case "PickDestinationStart":
                 if let hours = self.editor.interval2Editor.start?.hours {
                     timePicker.hours = hours
@@ -131,6 +117,7 @@ class EditOverlapViewController: UIViewController {
                     self.editor.interval2Editor.start = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
+
             case "PickDestinationEnd":
                 if let hours = self.editor.interval2Editor.end?.hours {
                     timePicker.hours = hours
@@ -142,8 +129,36 @@ class EditOverlapViewController: UIViewController {
                     self.editor.interval2Editor.end = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
+
             default:
-            break
+                break
+            }
+
+        } else if let
+        timezonePicker = segue.destinationViewController as? TimeZonePickerNavigationController,
+        identifier = segue.identifier {
+
+            switch identifier {
+            case "PickSourceTimezone":
+                if let timeZone = self.editor.interval1Editor.timeZone {
+                    timezonePicker.timeZone = timeZone
+                }
+                timezonePicker.finished = {
+                    self.editor.interval1Editor.timeZone = timezonePicker.timeZone
+                }
+                break
+
+            case "PickDestinationTimezone":
+                if let timeZone = self.editor.interval2Editor.timeZone {
+                    timezonePicker.timeZone = timeZone
+                }
+                timezonePicker.finished = {
+                    self.editor.interval2Editor.timeZone = timezonePicker.timeZone
+                }
+                break
+
+            default:
+                break
             }
         }
     }
@@ -156,42 +171,42 @@ class EditOverlapViewController: UIViewController {
         saveButton?.enabled = editor.hasChanges
 
         overlapView?.overlap = overlap
-        
+
         if let sourceStartTitle = editor.interval1Editor.start?.timeString() {
             sourceStartButton?.setTitle("\(sourceStartTitle)")
         } else {
             sourceStartButton?.setTitle("")
         }
-        
+
         if let sourceEndTitle = editor.interval1Editor.end?.timeString() {
             sourceEndButton?.setTitle("\(sourceEndTitle)")
         } else {
             sourceEndButton?.setTitle("")
         }
-        
+
         if let
-            sourceTimeZone = editor.interval1Editor.timeZone,
-            localizedName = sourceTimeZone.localizedName(.Generic, locale: NSLocale.currentLocale()) {
+        sourceTimeZone = editor.interval1Editor.timeZone,
+        localizedName = sourceTimeZone.localizedName(.Generic, locale: NSLocale.currentLocale()) {
             sourceTimezoneButton?.setTitle(localizedName)
         } else {
             sourceTimezoneButton?.setTitle("")
         }
-        
+
         if let destinationStartTitle = editor.interval2Editor.start?.timeString() {
             destinationStartButton?.setTitle("\(destinationStartTitle)")
         } else {
             destinationStartButton?.setTitle("")
         }
-        
+
         if let destinationEndTitle = editor.interval2Editor.end?.timeString() {
             destinationEndButton?.setTitle("\(destinationEndTitle)")
         } else {
             destinationEndButton?.setTitle("")
         }
-        
+
         if let
-            destinationTimeZone = editor.interval2Editor.timeZone,
-            localizedName = destinationTimeZone.localizedName(.Generic, locale: NSLocale.currentLocale()) {
+        destinationTimeZone = editor.interval2Editor.timeZone,
+        localizedName = destinationTimeZone.localizedName(.Generic, locale: NSLocale.currentLocale()) {
             destinationTimezoneButton?.setTitle(localizedName)
         } else {
             destinationTimezoneButton?.setTitle("")
