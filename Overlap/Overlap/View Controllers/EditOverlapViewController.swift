@@ -95,35 +95,54 @@ class EditOverlapViewController: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let
-        pickTimeViewController = segue.destinationViewController as? PickTimeViewController,
+        timePicker = segue.destinationViewController as? TimePickerNavigationController,
         identifier = segue.identifier {
             switch identifier {
             case "PickSourceStart":
-                pickTimeViewController.timePicked = {
-                    (hours: Int, minutes: Int) -> Void in
-                    self.editor.interval1Editor.start = Double(hours * 60 + minutes)
+                if let hours = self.editor.interval1Editor.start?.hours {
+                    timePicker.hours = hours
+                }
+                if let minutes = self.editor.interval1Editor.start?.minutes {
+                    timePicker.minutes = minutes
+                }
+                timePicker.finished = {
+                    self.editor.interval1Editor.start = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
             case "PickSourceEnd":
-                pickTimeViewController.timePicked = {
-                    (hours: Int, minutes: Int) -> Void in
-                    self.editor.interval1Editor.end = Double(hours * 60 + minutes)
+                if let hours = self.editor.interval1Editor.end?.hours {
+                    timePicker.hours = hours
+                }
+                if let minutes = self.editor.interval1Editor.end?.minutes {
+                    timePicker.minutes = minutes
+                }
+                timePicker.finished = {
+                    self.editor.interval1Editor.end = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
             case "PickDestinationStart":
-                pickTimeViewController.timePicked = {
-                    (hours: Int, minutes: Int) -> Void in
-                    self.editor.interval2Editor.start = Double(hours * 60 + minutes)
+                if let hours = self.editor.interval2Editor.start?.hours {
+                    timePicker.hours = hours
+                }
+                if let minutes = self.editor.interval2Editor.start?.minutes {
+                    timePicker.minutes = minutes
+                }
+                timePicker.finished = {
+                    self.editor.interval2Editor.start = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
             case "PickDestinationEnd":
-                pickTimeViewController.timePicked = {
-                    (hours: Int, minutes: Int) -> Void in
-                    self.editor.interval2Editor.end = Double(hours * 60 + minutes)
+                if let hours = self.editor.interval2Editor.end?.hours {
+                    timePicker.hours = hours
+                }
+                if let minutes = self.editor.interval2Editor.end?.minutes {
+                    timePicker.minutes = minutes
+                }
+                timePicker.finished = {
+                    self.editor.interval2Editor.end = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
             default:
-                pickTimeViewController.timePicked = nil
             break
             }
         }

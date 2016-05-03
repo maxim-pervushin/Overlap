@@ -8,7 +8,7 @@ import UIKit
 class OverlapListViewController: UIViewController {
 
     private let overlaps = [
-            Overlap(NSTimeZone(abbreviation: "MSK")!, 20, 6, NSTimeZone(abbreviation: "GMT")!, 8, 17),
+            Overlap(NSTimeZone(abbreviation: "MSK")!, 21.67, 6.5, NSTimeZone(abbreviation: "GMT")!, 8, 17),
             Overlap(NSTimeZone(abbreviation: "MSK")!, 20, 6, NSTimeZone(abbreviation: "GMT")!, 20, 6),
             Overlap(NSTimeZone(abbreviation: "MSK")!, 8, 17, NSTimeZone(abbreviation: "GMT")!, 20, 6),
 //        Overlap(NSTimeZone(abbreviation: "MSK")!, 8, 30, NSTimeZone(abbreviation: "GMT")!, 8, 17),

@@ -236,7 +236,7 @@
         <scene sceneID="ABa-5w-zv0">
             <objects>
                 <navigationController id="7lW-6U-85I" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Vww-ct-bCR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Vww-ct-bCR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
@@ -258,17 +258,17 @@
                         <viewControllerLayoutGuide type="bottom" id="1sA-J0-tr0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vRe-Ox-jht">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KVn-sI-3Lt" customClass="OverlapView" customModule="Overlap" customModuleProvider="target">
+                            <view contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVn-sI-3Lt" customClass="OverlapView" customModule="Overlap" customModuleProvider="target">
                                 <rect key="frame" x="20" y="88" width="560" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CM1-ef-sVQ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SML-q2-sXd" userLabel="Source Interval View">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SML-q2-sXd" userLabel="Source Interval View">
                                 <rect key="frame" x="20" y="154" width="560" height="174"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOURCE INTERVAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgi-fA-O13">
@@ -368,7 +368,7 @@
                                     <constraint firstItem="Hgi-fA-O13" firstAttribute="top" secondItem="SML-q2-sXd" secondAttribute="top" constant="8" id="yYm-Zg-Uu7"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-EE-i9L" userLabel="Destination Interval View">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-EE-i9L" userLabel="Destination Interval View">
                                 <rect key="frame" x="20" y="336" width="560" height="174"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCg-bR-8Y8" customClass="EditButton" customModule="Overlap" customModuleProvider="target">
@@ -503,12 +503,12 @@
                         <outlet property="sourceEndButton" destination="bge-nv-OfO" id="vjk-78-PrF"/>
                         <outlet property="sourceStartButton" destination="uLT-Gh-D7W" id="gc6-1f-4ob"/>
                         <outlet property="sourceTimezoneButton" destination="VNX-IA-Dt6" id="0sn-dD-3nR"/>
-                        <segue destination="UbC-jJ-4NF" kind="presentation" identifier="PickSourceStart" id="lgZ-DH-Q7y"/>
-                        <segue destination="UbC-jJ-4NF" kind="presentation" identifier="PickSourceEnd" id="NIt-I9-HCg"/>
-                        <segue destination="UbC-jJ-4NF" kind="presentation" identifier="PickDestinationStart" id="4VB-iR-hKv"/>
-                        <segue destination="UbC-jJ-4NF" kind="presentation" identifier="PickDestinationEnd" id="bkr-r0-Rke"/>
                         <segue destination="YXf-01-lTF" kind="presentation" identifier="PickSourceTimezone" id="bAY-cO-8bY"/>
                         <segue destination="YXf-01-lTF" kind="presentation" identifier="PickDestinationTimezone" id="c77-HL-Q2D"/>
+                        <segue destination="0H4-rA-1ao" kind="presentation" identifier="PickSourceEnd" id="csY-4w-2K4"/>
+                        <segue destination="0H4-rA-1ao" kind="presentation" identifier="PickDestinationStart" id="1Tq-Tl-jbr"/>
+                        <segue destination="0H4-rA-1ao" kind="presentation" identifier="PickDestinationEnd" id="EdY-9a-1gI"/>
+                        <segue destination="0H4-rA-1ao" kind="presentation" identifier="PickSourceStart" id="GOA-tc-T2c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjI-wU-aw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -578,71 +578,44 @@
             </objects>
             <point key="canvasLocation" x="2202" y="-184"/>
         </scene>
-        <!--Pick Time View Controller-->
+        <!--Time Picker View Controller-->
         <scene sceneID="Dad-dN-FlU">
             <objects>
-                <viewController id="UbC-jJ-4NF" customClass="PickTimeViewController" customModule="Overlap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UbC-jJ-4NF" customClass="TimePickerViewController" customModule="Overlap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yfj-Fj-XCg"/>
                         <viewControllerLayoutGuide type="bottom" id="kVl-EK-Uow"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cwl-8G-VSs">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7io-PC-cgN">
-                                <rect key="frame" x="0.0" y="63" width="600" height="216"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7io-PC-cgN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="483619974.782538">
                                     <!--2016-04-29 10:52:54 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="datePickerValueChanged:" destination="UbC-jJ-4NF" eventType="valueChanged" id="Kjt-c3-vAo"/>
-                                </connections>
                             </datePicker>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKV-er-fgG">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUD-cD-o9m">
-                                        <rect key="frame" x="8" y="0.0" width="48" height="44"/>
-                                        <state key="normal" title="Cancel"/>
-                                        <connections>
-                                            <action selector="cancelButtonAction:" destination="UbC-jJ-4NF" eventType="touchUpInside" id="hQf-Jp-zeV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63e-XU-7bB">
-                                        <rect key="frame" x="562" y="0.0" width="30" height="44"/>
-                                        <state key="normal" title="Pick"/>
-                                        <connections>
-                                            <action selector="pickButtonAction:" destination="UbC-jJ-4NF" eventType="touchUpInside" id="ZZE-VW-kHg"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="63e-XU-7bB" firstAttribute="top" secondItem="eKV-er-fgG" secondAttribute="top" id="4UY-FT-hfx"/>
-                                    <constraint firstAttribute="trailing" secondItem="63e-XU-7bB" secondAttribute="trailing" constant="8" id="55w-2G-gWY"/>
-                                    <constraint firstItem="JUD-cD-o9m" firstAttribute="top" secondItem="eKV-er-fgG" secondAttribute="top" id="FXg-5R-JHg"/>
-                                    <constraint firstItem="JUD-cD-o9m" firstAttribute="leading" secondItem="eKV-er-fgG" secondAttribute="leading" constant="8" id="JnP-du-rk9"/>
-                                    <constraint firstAttribute="bottom" secondItem="JUD-cD-o9m" secondAttribute="bottom" id="OW2-GZ-XG7"/>
-                                    <constraint firstAttribute="bottom" secondItem="63e-XU-7bB" secondAttribute="bottom" id="Tjw-z7-PSx"/>
-                                    <constraint firstAttribute="height" constant="44" id="cjy-Zq-u0y"/>
-                                </constraints>
-                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="7io-PC-cgN" firstAttribute="top" secondItem="eKV-er-fgG" secondAttribute="bottom" id="00u-9k-TAF"/>
-                            <constraint firstAttribute="trailing" secondItem="eKV-er-fgG" secondAttribute="trailing" id="2Ox-LW-IA7"/>
-                            <constraint firstItem="eKV-er-fgG" firstAttribute="leading" secondItem="cwl-8G-VSs" secondAttribute="leading" id="GMe-Lx-Mw1"/>
+                            <constraint firstItem="7io-PC-cgN" firstAttribute="top" secondItem="Yfj-Fj-XCg" secondAttribute="bottom" id="FGe-CS-aL8"/>
                             <constraint firstItem="7io-PC-cgN" firstAttribute="leading" secondItem="cwl-8G-VSs" secondAttribute="leading" id="PhP-3r-Aaq"/>
-                            <constraint firstItem="eKV-er-fgG" firstAttribute="top" secondItem="Yfj-Fj-XCg" secondAttribute="bottom" id="bjc-K1-xVc"/>
                             <constraint firstAttribute="trailing" secondItem="7io-PC-cgN" secondAttribute="trailing" id="lJ2-gE-Bfq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2wV-EY-Ioc">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uhD-By-a6L"/>
-                        <barButtonItem key="rightBarButtonItem" title="Pick" id="eHP-aA-EFp"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uhD-By-a6L">
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="UbC-jJ-4NF" id="fBw-rp-4VV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Pick" id="eHP-aA-EFp">
+                            <connections>
+                                <action selector="pickButtonAction:" destination="UbC-jJ-4NF" id="5bE-qf-dwt"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="datePicker" destination="7io-PC-cgN" id="agp-c5-9fn"/>
@@ -650,13 +623,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3x-cf-sHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669" y="607"/>
+            <point key="canvasLocation" x="2453" y="664"/>
+        </scene>
+        <!--Time Picker Navigation Controller-->
+        <scene sceneID="8bc-nJ-SeI">
+            <objects>
+                <navigationController id="0H4-rA-1ao" customClass="TimePickerNavigationController" customModule="Overlap" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="PgH-2v-SRS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UbC-jJ-4NF" kind="relationship" relationship="rootViewController" id="0gI-y7-4hM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnb-CO-OwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1703" y="664"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="c77-HL-Q2D"/>
         <segue reference="VF8-xW-Ez1"/>
-        <segue reference="bkr-r0-Rke"/>
+        <segue reference="c77-HL-Q2D"/>
+        <segue reference="GOA-tc-T2c"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.68627450980392157" green="0.71372549019607845" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
 </document>
