@@ -61,6 +61,12 @@ class TimePickerViewController: UIViewController {
         reloadData()
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // TODO: workaround for UIDatePicker text color. http://stackoverflow.com/questions/20181225/customize-text-color-of-uidatepicker-for-ios7-just-like-mailbox-does
+        datePicker?.setValue(UIColor.whiteColor(), forKeyPath: "textColor")
+    }
+
     // MARK: private
 
     private func reloadData() {
