@@ -4,8 +4,17 @@ import UIKit
 
     @IBInspectable var sourceColor = UIColor(red:0.75, green:0.22, blue:0.17, alpha:1.00)
     @IBInspectable var destinationColor = UIColor(red:0.15, green:0.68, blue:0.38, alpha:1.00)
-    @IBInspectable var overlapColor = UIColor(red:0.50, green:0.55, blue:0.55, alpha:1.00)
+//    @IBInspectable var overlapColor = UIColor(red:0.50, green:0.55, blue:0.55, alpha:1.00)
+    @IBInspectable var overlapColor = UIColor(red:0.74, green:0.76, blue:0.78, alpha:1.00)
     @IBInspectable var rulerColor = UIColor(red:0.74, green:0.76, blue:0.78, alpha:1.00)
+    @IBInspectable var cornerRadius: CGFloat {
+        set {
+            layer.cornerRadius = newValue
+        }
+        get {
+            return layer.cornerRadius
+        }
+    }
 
     var overlap: Overlap? {
         didSet {
@@ -23,8 +32,8 @@ import UIKit
         let height = bounds.height - topOffest - bottomOffest
 //        let rowHeight = height / 3
 
-        let startOffest = CGFloat(8)
-        let endOffest = CGFloat(8)
+        let startOffest = CGFloat(12)
+        let endOffest = CGFloat(12)
 
         let width = bounds.width - startOffest - endOffest
 
@@ -38,24 +47,22 @@ import UIKit
 
             let textAttributes = [
                     NSForegroundColorAttributeName: rulerColor,
-                    NSFontAttributeName: UIFont.monospacedDigitSystemFontOfSize(8, weight: 0)// systemFontOfSize(8)
+                    NSFontAttributeName: UIFont.systemFontOfSize(8)
+//                NSFontAttributeName: UIFont.monospacedDigitSystemFontOfSize(8, weight: 0)// systemFontOfSize(8)
             ]
 
-            for i in 0.stride(through: end - start, by: 1) {
-                let x = CGFloat(i) * width / count + startOffest
-
+            let hourSize = width / 24
+            for i in 0...24 {
+                let x = CGFloat(i) * hourSize + startOffest
+                CGContextMoveToPoint(ctx, x, height / 6 * 1.5)
+                CGContextAddLineToPoint(ctx, x, height / 6 * 1.75)
                 if 0 == i % 6 {
                     let text = NSString(string: "\(Int(i))")
                     let size = text.sizeWithAttributes(textAttributes)
-
                     text.drawAtPoint(CGPoint(x: x - size.width / 2, y: 0), withAttributes: textAttributes)
                 }
-//                CGContextMoveToPoint(ctx, x, 0)
-//                CGContextAddLineToPoint(ctx, x, 2)
-
-                CGContextMoveToPoint(ctx, x, height / 6 * 1.5)
-                CGContextAddLineToPoint(ctx, x, height / 6 * 2)
             }
+            
             CGContextStrokePath(ctx)
         }
 
@@ -70,8 +77,10 @@ import UIKit
                 CGContextSetLineWidth(ctx, 2 / UIScreen.mainScreen().scale)
                 CGContextSetStrokeColorWithColor(ctx, color.CGColor)
 
-                CGContextMoveToPoint(ctx, startX + 1, startY)
-                CGContextAddLineToPoint(ctx, endX - 1, endY)
+//                CGContextMoveToPoint(ctx, startX + 1, startY)
+//                CGContextAddLineToPoint(ctx, endX - 1, endY)
+                CGContextMoveToPoint(ctx, startX, startY)
+                CGContextAddLineToPoint(ctx, endX, endY)
                 CGContextStrokePath(ctx)
 
 //                CGContextStrokeEllipseInRect(ctx, CGRect(x: startX - 1, y: startY - 1, width: 2, height: 2))
@@ -80,9 +89,13 @@ import UIKit
 
             func drawOverlap(startX: CGFloat, endX: CGFloat, startText: String, endText: String) {
                 CGContextSetLineWidth(ctx, 2 / UIScreen.mainScreen().scale)
-                CGContextSetFillColorWithColor(ctx, overlapColor.colorWithAlphaComponent(0.25).CGColor)
+                CGContextSetFillColorWithColor(ctx, overlapColor.colorWithAlphaComponent(0.15).CGColor)
                 CGContextSetStrokeColorWithColor(ctx, overlapColor.CGColor)
                 CGContextFillRect(ctx, CGRect(x: startX, y: height / 6 * 3, width: endX - startX, height: height / 6 * 2))
+
+                CGContextMoveToPoint(ctx, startX, height - height / 6)
+                CGContextAddLineToPoint(ctx, endX, height - height / 6)
+                CGContextStrokePath(ctx)
 
 //                CGContextMoveToPoint(ctx, startX, height / 6 * 3)
 //                CGContextAddLineToPoint(ctx, startX, height - height / 6 - 1)
@@ -104,10 +117,10 @@ import UIKit
                 ]
 
                 let startTextSize = startText.sizeWithAttributes(textAttributes)
-                startText.drawAtPoint(CGPoint(x: startX - startTextSize.width / 2, y: height - height / 6), withAttributes: textAttributes)
+                startText.drawAtPoint(CGPoint(x: startX - startTextSize.width / 2, y: height - height / 6 + 2), withAttributes: textAttributes)
 
                 let endTextSize = endText.sizeWithAttributes(textAttributes)
-                endText.drawAtPoint(CGPoint(x: endX - endTextSize.width / 2, y: height - height / 6), withAttributes: textAttributes)
+                endText.drawAtPoint(CGPoint(x: endX - endTextSize.width / 2, y: height - height / 6 + 2), withAttributes: textAttributes)
             }
 
             // Draw overlap indicator
