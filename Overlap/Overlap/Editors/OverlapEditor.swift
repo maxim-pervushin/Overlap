@@ -39,7 +39,7 @@ class OverlapEditor {
             }
         }
     }
-    
+
     var hasChanges: Bool {
         return interval1Editor.hasChanges || interval2Editor.hasChanges
     }

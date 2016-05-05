@@ -30,9 +30,21 @@ class OverlapListViewController: UIViewController {
             if let indexPath = tableView?.indexPathForSelectedRow where indexPath.section == 0 {
                 overlapEditor.overlap = _overlaps[indexPath.row]
             } else {
-                overlapEditor.overlap = nil
+                overlapEditor.overlap = Overlap.defaultOverlap()
             }
         }
+    }
+
+    // MARK: override
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        _subscribe()
+    }
+
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        _unsubscribe()
     }
 
     // MARK: private
@@ -47,6 +59,17 @@ class OverlapListViewController: UIViewController {
 
     private func _saveOverlap(overlap: Overlap) -> Bool {
         return DataManager.defaultManager.saveOverlap(overlap)
+    }
+
+    private func _subscribe() {
+        NSNotificationCenter.defaultCenter().addObserverForName(DataManager.updatedNotificationName, object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: {
+            _ in
+            self.tableView?.reloadData()
+        })
+    }
+
+    private func _unsubscribe() {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: DataManager.updatedNotificationName, object: nil)
     }
 }
 
@@ -89,7 +112,7 @@ extension OverlapListViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return indexPath.section == 0 ? 110 : 50
     }
-    
+
     func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
         return indexPath.section == 0 ? .Delete : .None
     }
