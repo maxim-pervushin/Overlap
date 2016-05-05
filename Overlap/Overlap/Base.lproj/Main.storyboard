@@ -112,6 +112,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="7lW-6U-85I" kind="presentation" id="w7k-e0-Vck"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -594,6 +597,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="UCo-Mb-hvF"/>
         <segue reference="GOA-tc-T2c"/>
         <segue reference="c83-aV-ozs"/>
     </inferredMetricsTieBreakers>

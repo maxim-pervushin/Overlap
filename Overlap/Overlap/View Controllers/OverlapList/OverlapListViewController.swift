@@ -7,17 +7,11 @@ import UIKit
 
 class OverlapListViewController: UIViewController {
 
+    // MARK: @IB
+
     @IBOutlet weak var tableView: UITableView?
 
-    private let overlaps = [
-            Overlap(NSTimeZone(abbreviation: "MSK")!, 21.67, 6.5, NSTimeZone(abbreviation: "GMT")!, 8, 17),
-            Overlap(NSTimeZone(abbreviation: "MSK")!, 20, 6, NSTimeZone(abbreviation: "GMT")!, 20, 6),
-            Overlap(NSTimeZone(abbreviation: "MSK")!, 8, 17, NSTimeZone(abbreviation: "GMT")!, 20, 6),
-//        Overlap(NSTimeZone(abbreviation: "MSK")!, 8, 30, NSTimeZone(abbreviation: "GMT")!, 8, 17),
-//        Overlap(NSTimeZone(abbreviation: "MSK")!, 8, 24, NSTimeZone(abbreviation: "GMT")!, 8, 17),
-            Overlap(NSTimeZone(abbreviation: "MSK")!, 8, 17, NSTimeZone(abbreviation: "GMT")!, 8, 17),
-            Overlap(NSTimeZone(abbreviation: "MSK")!, 16, 9, NSTimeZone(abbreviation: "MSK")!, 8, 17),
-    ]
+    // MARK: override
 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
@@ -25,12 +19,26 @@ class OverlapListViewController: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let overlapEditor = segue.destinationViewController as? OverlapEditorNavigationController {
-            if let indexPath = tableView?.indexPathForSelectedRow {
-                overlapEditor.overlap = overlaps[indexPath.row]
+            if let indexPath = tableView?.indexPathForSelectedRow where indexPath.section == 0 {
+                overlapEditor.overlap = _overlaps[indexPath.row]
             } else {
                 overlapEditor.overlap = nil
             }
         }
+    }
+
+    // MARK: private
+
+    private var _overlaps: [Overlap] {
+        return DataManager.defaultManager.overlaps
+    }
+
+    private func _deleteOverlap(overlap: Overlap) -> Bool {
+        return DataManager.defaultManager.deleteOverlap(overlap)
+    }
+
+    private func _saveOverlap(overlap: Overlap) -> Bool {
+        return DataManager.defaultManager.saveOverlap(overlap)
     }
 }
 
@@ -41,13 +49,13 @@ extension OverlapListViewController: UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? overlaps.count : 1
+        return section == 0 ? _overlaps.count : 1
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let reuseIdentifier = indexPath.section == 0 ? OverlapCell.defaultReuseIdentifier : OverlapCell.addReuseIdentifier
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! OverlapCell
-        cell.overlap = overlaps[indexPath.row]
+        cell.overlap = _overlaps[indexPath.row]
         return cell
     }
 }
