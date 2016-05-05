@@ -9,25 +9,25 @@ class IntervalEditor {
 
     var timeZone: NSTimeZone? = nil {
         didSet {
-            changed()
+            updated?()
         }
     }
 
     var start: Double? = nil {
         didSet {
-            changed()
+            updated?()
         }
     }
 
     var end: Double? = nil {
         didSet {
-            changed()
+            updated?()
         }
     }
 
     var updated: (Void -> Void)? = nil {
         didSet {
-            changed()
+            updated?()
         }
     }
     
@@ -60,27 +60,23 @@ class IntervalEditor {
     
     private var originalTimeZone: NSTimeZone? = nil {
         didSet {
-            changed()
+            updated?()
         }
     }
     
     private var originalStart: Double? = nil {
         didSet {
-            changed()
+            updated?()
         }
     }
     
     private var originalEnd: Double? = nil {
         didSet {
-            changed()
+            updated?()
         }
     }
     
     var hasChanges: Bool {
         return originalTimeZone != timeZone || originalStart != start || originalEnd != end
-    }
-    
-    private func changed() {
-        updated?()
     }
 }

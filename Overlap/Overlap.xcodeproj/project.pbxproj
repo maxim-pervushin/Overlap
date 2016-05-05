@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		73BC603E3D4FA26BEE516F9D /* TimeZonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC63CBEC53DDCB5BC8043C /* TimeZonePickerViewController.swift */; };
 		73BC614A44D0A484B03DC83E /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */; };
-		73BC61AE3B8BC28A4453472F /* OverlapEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6ABC942CC02C5720436F /* OverlapEditorViewController.swift */; };
 		73BC61D215953837696ABB33 /* IntervalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6DB7EBA9F862E8FB5EB4 /* IntervalEditor.swift */; };
 		73BC635EFFCCD2C5E06CBC4A /* IntervalEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6205FB5B1894FFFB29CE /* IntervalEditorTests.swift */; };
-		73BC67255F451EF2396033A5 /* OverlapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC60D25256E1A1402EC63B /* OverlapListViewController.swift */; };
+		73BC639AC02E04FB738A849D /* OverlapEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC66DBC82F0BA1299229C5 /* OverlapEditorViewController.swift */; };
 		73BC67835E098C58CF928163 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6CC6D5CDE9E63FDF856E /* EditButton.swift */; };
+		73BC687C2A4C8A4CDFF03A9E /* OverlapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C2881B9B2ED16BACFF6 /* OverlapListViewController.swift */; };
 		73BC68D7A43C917D937096F0 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6E1DD887E08E00279C3E /* TimePickerViewController.swift */; };
 		73BC6BB0CC8662E53AFB27DB /* TimePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC686E50DE510AF7265D92 /* TimePickerNavigationController.swift */; };
 		73BC6BCD98392761D3C702E9 /* TimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BE24D18EEFA5CBD8CD2 /* TimeZoneCell.swift */; };
@@ -22,6 +22,7 @@
 		73BC6DDD7065530677E7CACA /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
 		73BC6E3D554FD671965C7785 /* TimeZonePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6B9E408A8CE60A589D51 /* TimeZonePickerNavigationController.swift */; };
 		73BC6E9C58B8329E2D6E4A59 /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC61D6D71726FF303FD224 /* Double+Time.swift */; };
+		73BC6FAB711DE2EC4FB29D7A /* OverlapEditorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6FB6505B68498841FB64 /* OverlapEditorNavigationController.swift */; };
 		C55E1B0E1CB7B0CF0019D979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B0D1CB7B0CF0019D979 /* AppDelegate.swift */; };
 		C55E1B131CB7B0CF0019D979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B111CB7B0CF0019D979 /* Main.storyboard */; };
 		C55E1B151CB7B0CF0019D979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B141CB7B0CF0019D979 /* Assets.xcassets */; };
@@ -56,20 +57,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		73BC60D25256E1A1402EC63B /* OverlapListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapListViewController.swift; sourceTree = "<group>"; };
 		73BC61D6D71726FF303FD224 /* Double+Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Time.swift"; sourceTree = "<group>"; };
 		73BC6205FB5B1894FFFB29CE /* IntervalEditorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalEditorTests.swift; sourceTree = "<group>"; };
 		73BC63CBEC53DDCB5BC8043C /* TimeZonePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZonePickerViewController.swift; sourceTree = "<group>"; };
 		73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
+		73BC66DBC82F0BA1299229C5 /* OverlapEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorViewController.swift; sourceTree = "<group>"; };
 		73BC686E50DE510AF7265D92 /* TimePickerNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerNavigationController.swift; sourceTree = "<group>"; };
-		73BC6ABC942CC02C5720436F /* OverlapEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorViewController.swift; sourceTree = "<group>"; };
 		73BC6B9E408A8CE60A589D51 /* TimeZonePickerNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZonePickerNavigationController.swift; sourceTree = "<group>"; };
 		73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditor.swift; sourceTree = "<group>"; };
 		73BC6BE24D18EEFA5CBD8CD2 /* TimeZoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZoneCell.swift; sourceTree = "<group>"; };
+		73BC6C2881B9B2ED16BACFF6 /* OverlapListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapListViewController.swift; sourceTree = "<group>"; };
 		73BC6CC6D5CDE9E63FDF856E /* EditButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		73BC6D77970220B169177C99 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		73BC6DB7EBA9F862E8FB5EB4 /* IntervalEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalEditor.swift; sourceTree = "<group>"; };
 		73BC6E1DD887E08E00279C3E /* TimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
+		73BC6FB6505B68498841FB64 /* OverlapEditorNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorNavigationController.swift; sourceTree = "<group>"; };
 		C55E1B0A1CB7B0CF0019D979 /* Overlap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overlap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55E1B0D1CB7B0CF0019D979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C55E1B121CB7B0CF0019D979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +129,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		73BC65C895AD40D2D814A7AB /* OverlapList */ = {
+			isa = PBXGroup;
+			children = (
+				73BC6C2881B9B2ED16BACFF6 /* OverlapListViewController.swift */,
+			);
+			path = OverlapList;
+			sourceTree = "<group>";
+		};
 		73BC674BB793DA2170DC23A5 /* TimePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +149,10 @@
 		73BC688EEC28B84EAADC9B78 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				73BC60D25256E1A1402EC63B /* OverlapListViewController.swift */,
-				73BC6ABC942CC02C5720436F /* OverlapEditorViewController.swift */,
 				73BC674BB793DA2170DC23A5 /* TimePicker */,
 				73BC6B6EFF81D75262163AD8 /* TimezonePicker */,
+				73BC6A2F3A4B947AC003B1C0 /* OverlapEditor */,
+				73BC65C895AD40D2D814A7AB /* OverlapList */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -154,6 +164,15 @@
 				C55E1B3C1CB7B1560019D979 /* Overlap.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		73BC6A2F3A4B947AC003B1C0 /* OverlapEditor */ = {
+			isa = PBXGroup;
+			children = (
+				73BC66DBC82F0BA1299229C5 /* OverlapEditorViewController.swift */,
+				73BC6FB6505B68498841FB64 /* OverlapEditorNavigationController.swift */,
+			);
+			path = OverlapEditor;
 			sourceTree = "<group>";
 		};
 		73BC6B6EFF81D75262163AD8 /* TimezonePicker */ = {
@@ -375,8 +394,6 @@
 				C55E1B0E1CB7B0CF0019D979 /* AppDelegate.swift in Sources */,
 				C55E1B441CB7B1700019D979 /* OverlapView.swift in Sources */,
 				C55E1B3D1CB7B1560019D979 /* Interval.swift in Sources */,
-				73BC67255F451EF2396033A5 /* OverlapListViewController.swift in Sources */,
-				73BC61AE3B8BC28A4453472F /* OverlapEditorViewController.swift in Sources */,
 				73BC6D5D9AC34F9A7C1A88DC /* RoundedView.swift in Sources */,
 				73BC61D215953837696ABB33 /* IntervalEditor.swift in Sources */,
 				73BC6BE36BED0841F2E37A58 /* OverlapEditor.swift in Sources */,
@@ -388,6 +405,9 @@
 				73BC6E3D554FD671965C7785 /* TimeZonePickerNavigationController.swift in Sources */,
 				73BC603E3D4FA26BEE516F9D /* TimeZonePickerViewController.swift in Sources */,
 				73BC6BCD98392761D3C702E9 /* TimeZoneCell.swift in Sources */,
+				73BC639AC02E04FB738A849D /* OverlapEditorViewController.swift in Sources */,
+				73BC687C2A4C8A4CDFF03A9E /* OverlapListViewController.swift in Sources */,
+				73BC6FAB711DE2EC4FB29D7A /* OverlapEditorNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

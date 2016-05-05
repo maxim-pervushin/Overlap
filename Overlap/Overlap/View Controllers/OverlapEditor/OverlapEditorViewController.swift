@@ -65,7 +65,6 @@ class OverlapEditorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         editor.updated = reloadData
-        overlap = Overlap.defaultOverlap()
 
         if let overlapView = overlapView {
             sourceStartButton?.setColor(overlapView.sourceColor)

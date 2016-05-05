@@ -12,6 +12,7 @@ class OverlapCell: UITableViewCell {
     // MARK: static
 
     static let defaultReuseIdentifier = "OverlapCell"
+    static let addReuseIdentifier = "AddOverlapCell"
 
     // MARK: public
 
