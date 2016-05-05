@@ -7,16 +7,29 @@ import UIKit
 
 class OverlapEditorNavigationController: UINavigationController {
 
+    // MARK: public
+
     var overlap: Overlap? {
         set {
-            overlapEditorViewController?.overlap = newValue
+            _overlapEditorViewController?.overlap = newValue
         }
         get {
-            return overlapEditorViewController?.overlap
+            return _overlapEditorViewController?.overlap
         }
     }
 
-    private var overlapEditorViewController: OverlapEditorViewController? {
+    var finished: (Overlap? -> Void)? {
+        set {
+            _overlapEditorViewController?.finished = newValue
+        }
+        get {
+            return _overlapEditorViewController?.finished
+        }
+    }
+
+    // MARK: private
+
+    private var _overlapEditorViewController: OverlapEditorViewController? {
         for viewController in viewControllers {
             if let overlapEditorViewController = viewController as? OverlapEditorViewController {
                 return overlapEditorViewController

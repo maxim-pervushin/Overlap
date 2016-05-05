@@ -20,10 +20,12 @@ class OverlapEditorViewController: UIViewController {
     @IBOutlet weak var destinationTimezoneButton: EditButton?
 
     @IBAction func save(sender: AnyObject) {
+        finished?(editor.overlap)
         dismissViewControllerAnimated(true, completion: nil)
     }
 
     @IBAction func cancel(sender: AnyObject) {
+        finished?(nil)
         dismissViewControllerAnimated(true, completion: nil)
     }
 
@@ -61,6 +63,8 @@ class OverlapEditorViewController: UIViewController {
             return editor.overlap
         }
     }
+
+    var finished: (Overlap? -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()

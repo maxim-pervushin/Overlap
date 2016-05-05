@@ -19,6 +19,14 @@ class OverlapListViewController: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let overlapEditor = segue.destinationViewController as? OverlapEditorNavigationController {
+            overlapEditor.finished = {
+                (overlap: Overlap?) in
+                if let overlap = overlap {
+                    if self._saveOverlap(overlap) {
+                        self.tableView?.reloadData()
+                    }
+                }
+            }
             if let indexPath = tableView?.indexPathForSelectedRow where indexPath.section == 0 {
                 overlapEditor.overlap = _overlaps[indexPath.row]
             } else {
@@ -65,7 +73,7 @@ extension OverlapListViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
-    
+
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return indexPath.section == 0 ? 110 : 50
     }
