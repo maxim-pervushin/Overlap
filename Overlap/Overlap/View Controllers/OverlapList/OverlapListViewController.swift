@@ -63,8 +63,20 @@ extension OverlapListViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let reuseIdentifier = indexPath.section == 0 ? OverlapCell.defaultReuseIdentifier : OverlapCell.addReuseIdentifier
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! OverlapCell
-        cell.overlap = _overlaps[indexPath.row]
+        if indexPath.section == 0 {
+            cell.overlap = _overlaps[indexPath.row]
+        } else {
+            cell.overlap = nil
+        }
         return cell
+    }
+
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if .Delete == editingStyle {
+            if _deleteOverlap(_overlaps[indexPath.row]) {
+                self.tableView?.reloadData()
+            }
+        }
     }
 }
 
@@ -76,5 +88,9 @@ extension OverlapListViewController: UITableViewDelegate {
 
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return indexPath.section == 0 ? 110 : 50
+    }
+    
+    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        return indexPath.section == 0 ? .Delete : .None
     }
 }
