@@ -29,6 +29,12 @@
 		73BC6E3D554FD671965C7785 /* TimeZonePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6B9E408A8CE60A589D51 /* TimeZonePickerNavigationController.swift */; };
 		73BC6E9C58B8329E2D6E4A59 /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC61D6D71726FF303FD224 /* Double+Time.swift */; };
 		73BC6FAB711DE2EC4FB29D7A /* OverlapEditorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6FB6505B68498841FB64 /* OverlapEditorNavigationController.swift */; };
+		C53B5DF71CDCA8AE0005C98A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF51CDCA8AE0005C98A /* Fabric.framework */; };
+		C53B5DF81CDCA8AE0005C98A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF51CDCA8AE0005C98A /* Fabric.framework */; };
+		C53B5DF91CDCA8AE0005C98A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF51CDCA8AE0005C98A /* Fabric.framework */; };
+		C53B5DFA1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF61CDCA8AE0005C98A /* Crashlytics.framework */; };
+		C53B5DFB1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF61CDCA8AE0005C98A /* Crashlytics.framework */; };
+		C53B5DFC1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF61CDCA8AE0005C98A /* Crashlytics.framework */; };
 		C55E1B0E1CB7B0CF0019D979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B0D1CB7B0CF0019D979 /* AppDelegate.swift */; };
 		C55E1B131CB7B0CF0019D979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B111CB7B0CF0019D979 /* Main.storyboard */; };
 		C55E1B151CB7B0CF0019D979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B141CB7B0CF0019D979 /* Assets.xcassets */; };
@@ -147,6 +153,8 @@
 		73BC6F6DF65BF71924DF08C8 /* Overlap+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Overlap+Dictionary.swift"; sourceTree = "<group>"; };
 		73BC6F95997332DE79752388 /* Overlap Alpha.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = "Overlap Alpha.app"; path = "../../../../Library/Caches/AppCode2016.1/DerivedData/Overlap-gplgayklgodcdtfxbfpvaiskmaal/Build/Products/Debug-iphoneos/Overlap Alpha.app"; sourceTree = "<group>"; };
 		73BC6FB6505B68498841FB64 /* OverlapEditorNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorNavigationController.swift; sourceTree = "<group>"; };
+		C53B5DF51CDCA8AE0005C98A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		C53B5DF61CDCA8AE0005C98A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		C55E1B0D1CB7B0CF0019D979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C55E1B121CB7B0CF0019D979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C55E1B141CB7B0CF0019D979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -168,6 +176,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53B5DFA1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */,
+				C53B5DF71CDCA8AE0005C98A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +199,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53B5DFB1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */,
+				C53B5DF81CDCA8AE0005C98A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +208,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53B5DFC1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */,
+				C53B5DF91CDCA8AE0005C98A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +327,15 @@
 			path = Editors;
 			sourceTree = "<group>";
 		};
+		73BC6C857F88D1318C58B053 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C53B5DF51CDCA8AE0005C98A /* Fabric.framework */,
+				C53B5DF61CDCA8AE0005C98A /* Crashlytics.framework */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		73BC6E0BB8AD8F0A5F615B40 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +370,7 @@
 				73BC6BACCE6EBAF100D68F1D /* Storage */,
 				73BC66FA75FB0F787B0D5BA1 /* Overlap Beta-Info.plist */,
 				73BC6F1DF4BA717D2A4B501D /* Overlap Alpha-Info.plist */,
+				73BC6C857F88D1318C58B053 /* Dependencies */,
 			);
 			path = Overlap;
 			sourceTree = "<group>";
@@ -381,6 +405,7 @@
 				C55E1B061CB7B0CF0019D979 /* Sources */,
 				C55E1B071CB7B0CF0019D979 /* Frameworks */,
 				C55E1B081CB7B0CF0019D979 /* Resources */,
+				C53B5DF21CDCA85C0005C98A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -431,6 +456,7 @@
 				C5C956141CDCA2AD0024B0B2 /* Sources */,
 				C5C9562E1CDCA2AD0024B0B2 /* Frameworks */,
 				C5C9562F1CDCA2AD0024B0B2 /* Resources */,
+				C53B5DF31CDCA86A0005C98A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -447,6 +473,7 @@
 				C5C956391CDCA3520024B0B2 /* Sources */,
 				C5C956531CDCA3520024B0B2 /* Frameworks */,
 				C5C956541CDCA3520024B0B2 /* Resources */,
+				C53B5DF41CDCA86E0005C98A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -546,6 +573,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C53B5DF21CDCA85C0005C98A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Overlap/Dependencies/Fabric.framework/run e83e0095e24774f93f86cd8f53b5743615ff236b ee344f57d2c4470643f18815f88b8e8f5665090f6cbe9dae15562ba9bd36fb4a";
+		};
+		C53B5DF31CDCA86A0005C98A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Overlap/Dependencies/Fabric.framework/run e83e0095e24774f93f86cd8f53b5743615ff236b ee344f57d2c4470643f18815f88b8e8f5665090f6cbe9dae15562ba9bd36fb4a";
+		};
+		C53B5DF41CDCA86E0005C98A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Overlap/Dependencies/Fabric.framework/run e83e0095e24774f93f86cd8f53b5743615ff236b ee344f57d2c4470643f18815f88b8e8f5665090f6cbe9dae15562ba9bd36fb4a";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C55E1B061CB7B0CF0019D979 /* Sources */ = {
@@ -790,6 +859,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Overlap/Dependencies",
+				);
 				INFOPLIST_FILE = Overlap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maximpervushin.Overlap;
@@ -801,6 +874,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Overlap/Dependencies",
+				);
 				INFOPLIST_FILE = Overlap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maximpervushin.Overlap;
@@ -858,6 +935,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Overlap/Dependencies",
+				);
 				INFOPLIST_FILE = "Overlap/Overlap Alpha-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-Alpha";
@@ -869,6 +950,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Overlap/Dependencies",
+				);
 				INFOPLIST_FILE = "Overlap/Overlap Alpha-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-Alpha";
@@ -880,6 +965,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Overlap/Dependencies",
+				);
 				INFOPLIST_FILE = "Overlap/Overlap Beta-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-Beta";
@@ -891,6 +980,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Overlap/Dependencies",
+				);
 				INFOPLIST_FILE = "Overlap/Overlap Beta-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-Beta";
