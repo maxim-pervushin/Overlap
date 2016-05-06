@@ -22,6 +22,7 @@
 		73BC6BCD98392761D3C702E9 /* TimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BE24D18EEFA5CBD8CD2 /* TimeZoneCell.swift */; };
 		73BC6BE36BED0841F2E37A58 /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
 		73BC6CA0D2E3FA1DF68B0651 /* PlistStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6A76F282932107469400 /* PlistStorage.swift */; };
+		73BC6D43290921E84B983D39 /* UIStoryboardSegue+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC62603799008701C0CE3E /* UIStoryboardSegue+Identifier.swift */; };
 		73BC6D5D9AC34F9A7C1A88DC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6D77970220B169177C99 /* RoundedView.swift */; };
 		73BC6DD8710431CDB7821349 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C77F3ABF175B8574FCC /* Storage.swift */; };
 		73BC6DDD7065530677E7CACA /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		73BC61D6D71726FF303FD224 /* Double+Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Time.swift"; sourceTree = "<group>"; };
 		73BC6205FB5B1894FFFB29CE /* IntervalEditorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalEditorTests.swift; sourceTree = "<group>"; };
+		73BC62603799008701C0CE3E /* UIStoryboardSegue+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboardSegue+Identifier.swift"; sourceTree = "<group>"; };
 		73BC63CBEC53DDCB5BC8043C /* TimeZonePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZonePickerViewController.swift; sourceTree = "<group>"; };
 		73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
 		73BC66DBC82F0BA1299229C5 /* OverlapEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				73BC61D6D71726FF303FD224 /* Double+Time.swift */,
+				73BC62603799008701C0CE3E /* UIStoryboardSegue+Identifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				73BC6CA0D2E3FA1DF68B0651 /* PlistStorage.swift in Sources */,
 				73BC6A33E6203D1445706EA4 /* Interval+Dictionary.swift in Sources */,
 				73BC6727915A4AB83B9AB916 /* Overlap+Dictionary.swift in Sources */,
+				73BC6D43290921E84B983D39 /* UIStoryboardSegue+Identifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

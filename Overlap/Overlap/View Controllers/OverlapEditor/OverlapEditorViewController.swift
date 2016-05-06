@@ -30,27 +30,27 @@ class OverlapEditorViewController: UIViewController {
     }
 
     @IBAction func editSourceStart(sender: AnyObject) {
-        performSegueWithIdentifier("PickSourceStart", sender: self)
+        performSegueWithIdentifier(UIStoryboardSegue.pickSourceStart, sender: self)
     }
 
     @IBAction func editSourceEnd(sender: AnyObject) {
-        performSegueWithIdentifier("PickSourceEnd", sender: self)
+        performSegueWithIdentifier(UIStoryboardSegue.pickSourceEnd, sender: self)
     }
 
     @IBAction func editSourceTimezone(sender: AnyObject) {
-        performSegueWithIdentifier("PickSourceTimezone", sender: self)
+        performSegueWithIdentifier(UIStoryboardSegue.pickSourceTimezone, sender: self)
     }
 
     @IBAction func editDestinationStart(sender: AnyObject) {
-        performSegueWithIdentifier("PickDestinationStart", sender: self)
+        performSegueWithIdentifier(UIStoryboardSegue.pickDestinationStart, sender: self)
     }
 
     @IBAction func editDestinationEnd(sender: AnyObject) {
-        performSegueWithIdentifier("PickDestinationEnd", sender: self)
+        performSegueWithIdentifier(UIStoryboardSegue.pickDestinationEnd, sender: self)
     }
 
     @IBAction func editDestinationTimezone(sender: AnyObject) {
-        performSegueWithIdentifier("PickDestinationTimezone", sender: self)
+        performSegueWithIdentifier(UIStoryboardSegue.pickDestinationTimezone, sender: self)
     }
 
     // MARK: public
@@ -90,7 +90,7 @@ class OverlapEditorViewController: UIViewController {
         timePicker = segue.destinationViewController as? TimePickerNavigationController,
         identifier = segue.identifier {
             switch identifier {
-            case "PickSourceStart":
+            case UIStoryboardSegue.pickSourceStart:
                 if let hours = self.editor.interval1Editor.start?.hours {
                     timePicker.hours = hours
                 }
@@ -102,7 +102,7 @@ class OverlapEditorViewController: UIViewController {
                 }
                 break
 
-            case "PickSourceEnd":
+            case UIStoryboardSegue.pickSourceEnd:
                 if let hours = self.editor.interval1Editor.end?.hours {
                     timePicker.hours = hours
                 }
@@ -114,7 +114,7 @@ class OverlapEditorViewController: UIViewController {
                 }
                 break
 
-            case "PickDestinationStart":
+            case UIStoryboardSegue.pickDestinationStart:
                 if let hours = self.editor.interval2Editor.start?.hours {
                     timePicker.hours = hours
                 }
@@ -126,7 +126,7 @@ class OverlapEditorViewController: UIViewController {
                 }
                 break
 
-            case "PickDestinationEnd":
+            case UIStoryboardSegue.pickDestinationEnd:
                 if let hours = self.editor.interval2Editor.end?.hours {
                     timePicker.hours = hours
                 }
@@ -147,7 +147,7 @@ class OverlapEditorViewController: UIViewController {
         identifier = segue.identifier {
 
             switch identifier {
-            case "PickSourceTimezone":
+            case UIStoryboardSegue.pickSourceTimezone:
                 if let timeZone = self.editor.interval1Editor.timeZone {
                     timezonePicker.timeZone = timeZone
                 }
@@ -156,7 +156,7 @@ class OverlapEditorViewController: UIViewController {
                 }
                 break
 
-            case "PickDestinationTimezone":
+            case UIStoryboardSegue.pickDestinationTimezone:
                 if let timeZone = self.editor.interval2Editor.timeZone {
                     timezonePicker.timeZone = timeZone
                 }
