@@ -30,7 +30,7 @@ class OverlapListViewController: UIViewController {
             if let indexPath = tableView?.indexPathForSelectedRow where indexPath.section == 0 {
                 overlapEditor.overlap = _overlaps[indexPath.row]
             } else {
-                overlapEditor.overlap = Overlap.defaultOverlap()
+                overlapEditor.overlap = nil
             }
         }
     }

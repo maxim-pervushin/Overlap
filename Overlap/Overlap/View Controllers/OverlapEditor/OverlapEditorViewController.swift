@@ -57,7 +57,12 @@ class OverlapEditorViewController: UIViewController {
 
     var overlap: Overlap? {
         set {
-            editor.overlap = newValue
+            if let newValue = newValue {
+                editor.overlap = newValue
+            } else {
+                editor.overlap = Overlap.defaultOverlap()
+                editor.id = nil
+            }
         }
         get {
             return editor.overlap
