@@ -60,7 +60,9 @@ extension UIButton {
         setTitle(title, forState: .Selected)
         setTitle(title, forState: .Disabled)
         setTitle(title, forState: .Highlighted)
-        setTitle(title, forState: .Focused)
+        if #available(iOS 9.0, *) {
+            setTitle(title, forState: .Focused)
+        }
     }
 
     func setTitleColor(color: UIColor) {
@@ -68,6 +70,8 @@ extension UIButton {
         setTitleColor(color, forState: .Selected)
         setTitleColor(color, forState: .Disabled)
         setTitleColor(color, forState: .Highlighted)
-        setTitleColor(color, forState: .Focused)
+        if #available(iOS 9.0, *) {
+            setTitleColor(color, forState: .Focused)
+        }
     }
 }

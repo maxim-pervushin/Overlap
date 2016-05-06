@@ -305,7 +305,6 @@
 				73BC684FDEBFF7A0AD61F952 /* Overlap Beta.app */,
 			);
 			name = Products;
-			path = ../../../Overlap;
 			sourceTree = "<group>";
 		};
 		73BC6BACCE6EBAF100D68F1D /* Storage */ = {
@@ -313,7 +312,6 @@
 			children = (
 				73BC6C77F3ABF175B8574FCC /* Storage.swift */,
 				73BC6154686C0500E9908273 /* Json */,
-				73BC6B7AD51913031436DEC2 /* Products */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -351,6 +349,7 @@
 				C55E1B0C1CB7B0CF0019D979 /* Overlap */,
 				C55E1B211CB7B0D00019D979 /* OverlapTests */,
 				C55E1B2C1CB7B0D00019D979 /* OverlapUITests */,
+				73BC6B7AD51913031436DEC2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -495,6 +494,7 @@
 				TargetAttributes = {
 					C55E1B091CB7B0CF0019D979 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FRM2L78456;
 					};
 					C55E1B1D1CB7B0D00019D979 = {
 						CreatedOnToolsVersion = 7.3;
@@ -503,6 +503,9 @@
 					C55E1B281CB7B0D00019D979 = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = C55E1B091CB7B0CF0019D979;
+					};
+					C5C956381CDCA3520024B0B2 = {
+						DevelopmentTeam = FRM2L78456;
 					};
 				};
 			};
@@ -519,8 +522,8 @@
 			projectRoot = "";
 			targets = (
 				C55E1B091CB7B0CF0019D979 /* Overlap */,
-				C5C956131CDCA2AD0024B0B2 /* Overlap Alpha */,
 				C5C956381CDCA3520024B0B2 /* Overlap Beta */,
+				C5C956131CDCA2AD0024B0B2 /* Overlap Alpha */,
 				C55E1B1D1CB7B0D00019D979 /* OverlapTests */,
 				C55E1B281CB7B0D00019D979 /* OverlapUITests */,
 			);
@@ -807,7 +810,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -847,7 +850,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -859,6 +862,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Overlap/Dependencies",
@@ -874,6 +879,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Overlap/Dependencies",
@@ -935,6 +941,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Overlap/Dependencies",
@@ -950,6 +958,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Overlap/Dependencies",
@@ -965,6 +975,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Overlap/Dependencies",
@@ -980,6 +992,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Overlap/Dependencies",
