@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +13,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C5C956131CDCA2AD0024B0B2"
-               BuildableName = "Overlap Alpha.app"
-               BlueprintName = "Overlap Alpha"
+               BlueprintIdentifier = "C55E1B091CB7B0CF0019D979"
+               BuildableName = "Overlap.app"
+               BlueprintName = "Overlap"
                ReferencedContainer = "container:Overlap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +45,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5C956131CDCA2AD0024B0B2"
-            BuildableName = "Overlap Alpha.app"
-            BlueprintName = "Overlap Alpha"
+            BlueprintIdentifier = "C55E1B091CB7B0CF0019D979"
+            BuildableName = "Overlap.app"
+            BlueprintName = "Overlap"
             ReferencedContainer = "container:Overlap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5C956131CDCA2AD0024B0B2"
-            BuildableName = "Overlap Alpha"
-            BlueprintName = "Overlap Alpha"
-            ReferencedContainer = "container:Overlap.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

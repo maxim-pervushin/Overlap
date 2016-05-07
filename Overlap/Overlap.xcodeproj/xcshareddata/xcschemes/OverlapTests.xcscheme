@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C5C956131CDCA2AD0024B0B2"
-               BuildableName = "Overlap Alpha.app"
-               BlueprintName = "Overlap Alpha"
+               BlueprintIdentifier = "C55E1B1D1CB7B0D00019D979"
+               BuildableName = "OverlapTests.xctest"
+               BlueprintName = "OverlapTests"
                ReferencedContainer = "container:Overlap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C55E1B1D1CB7B0D00019D979"
+               BuildableName = "OverlapTests.xctest"
+               BlueprintName = "OverlapTests"
+               ReferencedContainer = "container:Overlap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -42,16 +52,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5C956131CDCA2AD0024B0B2"
-            BuildableName = "Overlap Alpha.app"
-            BlueprintName = "Overlap Alpha"
+            BlueprintIdentifier = "C55E1B1D1CB7B0D00019D979"
+            BuildableName = "OverlapTests"
+            BlueprintName = "OverlapTests"
             ReferencedContainer = "container:Overlap.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -64,9 +73,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5C956131CDCA2AD0024B0B2"
-            BuildableName = "Overlap Alpha"
-            BlueprintName = "Overlap Alpha"
+            BlueprintIdentifier = "C55E1B1D1CB7B0D00019D979"
+            BuildableName = "OverlapTests"
+            BlueprintName = "OverlapTests"
             ReferencedContainer = "container:Overlap.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

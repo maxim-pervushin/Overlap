@@ -28,36 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C55E1B1D1CB7B0D00019D979"
-               BuildableName = "OverlapTests"
-               BlueprintName = "OverlapTests"
-               ReferencedContainer = "container:Overlap.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C55E1B281CB7B0D00019D979"
-               BuildableName = "OverlapUITests"
-               BlueprintName = "OverlapUITests"
-               ReferencedContainer = "container:Overlap.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C55E1B091CB7B0CF0019D979"
-            BuildableName = "Overlap"
-            BlueprintName = "Overlap"
-            ReferencedContainer = "container:Overlap.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -90,8 +61,7 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C55E1B091CB7B0CF0019D979"
@@ -99,7 +69,7 @@
             BlueprintName = "Overlap"
             ReferencedContainer = "container:Overlap.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
