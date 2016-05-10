@@ -1078,7 +1078,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1118,7 +1118,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1373,6 +1373,7 @@
 				C5140E331CE1D80D00B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5140E341CE1D80D00B306FA /* Build configuration list for PBXNativeTarget "OverlapTests" */ = {
 			isa = XCConfigurationList;
@@ -1381,6 +1382,7 @@
 				C5140E361CE1D80D00B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5140E371CE1D80D00B306FA /* Build configuration list for PBXNativeTarget "OverlapUITests" */ = {
 			isa = XCConfigurationList;
@@ -1389,6 +1391,7 @@
 				C5140E391CE1D80D00B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5140E7F1CE1D8B700B306FA /* Build configuration list for PBXNativeTarget "Overlap Alpha" */ = {
 			isa = XCConfigurationList;
@@ -1397,6 +1400,7 @@
 				C5140E811CE1D8B700B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5140E821CE1D8B800B306FA /* Build configuration list for PBXNativeTarget "Overlap AlphaTests" */ = {
 			isa = XCConfigurationList;
@@ -1405,6 +1409,7 @@
 				C5140E841CE1D8B800B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5140E851CE1D8B800B306FA /* Build configuration list for PBXNativeTarget "Overlap AlphaUITests" */ = {
 			isa = XCConfigurationList;
@@ -1413,6 +1418,7 @@
 				C5140E871CE1D8B800B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5140EB11CE1D8C700B306FA /* Build configuration list for PBXNativeTarget "Overlap Beta" */ = {
 			isa = XCConfigurationList;
@@ -1421,6 +1427,7 @@
 				C5140EB31CE1D8C700B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5140EB41CE1D8C700B306FA /* Build configuration list for PBXNativeTarget "Overlap BetaTests" */ = {
 			isa = XCConfigurationList;
@@ -1429,6 +1436,7 @@
 				C5140EB61CE1D8C700B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5140EB71CE1D8C700B306FA /* Build configuration list for PBXNativeTarget "Overlap BetaUITests" */ = {
 			isa = XCConfigurationList;
@@ -1437,6 +1445,7 @@
 				C5140EB91CE1D8C700B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
