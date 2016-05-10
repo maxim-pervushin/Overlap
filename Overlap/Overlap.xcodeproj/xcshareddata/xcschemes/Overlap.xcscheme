@@ -48,6 +48,16 @@
                ReferencedContainer = "container:Overlap.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C546A8301CE20DBF00B09E61"
+               BuildableName = "OverlapSnapshots.xctest"
+               BlueprintName = "OverlapSnapshots"
+               ReferencedContainer = "container:Overlap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
