@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C55E1B091CB7B0CF0019D979"
+               BlueprintIdentifier = "C5140E081CE1D80D00B306FA"
                BuildableName = "Overlap.app"
                BlueprintName = "Overlap"
                ReferencedContainer = "container:Overlap.xcodeproj">
@@ -28,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C5140E1C1CE1D80D00B306FA"
+               BuildableName = "OverlapTests.xctest"
+               BlueprintName = "OverlapTests"
+               ReferencedContainer = "container:Overlap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C5140E271CE1D80D00B306FA"
+               BuildableName = "OverlapUITests.xctest"
+               BlueprintName = "OverlapUITests"
+               ReferencedContainer = "container:Overlap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C5140E081CE1D80D00B306FA"
+            BuildableName = "Overlap.app"
+            BlueprintName = "Overlap"
+            ReferencedContainer = "container:Overlap.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C55E1B091CB7B0CF0019D979"
+            BlueprintIdentifier = "C5140E081CE1D80D00B306FA"
             BuildableName = "Overlap.app"
             BlueprintName = "Overlap"
             ReferencedContainer = "container:Overlap.xcodeproj">
@@ -61,15 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C55E1B091CB7B0CF0019D979"
-            BuildableName = "Overlap"
+            BlueprintIdentifier = "C5140E081CE1D80D00B306FA"
+            BuildableName = "Overlap.app"
             BlueprintName = "Overlap"
             ReferencedContainer = "container:Overlap.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

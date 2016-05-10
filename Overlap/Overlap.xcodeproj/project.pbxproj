@@ -7,404 +7,555 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		73BC603E3D4FA26BEE516F9D /* TimeZonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC63CBEC53DDCB5BC8043C /* TimeZonePickerViewController.swift */; };
-		73BC606C0C6D49EA2F666351 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6CA409E83023578F7EEE /* DataManager.swift */; };
-		73BC614A44D0A484B03DC83E /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */; };
-		73BC61D215953837696ABB33 /* IntervalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6DB7EBA9F862E8FB5EB4 /* IntervalEditor.swift */; };
-		73BC635EFFCCD2C5E06CBC4A /* IntervalEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6205FB5B1894FFFB29CE /* IntervalEditorTests.swift */; };
-		73BC639AC02E04FB738A849D /* OverlapEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC66DBC82F0BA1299229C5 /* OverlapEditorViewController.swift */; };
-		73BC6727915A4AB83B9AB916 /* Overlap+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6F6DF65BF71924DF08C8 /* Overlap+Dictionary.swift */; };
-		73BC67835E098C58CF928163 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6CC6D5CDE9E63FDF856E /* EditButton.swift */; };
-		73BC687C2A4C8A4CDFF03A9E /* OverlapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C2881B9B2ED16BACFF6 /* OverlapListViewController.swift */; };
-		73BC68D7A43C917D937096F0 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6E1DD887E08E00279C3E /* TimePickerViewController.swift */; };
-		73BC6A33E6203D1445706EA4 /* Interval+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6AED69B8A33CE6F8B58A /* Interval+Dictionary.swift */; };
-		73BC6BB0CC8662E53AFB27DB /* TimePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC686E50DE510AF7265D92 /* TimePickerNavigationController.swift */; };
-		73BC6BCD98392761D3C702E9 /* TimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BE24D18EEFA5CBD8CD2 /* TimeZoneCell.swift */; };
-		73BC6BE36BED0841F2E37A58 /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
-		73BC6CA0D2E3FA1DF68B0651 /* PlistStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6A76F282932107469400 /* PlistStorage.swift */; };
-		73BC6D43290921E84B983D39 /* UIStoryboardSegue+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC62603799008701C0CE3E /* UIStoryboardSegue+Identifier.swift */; };
-		73BC6D5D9AC34F9A7C1A88DC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6D77970220B169177C99 /* RoundedView.swift */; };
-		73BC6DD8710431CDB7821349 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C77F3ABF175B8574FCC /* Storage.swift */; };
-		73BC6DDD7065530677E7CACA /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
-		73BC6E3D554FD671965C7785 /* TimeZonePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6B9E408A8CE60A589D51 /* TimeZonePickerNavigationController.swift */; };
-		73BC6E9C58B8329E2D6E4A59 /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC61D6D71726FF303FD224 /* Double+Time.swift */; };
-		73BC6FAB711DE2EC4FB29D7A /* OverlapEditorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6FB6505B68498841FB64 /* OverlapEditorNavigationController.swift */; };
-		C53B5DF71CDCA8AE0005C98A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF51CDCA8AE0005C98A /* Fabric.framework */; };
-		C53B5DF81CDCA8AE0005C98A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF51CDCA8AE0005C98A /* Fabric.framework */; };
-		C53B5DF91CDCA8AE0005C98A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF51CDCA8AE0005C98A /* Fabric.framework */; };
-		C53B5DFA1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF61CDCA8AE0005C98A /* Crashlytics.framework */; };
-		C53B5DFB1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF61CDCA8AE0005C98A /* Crashlytics.framework */; };
-		C53B5DFC1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53B5DF61CDCA8AE0005C98A /* Crashlytics.framework */; };
-		C55E1B0E1CB7B0CF0019D979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B0D1CB7B0CF0019D979 /* AppDelegate.swift */; };
-		C55E1B131CB7B0CF0019D979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B111CB7B0CF0019D979 /* Main.storyboard */; };
-		C55E1B151CB7B0CF0019D979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B141CB7B0CF0019D979 /* Assets.xcassets */; };
-		C55E1B181CB7B0CF0019D979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B161CB7B0CF0019D979 /* LaunchScreen.storyboard */; };
-		C55E1B231CB7B0D00019D979 /* OverlapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B221CB7B0D00019D979 /* OverlapTests.swift */; };
-		C55E1B2E1CB7B0D00019D979 /* OverlapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B2D1CB7B0D00019D979 /* OverlapUITests.swift */; };
-		C55E1B3D1CB7B1560019D979 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B3B1CB7B1560019D979 /* Interval.swift */; };
-		C55E1B3E1CB7B1560019D979 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B3B1CB7B1560019D979 /* Interval.swift */; };
-		C55E1B3F1CB7B1560019D979 /* Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B3C1CB7B1560019D979 /* Overlap.swift */; };
-		C55E1B401CB7B1560019D979 /* Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B3C1CB7B1560019D979 /* Overlap.swift */; };
-		C55E1B431CB7B1700019D979 /* OverlapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B411CB7B1700019D979 /* OverlapCell.swift */; };
-		C55E1B441CB7B1700019D979 /* OverlapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B421CB7B1700019D979 /* OverlapView.swift */; };
-		C57AFA301CD3587B008A6A99 /* IntervalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6DB7EBA9F862E8FB5EB4 /* IntervalEditor.swift */; };
-		C57AFA321CD3635E008A6A99 /* OverlapEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57AFA311CD3635E008A6A99 /* OverlapEditorTests.swift */; };
-		C5C956151CDCA2AD0024B0B2 /* Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B3C1CB7B1560019D979 /* Overlap.swift */; };
-		C5C956161CDCA2AD0024B0B2 /* OverlapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B411CB7B1700019D979 /* OverlapCell.swift */; };
-		C5C956171CDCA2AD0024B0B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B0D1CB7B0CF0019D979 /* AppDelegate.swift */; };
-		C5C956181CDCA2AD0024B0B2 /* OverlapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B421CB7B1700019D979 /* OverlapView.swift */; };
-		C5C956191CDCA2AD0024B0B2 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B3B1CB7B1560019D979 /* Interval.swift */; };
-		C5C9561A1CDCA2AD0024B0B2 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6D77970220B169177C99 /* RoundedView.swift */; };
-		C5C9561B1CDCA2AD0024B0B2 /* IntervalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6DB7EBA9F862E8FB5EB4 /* IntervalEditor.swift */; };
-		C5C9561C1CDCA2AD0024B0B2 /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
-		C5C9561D1CDCA2AD0024B0B2 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6CC6D5CDE9E63FDF856E /* EditButton.swift */; };
-		C5C9561E1CDCA2AD0024B0B2 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */; };
-		C5C9561F1CDCA2AD0024B0B2 /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC61D6D71726FF303FD224 /* Double+Time.swift */; };
-		C5C956201CDCA2AD0024B0B2 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6E1DD887E08E00279C3E /* TimePickerViewController.swift */; };
-		C5C956211CDCA2AD0024B0B2 /* TimePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC686E50DE510AF7265D92 /* TimePickerNavigationController.swift */; };
-		C5C956221CDCA2AD0024B0B2 /* TimeZonePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6B9E408A8CE60A589D51 /* TimeZonePickerNavigationController.swift */; };
-		C5C956231CDCA2AD0024B0B2 /* TimeZonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC63CBEC53DDCB5BC8043C /* TimeZonePickerViewController.swift */; };
-		C5C956241CDCA2AD0024B0B2 /* TimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BE24D18EEFA5CBD8CD2 /* TimeZoneCell.swift */; };
-		C5C956251CDCA2AD0024B0B2 /* OverlapEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC66DBC82F0BA1299229C5 /* OverlapEditorViewController.swift */; };
-		C5C956261CDCA2AD0024B0B2 /* OverlapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C2881B9B2ED16BACFF6 /* OverlapListViewController.swift */; };
-		C5C956271CDCA2AD0024B0B2 /* OverlapEditorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6FB6505B68498841FB64 /* OverlapEditorNavigationController.swift */; };
-		C5C956281CDCA2AD0024B0B2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6CA409E83023578F7EEE /* DataManager.swift */; };
-		C5C956291CDCA2AD0024B0B2 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C77F3ABF175B8574FCC /* Storage.swift */; };
-		C5C9562A1CDCA2AD0024B0B2 /* PlistStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6A76F282932107469400 /* PlistStorage.swift */; };
-		C5C9562B1CDCA2AD0024B0B2 /* Interval+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6AED69B8A33CE6F8B58A /* Interval+Dictionary.swift */; };
-		C5C9562C1CDCA2AD0024B0B2 /* Overlap+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6F6DF65BF71924DF08C8 /* Overlap+Dictionary.swift */; };
-		C5C9562D1CDCA2AD0024B0B2 /* UIStoryboardSegue+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC62603799008701C0CE3E /* UIStoryboardSegue+Identifier.swift */; };
-		C5C956301CDCA2AD0024B0B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B161CB7B0CF0019D979 /* LaunchScreen.storyboard */; };
-		C5C956311CDCA2AD0024B0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B141CB7B0CF0019D979 /* Assets.xcassets */; };
-		C5C956321CDCA2AD0024B0B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B111CB7B0CF0019D979 /* Main.storyboard */; };
-		C5C9563A1CDCA3520024B0B2 /* Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B3C1CB7B1560019D979 /* Overlap.swift */; };
-		C5C9563B1CDCA3520024B0B2 /* OverlapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B411CB7B1700019D979 /* OverlapCell.swift */; };
-		C5C9563C1CDCA3520024B0B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B0D1CB7B0CF0019D979 /* AppDelegate.swift */; };
-		C5C9563D1CDCA3520024B0B2 /* OverlapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B421CB7B1700019D979 /* OverlapView.swift */; };
-		C5C9563E1CDCA3520024B0B2 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E1B3B1CB7B1560019D979 /* Interval.swift */; };
-		C5C9563F1CDCA3520024B0B2 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6D77970220B169177C99 /* RoundedView.swift */; };
-		C5C956401CDCA3520024B0B2 /* IntervalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6DB7EBA9F862E8FB5EB4 /* IntervalEditor.swift */; };
-		C5C956411CDCA3520024B0B2 /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */; };
-		C5C956421CDCA3520024B0B2 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6CC6D5CDE9E63FDF856E /* EditButton.swift */; };
-		C5C956431CDCA3520024B0B2 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */; };
-		C5C956441CDCA3520024B0B2 /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC61D6D71726FF303FD224 /* Double+Time.swift */; };
-		C5C956451CDCA3520024B0B2 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6E1DD887E08E00279C3E /* TimePickerViewController.swift */; };
-		C5C956461CDCA3520024B0B2 /* TimePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC686E50DE510AF7265D92 /* TimePickerNavigationController.swift */; };
-		C5C956471CDCA3520024B0B2 /* TimeZonePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6B9E408A8CE60A589D51 /* TimeZonePickerNavigationController.swift */; };
-		C5C956481CDCA3520024B0B2 /* TimeZonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC63CBEC53DDCB5BC8043C /* TimeZonePickerViewController.swift */; };
-		C5C956491CDCA3520024B0B2 /* TimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6BE24D18EEFA5CBD8CD2 /* TimeZoneCell.swift */; };
-		C5C9564A1CDCA3520024B0B2 /* OverlapEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC66DBC82F0BA1299229C5 /* OverlapEditorViewController.swift */; };
-		C5C9564B1CDCA3520024B0B2 /* OverlapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C2881B9B2ED16BACFF6 /* OverlapListViewController.swift */; };
-		C5C9564C1CDCA3520024B0B2 /* OverlapEditorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6FB6505B68498841FB64 /* OverlapEditorNavigationController.swift */; };
-		C5C9564D1CDCA3520024B0B2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6CA409E83023578F7EEE /* DataManager.swift */; };
-		C5C9564E1CDCA3520024B0B2 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C77F3ABF175B8574FCC /* Storage.swift */; };
-		C5C9564F1CDCA3520024B0B2 /* PlistStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6A76F282932107469400 /* PlistStorage.swift */; };
-		C5C956501CDCA3520024B0B2 /* Interval+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6AED69B8A33CE6F8B58A /* Interval+Dictionary.swift */; };
-		C5C956511CDCA3520024B0B2 /* Overlap+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6F6DF65BF71924DF08C8 /* Overlap+Dictionary.swift */; };
-		C5C956521CDCA3520024B0B2 /* UIStoryboardSegue+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC62603799008701C0CE3E /* UIStoryboardSegue+Identifier.swift */; };
-		C5C956551CDCA3520024B0B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B161CB7B0CF0019D979 /* LaunchScreen.storyboard */; };
-		C5C956561CDCA3520024B0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B141CB7B0CF0019D979 /* Assets.xcassets */; };
-		C5C956571CDCA3520024B0B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55E1B111CB7B0CF0019D979 /* Main.storyboard */; };
+		C5140E141CE1D80D00B306FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5140E131CE1D80D00B306FA /* Assets.xcassets */; };
+		C5140E641CE1D8B700B306FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5140E631CE1D8B700B306FA /* Assets.xcassets */; };
+		C5140E961CE1D8C700B306FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5140E951CE1D8C700B306FA /* Assets.xcassets */; };
+		C5140EE41CE1DAB800B306FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBB1CE1DAB800B306FA /* AppDelegate.swift */; };
+		C5140EE51CE1DAB800B306FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBB1CE1DAB800B306FA /* AppDelegate.swift */; };
+		C5140EE61CE1DAB800B306FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBB1CE1DAB800B306FA /* AppDelegate.swift */; };
+		C5140EE71CE1DAB800B306FA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBD1CE1DAB800B306FA /* DataManager.swift */; };
+		C5140EE81CE1DAB800B306FA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBD1CE1DAB800B306FA /* DataManager.swift */; };
+		C5140EE91CE1DAB800B306FA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBD1CE1DAB800B306FA /* DataManager.swift */; };
+		C5140EEA1CE1DAB800B306FA /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBE1CE1DAB800B306FA /* Interval.swift */; };
+		C5140EEB1CE1DAB800B306FA /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBE1CE1DAB800B306FA /* Interval.swift */; };
+		C5140EEC1CE1DAB800B306FA /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBE1CE1DAB800B306FA /* Interval.swift */; };
+		C5140EED1CE1DAB800B306FA /* Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBF1CE1DAB800B306FA /* Overlap.swift */; };
+		C5140EEE1CE1DAB800B306FA /* Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBF1CE1DAB800B306FA /* Overlap.swift */; };
+		C5140EEF1CE1DAB800B306FA /* Overlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EBF1CE1DAB800B306FA /* Overlap.swift */; };
+		C5140EF01CE1DAB800B306FA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5140EC11CE1DAB800B306FA /* Crashlytics.framework */; };
+		C5140EF11CE1DAB800B306FA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5140EC11CE1DAB800B306FA /* Crashlytics.framework */; };
+		C5140EF21CE1DAB800B306FA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5140EC11CE1DAB800B306FA /* Crashlytics.framework */; };
+		C5140EF31CE1DAB800B306FA /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5140EC21CE1DAB800B306FA /* Fabric.framework */; };
+		C5140EF41CE1DAB800B306FA /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5140EC21CE1DAB800B306FA /* Fabric.framework */; };
+		C5140EF51CE1DAB800B306FA /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5140EC21CE1DAB800B306FA /* Fabric.framework */; };
+		C5140EF61CE1DAB800B306FA /* IntervalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC41CE1DAB800B306FA /* IntervalEditor.swift */; };
+		C5140EF71CE1DAB800B306FA /* IntervalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC41CE1DAB800B306FA /* IntervalEditor.swift */; };
+		C5140EF81CE1DAB800B306FA /* IntervalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC41CE1DAB800B306FA /* IntervalEditor.swift */; };
+		C5140EF91CE1DAB800B306FA /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC51CE1DAB800B306FA /* OverlapEditor.swift */; };
+		C5140EFA1CE1DAB800B306FA /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC51CE1DAB800B306FA /* OverlapEditor.swift */; };
+		C5140EFB1CE1DAB800B306FA /* OverlapEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC51CE1DAB800B306FA /* OverlapEditor.swift */; };
+		C5140EFC1CE1DAB800B306FA /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC71CE1DAB800B306FA /* Double+Time.swift */; };
+		C5140EFD1CE1DAB800B306FA /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC71CE1DAB800B306FA /* Double+Time.swift */; };
+		C5140EFE1CE1DAB800B306FA /* Double+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC71CE1DAB800B306FA /* Double+Time.swift */; };
+		C5140EFF1CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC81CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift */; };
+		C5140F001CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC81CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift */; };
+		C5140F011CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EC81CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift */; };
+		C5140F021CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140EC91CE1DAB800B306FA /* LaunchScreen.storyboard */; };
+		C5140F031CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140EC91CE1DAB800B306FA /* LaunchScreen.storyboard */; };
+		C5140F041CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140EC91CE1DAB800B306FA /* LaunchScreen.storyboard */; };
+		C5140F051CE1DAB800B306FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140ECA1CE1DAB800B306FA /* Main.storyboard */; };
+		C5140F061CE1DAB800B306FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140ECA1CE1DAB800B306FA /* Main.storyboard */; };
+		C5140F071CE1DAB800B306FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140ECA1CE1DAB800B306FA /* Main.storyboard */; };
+		C5140F081CE1DAB800B306FA /* Interval+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECD1CE1DAB800B306FA /* Interval+Dictionary.swift */; };
+		C5140F091CE1DAB800B306FA /* Interval+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECD1CE1DAB800B306FA /* Interval+Dictionary.swift */; };
+		C5140F0A1CE1DAB800B306FA /* Interval+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECD1CE1DAB800B306FA /* Interval+Dictionary.swift */; };
+		C5140F0B1CE1DAB800B306FA /* Overlap+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECE1CE1DAB800B306FA /* Overlap+Dictionary.swift */; };
+		C5140F0C1CE1DAB800B306FA /* Overlap+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECE1CE1DAB800B306FA /* Overlap+Dictionary.swift */; };
+		C5140F0D1CE1DAB800B306FA /* Overlap+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECE1CE1DAB800B306FA /* Overlap+Dictionary.swift */; };
+		C5140F0E1CE1DAB800B306FA /* PlistStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECF1CE1DAB800B306FA /* PlistStorage.swift */; };
+		C5140F0F1CE1DAB800B306FA /* PlistStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECF1CE1DAB800B306FA /* PlistStorage.swift */; };
+		C5140F101CE1DAB800B306FA /* PlistStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECF1CE1DAB800B306FA /* PlistStorage.swift */; };
+		C5140F111CE1DAB800B306FA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED01CE1DAB800B306FA /* Storage.swift */; };
+		C5140F121CE1DAB800B306FA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED01CE1DAB800B306FA /* Storage.swift */; };
+		C5140F131CE1DAB800B306FA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED01CE1DAB800B306FA /* Storage.swift */; };
+		C5140F141CE1DAB800B306FA /* OverlapEditorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED31CE1DAB800B306FA /* OverlapEditorNavigationController.swift */; };
+		C5140F151CE1DAB800B306FA /* OverlapEditorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED31CE1DAB800B306FA /* OverlapEditorNavigationController.swift */; };
+		C5140F161CE1DAB800B306FA /* OverlapEditorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED31CE1DAB800B306FA /* OverlapEditorNavigationController.swift */; };
+		C5140F171CE1DAB800B306FA /* OverlapEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED41CE1DAB800B306FA /* OverlapEditorViewController.swift */; };
+		C5140F181CE1DAB800B306FA /* OverlapEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED41CE1DAB800B306FA /* OverlapEditorViewController.swift */; };
+		C5140F191CE1DAB800B306FA /* OverlapEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED41CE1DAB800B306FA /* OverlapEditorViewController.swift */; };
+		C5140F1A1CE1DAB800B306FA /* OverlapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED61CE1DAB800B306FA /* OverlapListViewController.swift */; };
+		C5140F1B1CE1DAB800B306FA /* OverlapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED61CE1DAB800B306FA /* OverlapListViewController.swift */; };
+		C5140F1C1CE1DAB800B306FA /* OverlapListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED61CE1DAB800B306FA /* OverlapListViewController.swift */; };
+		C5140F1D1CE1DAB800B306FA /* TimePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED81CE1DAB800B306FA /* TimePickerNavigationController.swift */; };
+		C5140F1E1CE1DAB800B306FA /* TimePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED81CE1DAB800B306FA /* TimePickerNavigationController.swift */; };
+		C5140F1F1CE1DAB800B306FA /* TimePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED81CE1DAB800B306FA /* TimePickerNavigationController.swift */; };
+		C5140F201CE1DAB800B306FA /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED91CE1DAB800B306FA /* TimePickerViewController.swift */; };
+		C5140F211CE1DAB800B306FA /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED91CE1DAB800B306FA /* TimePickerViewController.swift */; };
+		C5140F221CE1DAB800B306FA /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ED91CE1DAB800B306FA /* TimePickerViewController.swift */; };
+		C5140F231CE1DAB800B306FA /* TimezonePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDB1CE1DAB800B306FA /* TimezonePickerNavigationController.swift */; };
+		C5140F241CE1DAB800B306FA /* TimezonePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDB1CE1DAB800B306FA /* TimezonePickerNavigationController.swift */; };
+		C5140F251CE1DAB800B306FA /* TimezonePickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDB1CE1DAB800B306FA /* TimezonePickerNavigationController.swift */; };
+		C5140F261CE1DAB800B306FA /* TimezonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDC1CE1DAB800B306FA /* TimezonePickerViewController.swift */; };
+		C5140F271CE1DAB800B306FA /* TimezonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDC1CE1DAB800B306FA /* TimezonePickerViewController.swift */; };
+		C5140F281CE1DAB800B306FA /* TimezonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDC1CE1DAB800B306FA /* TimezonePickerViewController.swift */; };
+		C5140F291CE1DAB800B306FA /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDE1CE1DAB800B306FA /* EditButton.swift */; };
+		C5140F2A1CE1DAB800B306FA /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDE1CE1DAB800B306FA /* EditButton.swift */; };
+		C5140F2B1CE1DAB800B306FA /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDE1CE1DAB800B306FA /* EditButton.swift */; };
+		C5140F2C1CE1DAB800B306FA /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDF1CE1DAB800B306FA /* HorizontalLineView.swift */; };
+		C5140F2D1CE1DAB800B306FA /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDF1CE1DAB800B306FA /* HorizontalLineView.swift */; };
+		C5140F2E1CE1DAB800B306FA /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EDF1CE1DAB800B306FA /* HorizontalLineView.swift */; };
+		C5140F2F1CE1DAB800B306FA /* OverlapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE01CE1DAB800B306FA /* OverlapCell.swift */; };
+		C5140F301CE1DAB800B306FA /* OverlapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE01CE1DAB800B306FA /* OverlapCell.swift */; };
+		C5140F311CE1DAB800B306FA /* OverlapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE01CE1DAB800B306FA /* OverlapCell.swift */; };
+		C5140F321CE1DAB800B306FA /* OverlapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE11CE1DAB800B306FA /* OverlapView.swift */; };
+		C5140F331CE1DAB800B306FA /* OverlapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE11CE1DAB800B306FA /* OverlapView.swift */; };
+		C5140F341CE1DAB800B306FA /* OverlapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE11CE1DAB800B306FA /* OverlapView.swift */; };
+		C5140F351CE1DAB800B306FA /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE21CE1DAB800B306FA /* RoundedView.swift */; };
+		C5140F361CE1DAB800B306FA /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE21CE1DAB800B306FA /* RoundedView.swift */; };
+		C5140F371CE1DAB800B306FA /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE21CE1DAB800B306FA /* RoundedView.swift */; };
+		C5140F381CE1DAB800B306FA /* TimezoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE31CE1DAB800B306FA /* TimezoneCell.swift */; };
+		C5140F391CE1DAB800B306FA /* TimezoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE31CE1DAB800B306FA /* TimezoneCell.swift */; };
+		C5140F3A1CE1DAB800B306FA /* TimezoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140EE31CE1DAB800B306FA /* TimezoneCell.swift */; };
+		C5140F3F1CE1E29900B306FA /* IntervalEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F3C1CE1E29900B306FA /* IntervalEditorTests.swift */; };
+		C5140F401CE1E29900B306FA /* IntervalEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F3C1CE1E29900B306FA /* IntervalEditorTests.swift */; };
+		C5140F411CE1E29900B306FA /* IntervalEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F3C1CE1E29900B306FA /* IntervalEditorTests.swift */; };
+		C5140F421CE1E29900B306FA /* OverlapEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F3D1CE1E29900B306FA /* OverlapEditorTests.swift */; };
+		C5140F431CE1E29900B306FA /* OverlapEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F3D1CE1E29900B306FA /* OverlapEditorTests.swift */; };
+		C5140F441CE1E29900B306FA /* OverlapEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F3D1CE1E29900B306FA /* OverlapEditorTests.swift */; };
+		C5140F451CE1E29900B306FA /* OverlapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F3E1CE1E29900B306FA /* OverlapTests.swift */; };
+		C5140F461CE1E29900B306FA /* OverlapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F3E1CE1E29900B306FA /* OverlapTests.swift */; };
+		C5140F471CE1E29900B306FA /* OverlapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F3E1CE1E29900B306FA /* OverlapTests.swift */; };
+		C5140F4A1CE1E31600B306FA /* OverlapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F491CE1E31600B306FA /* OverlapUITests.swift */; };
+		C5140F4B1CE1E31600B306FA /* OverlapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F491CE1E31600B306FA /* OverlapUITests.swift */; };
+		C5140F4C1CE1E31600B306FA /* OverlapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F491CE1E31600B306FA /* OverlapUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C55E1B1F1CB7B0D00019D979 /* PBXContainerItemProxy */ = {
+		C5140E1E1CE1D80D00B306FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C55E1B021CB7B0CF0019D979 /* Project object */;
+			containerPortal = C5140E011CE1D80D00B306FA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C55E1B091CB7B0CF0019D979;
+			remoteGlobalIDString = C5140E081CE1D80D00B306FA;
 			remoteInfo = Overlap;
 		};
-		C55E1B2A1CB7B0D00019D979 /* PBXContainerItemProxy */ = {
+		C5140E291CE1D80D00B306FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C55E1B021CB7B0CF0019D979 /* Project object */;
+			containerPortal = C5140E011CE1D80D00B306FA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C55E1B091CB7B0CF0019D979;
+			remoteGlobalIDString = C5140E081CE1D80D00B306FA;
 			remoteInfo = Overlap;
+		};
+		C5140E6E1CE1D8B700B306FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5140E011CE1D80D00B306FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5140E591CE1D8B700B306FA;
+			remoteInfo = "Overlap Alpha";
+		};
+		C5140E791CE1D8B700B306FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5140E011CE1D80D00B306FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5140E591CE1D8B700B306FA;
+			remoteInfo = "Overlap Alpha";
+		};
+		C5140EA01CE1D8C700B306FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5140E011CE1D80D00B306FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5140E8B1CE1D8C700B306FA;
+			remoteInfo = "Overlap Beta";
+		};
+		C5140EAB1CE1D8C700B306FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5140E011CE1D80D00B306FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5140E8B1CE1D8C700B306FA;
+			remoteInfo = "Overlap Beta";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		73BC61D6D71726FF303FD224 /* Double+Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Time.swift"; sourceTree = "<group>"; };
-		73BC6205FB5B1894FFFB29CE /* IntervalEditorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalEditorTests.swift; sourceTree = "<group>"; };
-		73BC62603799008701C0CE3E /* UIStoryboardSegue+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboardSegue+Identifier.swift"; sourceTree = "<group>"; };
-		73BC63CBEC53DDCB5BC8043C /* TimeZonePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZonePickerViewController.swift; sourceTree = "<group>"; };
-		73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
-		73BC658A7E5575C1510C4357 /* Overlap.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Overlap.app; path = "../../../../Library/Caches/AppCode2016.1/DerivedData/Overlap-gplgayklgodcdtfxbfpvaiskmaal/Build/Products/Debug-iphoneos/Overlap.app"; sourceTree = "<group>"; };
-		73BC66DBC82F0BA1299229C5 /* OverlapEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorViewController.swift; sourceTree = "<group>"; };
-		73BC66FA75FB0F787B0D5BA1 /* Overlap Beta-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "Overlap Beta-Info.plist"; sourceTree = "<group>"; };
-		73BC684FDEBFF7A0AD61F952 /* Overlap Beta.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = "Overlap Beta.app"; path = "../../../../Library/Caches/AppCode2016.1/DerivedData/Overlap-gplgayklgodcdtfxbfpvaiskmaal/Build/Products/Debug-iphoneos/Overlap Beta.app"; sourceTree = "<group>"; };
-		73BC686E50DE510AF7265D92 /* TimePickerNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerNavigationController.swift; sourceTree = "<group>"; };
-		73BC6A76F282932107469400 /* PlistStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistStorage.swift; sourceTree = "<group>"; };
-		73BC6AED69B8A33CE6F8B58A /* Interval+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Interval+Dictionary.swift"; sourceTree = "<group>"; };
-		73BC6B9E408A8CE60A589D51 /* TimeZonePickerNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZonePickerNavigationController.swift; sourceTree = "<group>"; };
-		73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditor.swift; sourceTree = "<group>"; };
-		73BC6BE24D18EEFA5CBD8CD2 /* TimeZoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZoneCell.swift; sourceTree = "<group>"; };
-		73BC6BEED276BF49844F5479 /* OverlapTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file.xctest; name = OverlapTests.xctest; path = "../../../../Library/Caches/AppCode2016.1/DerivedData/Overlap-gplgayklgodcdtfxbfpvaiskmaal/Build/Products/Debug-iphoneos/OverlapTests.xctest"; sourceTree = "<group>"; };
-		73BC6C2881B9B2ED16BACFF6 /* OverlapListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapListViewController.swift; sourceTree = "<group>"; };
-		73BC6C77F3ABF175B8574FCC /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		73BC6CA409E83023578F7EEE /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		73BC6CC6D5CDE9E63FDF856E /* EditButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
-		73BC6D77970220B169177C99 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
-		73BC6DB7EBA9F862E8FB5EB4 /* IntervalEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalEditor.swift; sourceTree = "<group>"; };
-		73BC6DD7A57494C0CAF33A3D /* OverlapUITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file.xctest; name = OverlapUITests.xctest; path = "../../../../Library/Caches/AppCode2016.1/DerivedData/Overlap-gplgayklgodcdtfxbfpvaiskmaal/Build/Products/Debug-iphoneos/OverlapUITests.xctest"; sourceTree = "<group>"; };
-		73BC6E1DD887E08E00279C3E /* TimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
-		73BC6F1DF4BA717D2A4B501D /* Overlap Alpha-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "Overlap Alpha-Info.plist"; sourceTree = "<group>"; };
-		73BC6F6DF65BF71924DF08C8 /* Overlap+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Overlap+Dictionary.swift"; sourceTree = "<group>"; };
-		73BC6F95997332DE79752388 /* Overlap Alpha.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = "Overlap Alpha.app"; path = "../../../../Library/Caches/AppCode2016.1/DerivedData/Overlap-gplgayklgodcdtfxbfpvaiskmaal/Build/Products/Debug-iphoneos/Overlap Alpha.app"; sourceTree = "<group>"; };
-		73BC6FB6505B68498841FB64 /* OverlapEditorNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorNavigationController.swift; sourceTree = "<group>"; };
-		C53B5DF51CDCA8AE0005C98A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		C53B5DF61CDCA8AE0005C98A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		C55E1B0D1CB7B0CF0019D979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C55E1B121CB7B0CF0019D979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C55E1B141CB7B0CF0019D979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C55E1B171CB7B0CF0019D979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C55E1B191CB7B0CF0019D979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C55E1B221CB7B0D00019D979 /* OverlapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapTests.swift; sourceTree = "<group>"; };
-		C55E1B241CB7B0D00019D979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C55E1B2D1CB7B0D00019D979 /* OverlapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapUITests.swift; sourceTree = "<group>"; };
-		C55E1B2F1CB7B0D00019D979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C55E1B3B1CB7B1560019D979 /* Interval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
-		C55E1B3C1CB7B1560019D979 /* Overlap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overlap.swift; sourceTree = "<group>"; };
-		C55E1B411CB7B1700019D979 /* OverlapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapCell.swift; sourceTree = "<group>"; };
-		C55E1B421CB7B1700019D979 /* OverlapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapView.swift; sourceTree = "<group>"; };
-		C57AFA311CD3635E008A6A99 /* OverlapEditorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorTests.swift; sourceTree = "<group>"; };
+		C5140E091CE1D80D00B306FA /* Overlap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overlap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5140E131CE1D80D00B306FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5140E181CE1D80D00B306FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5140E1D1CE1D80D00B306FA /* OverlapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverlapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5140E231CE1D80D00B306FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5140E281CE1D80D00B306FA /* OverlapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverlapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5140E2E1CE1D80D00B306FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5140E5A1CE1D8B700B306FA /* Overlap Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Overlap Alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5140E631CE1D8B700B306FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5140E681CE1D8B700B306FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5140E6D1CE1D8B700B306FA /* Overlap AlphaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Overlap AlphaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5140E731CE1D8B700B306FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5140E781CE1D8B700B306FA /* Overlap AlphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Overlap AlphaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5140E7E1CE1D8B700B306FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5140E8C1CE1D8C700B306FA /* Overlap Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Overlap Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5140E951CE1D8C700B306FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5140E9A1CE1D8C700B306FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5140E9F1CE1D8C700B306FA /* Overlap BetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Overlap BetaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5140EA51CE1D8C700B306FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5140EAA1CE1D8C700B306FA /* Overlap BetaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Overlap BetaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5140EB01CE1D8C700B306FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5140EBB1CE1DAB800B306FA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5140EBD1CE1DAB800B306FA /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C5140EBE1CE1DAB800B306FA /* Interval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		C5140EBF1CE1DAB800B306FA /* Overlap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overlap.swift; sourceTree = "<group>"; };
+		C5140EC11CE1DAB800B306FA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		C5140EC21CE1DAB800B306FA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		C5140EC41CE1DAB800B306FA /* IntervalEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalEditor.swift; sourceTree = "<group>"; };
+		C5140EC51CE1DAB800B306FA /* OverlapEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditor.swift; sourceTree = "<group>"; };
+		C5140EC71CE1DAB800B306FA /* Double+Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Time.swift"; sourceTree = "<group>"; };
+		C5140EC81CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboardSegue+Identifier.swift"; sourceTree = "<group>"; };
+		C5140EC91CE1DAB800B306FA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5140ECA1CE1DAB800B306FA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C5140ECD1CE1DAB800B306FA /* Interval+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Interval+Dictionary.swift"; sourceTree = "<group>"; };
+		C5140ECE1CE1DAB800B306FA /* Overlap+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Overlap+Dictionary.swift"; sourceTree = "<group>"; };
+		C5140ECF1CE1DAB800B306FA /* PlistStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistStorage.swift; sourceTree = "<group>"; };
+		C5140ED01CE1DAB800B306FA /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		C5140ED31CE1DAB800B306FA /* OverlapEditorNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorNavigationController.swift; sourceTree = "<group>"; };
+		C5140ED41CE1DAB800B306FA /* OverlapEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorViewController.swift; sourceTree = "<group>"; };
+		C5140ED61CE1DAB800B306FA /* OverlapListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapListViewController.swift; sourceTree = "<group>"; };
+		C5140ED81CE1DAB800B306FA /* TimePickerNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerNavigationController.swift; sourceTree = "<group>"; };
+		C5140ED91CE1DAB800B306FA /* TimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
+		C5140EDB1CE1DAB800B306FA /* TimezonePickerNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimezonePickerNavigationController.swift; sourceTree = "<group>"; };
+		C5140EDC1CE1DAB800B306FA /* TimezonePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimezonePickerViewController.swift; sourceTree = "<group>"; };
+		C5140EDE1CE1DAB800B306FA /* EditButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
+		C5140EDF1CE1DAB800B306FA /* HorizontalLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
+		C5140EE01CE1DAB800B306FA /* OverlapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapCell.swift; sourceTree = "<group>"; };
+		C5140EE11CE1DAB800B306FA /* OverlapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapView.swift; sourceTree = "<group>"; };
+		C5140EE21CE1DAB800B306FA /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		C5140EE31CE1DAB800B306FA /* TimezoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimezoneCell.swift; sourceTree = "<group>"; };
+		C5140F3C1CE1E29900B306FA /* IntervalEditorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalEditorTests.swift; sourceTree = "<group>"; };
+		C5140F3D1CE1E29900B306FA /* OverlapEditorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapEditorTests.swift; sourceTree = "<group>"; };
+		C5140F3E1CE1E29900B306FA /* OverlapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapTests.swift; sourceTree = "<group>"; };
+		C5140F491CE1E31600B306FA /* OverlapUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C55E1B071CB7B0CF0019D979 /* Frameworks */ = {
+		C5140E061CE1D80D00B306FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C53B5DFA1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */,
-				C53B5DF71CDCA8AE0005C98A /* Fabric.framework in Frameworks */,
+				C5140EF01CE1DAB800B306FA /* Crashlytics.framework in Frameworks */,
+				C5140EF31CE1DAB800B306FA /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C55E1B1B1CB7B0D00019D979 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C55E1B261CB7B0D00019D979 /* Frameworks */ = {
+		C5140E1A1CE1D80D00B306FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5C9562E1CDCA2AD0024B0B2 /* Frameworks */ = {
+		C5140E251CE1D80D00B306FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C53B5DFB1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */,
-				C53B5DF81CDCA8AE0005C98A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5C956531CDCA3520024B0B2 /* Frameworks */ = {
+		C5140E571CE1D8B700B306FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C53B5DFC1CDCA8AE0005C98A /* Crashlytics.framework in Frameworks */,
-				C53B5DF91CDCA8AE0005C98A /* Fabric.framework in Frameworks */,
+				C5140EF11CE1DAB800B306FA /* Crashlytics.framework in Frameworks */,
+				C5140EF41CE1DAB800B306FA /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E6A1CE1D8B700B306FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E751CE1D8B700B306FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E891CE1D8C700B306FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5140EF21CE1DAB800B306FA /* Crashlytics.framework in Frameworks */,
+				C5140EF51CE1DAB800B306FA /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E9C1CE1D8C700B306FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140EA71CE1D8C700B306FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		73BC6154686C0500E9908273 /* Json */ = {
+		C5140E001CE1D80D00B306FA = {
 			isa = PBXGroup;
 			children = (
-				73BC6A76F282932107469400 /* PlistStorage.swift */,
-				73BC6AED69B8A33CE6F8B58A /* Interval+Dictionary.swift */,
-				73BC6F6DF65BF71924DF08C8 /* Overlap+Dictionary.swift */,
+				C5140EBA1CE1DAB800B306FA /* App */,
+				C5140F3B1CE1E29900B306FA /* Tests */,
+				C5140F481CE1E31600B306FA /* UITests */,
+				C5140E0B1CE1D80D00B306FA /* Overlap */,
+				C5140E201CE1D80D00B306FA /* OverlapTests */,
+				C5140E2B1CE1D80D00B306FA /* OverlapUITests */,
+				C5140E5B1CE1D8B700B306FA /* Overlap Alpha */,
+				C5140E701CE1D8B700B306FA /* Overlap AlphaTests */,
+				C5140E7B1CE1D8B700B306FA /* Overlap AlphaUITests */,
+				C5140E8D1CE1D8C700B306FA /* Overlap Beta */,
+				C5140EA21CE1D8C700B306FA /* Overlap BetaTests */,
+				C5140EAD1CE1D8C700B306FA /* Overlap BetaUITests */,
+				C5140E0A1CE1D80D00B306FA /* Products */,
 			);
-			path = Json;
 			sourceTree = "<group>";
 		};
-		73BC6210C5ECC703CA3DAA30 /* Views */ = {
+		C5140E0A1CE1D80D00B306FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C55E1B411CB7B1700019D979 /* OverlapCell.swift */,
-				C55E1B421CB7B1700019D979 /* OverlapView.swift */,
-				73BC6D77970220B169177C99 /* RoundedView.swift */,
-				73BC6CC6D5CDE9E63FDF856E /* EditButton.swift */,
-				73BC646CE0225F8D5FCE5000 /* HorizontalLineView.swift */,
-				73BC6BE24D18EEFA5CBD8CD2 /* TimeZoneCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		73BC65C895AD40D2D814A7AB /* OverlapList */ = {
-			isa = PBXGroup;
-			children = (
-				73BC6C2881B9B2ED16BACFF6 /* OverlapListViewController.swift */,
-			);
-			path = OverlapList;
-			sourceTree = "<group>";
-		};
-		73BC674BB793DA2170DC23A5 /* TimePicker */ = {
-			isa = PBXGroup;
-			children = (
-				73BC6E1DD887E08E00279C3E /* TimePickerViewController.swift */,
-				73BC686E50DE510AF7265D92 /* TimePickerNavigationController.swift */,
-			);
-			path = TimePicker;
-			sourceTree = "<group>";
-		};
-		73BC688EEC28B84EAADC9B78 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				73BC674BB793DA2170DC23A5 /* TimePicker */,
-				73BC6B6EFF81D75262163AD8 /* TimezonePicker */,
-				73BC6A2F3A4B947AC003B1C0 /* OverlapEditor */,
-				73BC65C895AD40D2D814A7AB /* OverlapList */,
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		73BC69456EB67B8662B835A6 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				C55E1B3B1CB7B1560019D979 /* Interval.swift */,
-				C55E1B3C1CB7B1560019D979 /* Overlap.swift */,
-				73BC6CA409E83023578F7EEE /* DataManager.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		73BC6A2F3A4B947AC003B1C0 /* OverlapEditor */ = {
-			isa = PBXGroup;
-			children = (
-				73BC66DBC82F0BA1299229C5 /* OverlapEditorViewController.swift */,
-				73BC6FB6505B68498841FB64 /* OverlapEditorNavigationController.swift */,
-			);
-			path = OverlapEditor;
-			sourceTree = "<group>";
-		};
-		73BC6B6EFF81D75262163AD8 /* TimezonePicker */ = {
-			isa = PBXGroup;
-			children = (
-				73BC6B9E408A8CE60A589D51 /* TimeZonePickerNavigationController.swift */,
-				73BC63CBEC53DDCB5BC8043C /* TimeZonePickerViewController.swift */,
-			);
-			path = TimezonePicker;
-			sourceTree = "<group>";
-		};
-		73BC6B7AD51913031436DEC2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				73BC658A7E5575C1510C4357 /* Overlap.app */,
-				73BC6BEED276BF49844F5479 /* OverlapTests.xctest */,
-				73BC6DD7A57494C0CAF33A3D /* OverlapUITests.xctest */,
-				73BC6F95997332DE79752388 /* Overlap Alpha.app */,
-				73BC684FDEBFF7A0AD61F952 /* Overlap Beta.app */,
+				C5140E091CE1D80D00B306FA /* Overlap.app */,
+				C5140E1D1CE1D80D00B306FA /* OverlapTests.xctest */,
+				C5140E281CE1D80D00B306FA /* OverlapUITests.xctest */,
+				C5140E5A1CE1D8B700B306FA /* Overlap Alpha.app */,
+				C5140E6D1CE1D8B700B306FA /* Overlap AlphaTests.xctest */,
+				C5140E781CE1D8B700B306FA /* Overlap AlphaUITests.xctest */,
+				C5140E8C1CE1D8C700B306FA /* Overlap Beta.app */,
+				C5140E9F1CE1D8C700B306FA /* Overlap BetaTests.xctest */,
+				C5140EAA1CE1D8C700B306FA /* Overlap BetaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		73BC6BACCE6EBAF100D68F1D /* Storage */ = {
+		C5140E0B1CE1D80D00B306FA /* Overlap */ = {
 			isa = PBXGroup;
 			children = (
-				73BC6C77F3ABF175B8574FCC /* Storage.swift */,
-				73BC6154686C0500E9908273 /* Json */,
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
-		73BC6BC68CBFCC73C790F661 /* Editors */ = {
-			isa = PBXGroup;
-			children = (
-				73BC6DB7EBA9F862E8FB5EB4 /* IntervalEditor.swift */,
-				73BC6BDD421D0FA5CA421111 /* OverlapEditor.swift */,
-			);
-			path = Editors;
-			sourceTree = "<group>";
-		};
-		73BC6C857F88D1318C58B053 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				C53B5DF51CDCA8AE0005C98A /* Fabric.framework */,
-				C53B5DF61CDCA8AE0005C98A /* Crashlytics.framework */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		73BC6E0BB8AD8F0A5F615B40 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				73BC61D6D71726FF303FD224 /* Double+Time.swift */,
-				73BC62603799008701C0CE3E /* UIStoryboardSegue+Identifier.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		C55E1B011CB7B0CF0019D979 = {
-			isa = PBXGroup;
-			children = (
-				C55E1B0C1CB7B0CF0019D979 /* Overlap */,
-				C55E1B211CB7B0D00019D979 /* OverlapTests */,
-				C55E1B2C1CB7B0D00019D979 /* OverlapUITests */,
-				73BC6B7AD51913031436DEC2 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		C55E1B0C1CB7B0CF0019D979 /* Overlap */ = {
-			isa = PBXGroup;
-			children = (
-				C55E1B0D1CB7B0CF0019D979 /* AppDelegate.swift */,
-				C55E1B111CB7B0CF0019D979 /* Main.storyboard */,
-				C55E1B141CB7B0CF0019D979 /* Assets.xcassets */,
-				C55E1B161CB7B0CF0019D979 /* LaunchScreen.storyboard */,
-				C55E1B191CB7B0CF0019D979 /* Info.plist */,
-				73BC69456EB67B8662B835A6 /* Data */,
-				73BC6210C5ECC703CA3DAA30 /* Views */,
-				73BC688EEC28B84EAADC9B78 /* View Controllers */,
-				73BC6BC68CBFCC73C790F661 /* Editors */,
-				73BC6E0BB8AD8F0A5F615B40 /* Extensions */,
-				73BC6BACCE6EBAF100D68F1D /* Storage */,
-				73BC66FA75FB0F787B0D5BA1 /* Overlap Beta-Info.plist */,
-				73BC6F1DF4BA717D2A4B501D /* Overlap Alpha-Info.plist */,
-				73BC6C857F88D1318C58B053 /* Dependencies */,
+				C5140E131CE1D80D00B306FA /* Assets.xcassets */,
+				C5140E181CE1D80D00B306FA /* Info.plist */,
 			);
 			path = Overlap;
 			sourceTree = "<group>";
 		};
-		C55E1B211CB7B0D00019D979 /* OverlapTests */ = {
+		C5140E201CE1D80D00B306FA /* OverlapTests */ = {
 			isa = PBXGroup;
 			children = (
-				C55E1B221CB7B0D00019D979 /* OverlapTests.swift */,
-				C55E1B241CB7B0D00019D979 /* Info.plist */,
-				73BC6205FB5B1894FFFB29CE /* IntervalEditorTests.swift */,
-				C57AFA311CD3635E008A6A99 /* OverlapEditorTests.swift */,
+				C5140E231CE1D80D00B306FA /* Info.plist */,
 			);
 			path = OverlapTests;
 			sourceTree = "<group>";
 		};
-		C55E1B2C1CB7B0D00019D979 /* OverlapUITests */ = {
+		C5140E2B1CE1D80D00B306FA /* OverlapUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C55E1B2D1CB7B0D00019D979 /* OverlapUITests.swift */,
-				C55E1B2F1CB7B0D00019D979 /* Info.plist */,
+				C5140E2E1CE1D80D00B306FA /* Info.plist */,
 			);
 			path = OverlapUITests;
+			sourceTree = "<group>";
+		};
+		C5140E5B1CE1D8B700B306FA /* Overlap Alpha */ = {
+			isa = PBXGroup;
+			children = (
+				C5140E631CE1D8B700B306FA /* Assets.xcassets */,
+				C5140E681CE1D8B700B306FA /* Info.plist */,
+			);
+			path = "Overlap Alpha";
+			sourceTree = "<group>";
+		};
+		C5140E701CE1D8B700B306FA /* Overlap AlphaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5140E731CE1D8B700B306FA /* Info.plist */,
+			);
+			path = "Overlap AlphaTests";
+			sourceTree = "<group>";
+		};
+		C5140E7B1CE1D8B700B306FA /* Overlap AlphaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5140E7E1CE1D8B700B306FA /* Info.plist */,
+			);
+			path = "Overlap AlphaUITests";
+			sourceTree = "<group>";
+		};
+		C5140E8D1CE1D8C700B306FA /* Overlap Beta */ = {
+			isa = PBXGroup;
+			children = (
+				C5140E951CE1D8C700B306FA /* Assets.xcassets */,
+				C5140E9A1CE1D8C700B306FA /* Info.plist */,
+			);
+			path = "Overlap Beta";
+			sourceTree = "<group>";
+		};
+		C5140EA21CE1D8C700B306FA /* Overlap BetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5140EA51CE1D8C700B306FA /* Info.plist */,
+			);
+			path = "Overlap BetaTests";
+			sourceTree = "<group>";
+		};
+		C5140EAD1CE1D8C700B306FA /* Overlap BetaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5140EB01CE1D8C700B306FA /* Info.plist */,
+			);
+			path = "Overlap BetaUITests";
+			sourceTree = "<group>";
+		};
+		C5140EBA1CE1DAB800B306FA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C5140EBB1CE1DAB800B306FA /* AppDelegate.swift */,
+				C5140EBC1CE1DAB800B306FA /* Data */,
+				C5140EC01CE1DAB800B306FA /* Dependencies */,
+				C5140EC31CE1DAB800B306FA /* Editors */,
+				C5140EC61CE1DAB800B306FA /* Extensions */,
+				C5140EC91CE1DAB800B306FA /* LaunchScreen.storyboard */,
+				C5140ECA1CE1DAB800B306FA /* Main.storyboard */,
+				C5140ECB1CE1DAB800B306FA /* Storage */,
+				C5140ED11CE1DAB800B306FA /* View Controllers */,
+				C5140EDD1CE1DAB800B306FA /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C5140EBC1CE1DAB800B306FA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C5140EBD1CE1DAB800B306FA /* DataManager.swift */,
+				C5140EBE1CE1DAB800B306FA /* Interval.swift */,
+				C5140EBF1CE1DAB800B306FA /* Overlap.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C5140EC01CE1DAB800B306FA /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C5140EC11CE1DAB800B306FA /* Crashlytics.framework */,
+				C5140EC21CE1DAB800B306FA /* Fabric.framework */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		C5140EC31CE1DAB800B306FA /* Editors */ = {
+			isa = PBXGroup;
+			children = (
+				C5140EC41CE1DAB800B306FA /* IntervalEditor.swift */,
+				C5140EC51CE1DAB800B306FA /* OverlapEditor.swift */,
+			);
+			path = Editors;
+			sourceTree = "<group>";
+		};
+		C5140EC61CE1DAB800B306FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5140EC71CE1DAB800B306FA /* Double+Time.swift */,
+				C5140EC81CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5140ECB1CE1DAB800B306FA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				C5140ECC1CE1DAB800B306FA /* Json */,
+				C5140ED01CE1DAB800B306FA /* Storage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		C5140ECC1CE1DAB800B306FA /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				C5140ECD1CE1DAB800B306FA /* Interval+Dictionary.swift */,
+				C5140ECE1CE1DAB800B306FA /* Overlap+Dictionary.swift */,
+				C5140ECF1CE1DAB800B306FA /* PlistStorage.swift */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		C5140ED11CE1DAB800B306FA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5140ED21CE1DAB800B306FA /* OverlapEditor */,
+				C5140ED51CE1DAB800B306FA /* OverlapList */,
+				C5140ED71CE1DAB800B306FA /* TimePicker */,
+				C5140EDA1CE1DAB800B306FA /* TimezonePicker */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C5140ED21CE1DAB800B306FA /* OverlapEditor */ = {
+			isa = PBXGroup;
+			children = (
+				C5140ED31CE1DAB800B306FA /* OverlapEditorNavigationController.swift */,
+				C5140ED41CE1DAB800B306FA /* OverlapEditorViewController.swift */,
+			);
+			path = OverlapEditor;
+			sourceTree = "<group>";
+		};
+		C5140ED51CE1DAB800B306FA /* OverlapList */ = {
+			isa = PBXGroup;
+			children = (
+				C5140ED61CE1DAB800B306FA /* OverlapListViewController.swift */,
+			);
+			path = OverlapList;
+			sourceTree = "<group>";
+		};
+		C5140ED71CE1DAB800B306FA /* TimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C5140ED81CE1DAB800B306FA /* TimePickerNavigationController.swift */,
+				C5140ED91CE1DAB800B306FA /* TimePickerViewController.swift */,
+			);
+			path = TimePicker;
+			sourceTree = "<group>";
+		};
+		C5140EDA1CE1DAB800B306FA /* TimezonePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C5140EDB1CE1DAB800B306FA /* TimezonePickerNavigationController.swift */,
+				C5140EDC1CE1DAB800B306FA /* TimezonePickerViewController.swift */,
+			);
+			path = TimezonePicker;
+			sourceTree = "<group>";
+		};
+		C5140EDD1CE1DAB800B306FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5140EDE1CE1DAB800B306FA /* EditButton.swift */,
+				C5140EDF1CE1DAB800B306FA /* HorizontalLineView.swift */,
+				C5140EE01CE1DAB800B306FA /* OverlapCell.swift */,
+				C5140EE11CE1DAB800B306FA /* OverlapView.swift */,
+				C5140EE21CE1DAB800B306FA /* RoundedView.swift */,
+				C5140EE31CE1DAB800B306FA /* TimezoneCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5140F3B1CE1E29900B306FA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C5140F3C1CE1E29900B306FA /* IntervalEditorTests.swift */,
+				C5140F3D1CE1E29900B306FA /* OverlapEditorTests.swift */,
+				C5140F3E1CE1E29900B306FA /* OverlapTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C5140F481CE1E31600B306FA /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5140F491CE1E31600B306FA /* OverlapUITests.swift */,
+			);
+			path = UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C55E1B091CB7B0CF0019D979 /* Overlap */ = {
+		C5140E081CE1D80D00B306FA /* Overlap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C55E1B321CB7B0D00019D979 /* Build configuration list for PBXNativeTarget "Overlap" */;
+			buildConfigurationList = C5140E311CE1D80D00B306FA /* Build configuration list for PBXNativeTarget "Overlap" */;
 			buildPhases = (
-				C55E1B061CB7B0CF0019D979 /* Sources */,
-				C55E1B071CB7B0CF0019D979 /* Frameworks */,
-				C55E1B081CB7B0CF0019D979 /* Resources */,
-				C53B5DF21CDCA85C0005C98A /* ShellScript */,
+				C5140E051CE1D80D00B306FA /* Sources */,
+				C5140E061CE1D80D00B306FA /* Frameworks */,
+				C5140E071CE1D80D00B306FA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -412,104 +563,197 @@
 			);
 			name = Overlap;
 			productName = Overlap;
+			productReference = C5140E091CE1D80D00B306FA /* Overlap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C55E1B1D1CB7B0D00019D979 /* OverlapTests */ = {
+		C5140E1C1CE1D80D00B306FA /* OverlapTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C55E1B351CB7B0D00019D979 /* Build configuration list for PBXNativeTarget "OverlapTests" */;
+			buildConfigurationList = C5140E341CE1D80D00B306FA /* Build configuration list for PBXNativeTarget "OverlapTests" */;
 			buildPhases = (
-				C55E1B1A1CB7B0D00019D979 /* Sources */,
-				C55E1B1B1CB7B0D00019D979 /* Frameworks */,
-				C55E1B1C1CB7B0D00019D979 /* Resources */,
+				C5140E191CE1D80D00B306FA /* Sources */,
+				C5140E1A1CE1D80D00B306FA /* Frameworks */,
+				C5140E1B1CE1D80D00B306FA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C55E1B201CB7B0D00019D979 /* PBXTargetDependency */,
+				C5140E1F1CE1D80D00B306FA /* PBXTargetDependency */,
 			);
 			name = OverlapTests;
 			productName = OverlapTests;
+			productReference = C5140E1D1CE1D80D00B306FA /* OverlapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C55E1B281CB7B0D00019D979 /* OverlapUITests */ = {
+		C5140E271CE1D80D00B306FA /* OverlapUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C55E1B381CB7B0D00019D979 /* Build configuration list for PBXNativeTarget "OverlapUITests" */;
+			buildConfigurationList = C5140E371CE1D80D00B306FA /* Build configuration list for PBXNativeTarget "OverlapUITests" */;
 			buildPhases = (
-				C55E1B251CB7B0D00019D979 /* Sources */,
-				C55E1B261CB7B0D00019D979 /* Frameworks */,
-				C55E1B271CB7B0D00019D979 /* Resources */,
+				C5140E241CE1D80D00B306FA /* Sources */,
+				C5140E251CE1D80D00B306FA /* Frameworks */,
+				C5140E261CE1D80D00B306FA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C55E1B2B1CB7B0D00019D979 /* PBXTargetDependency */,
+				C5140E2A1CE1D80D00B306FA /* PBXTargetDependency */,
 			);
 			name = OverlapUITests;
 			productName = OverlapUITests;
+			productReference = C5140E281CE1D80D00B306FA /* OverlapUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		C5C956131CDCA2AD0024B0B2 /* Overlap Alpha */ = {
+		C5140E591CE1D8B700B306FA /* Overlap Alpha */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5C956331CDCA2AD0024B0B2 /* Build configuration list for PBXNativeTarget "Overlap Alpha" */;
+			buildConfigurationList = C5140E7F1CE1D8B700B306FA /* Build configuration list for PBXNativeTarget "Overlap Alpha" */;
 			buildPhases = (
-				C5C956141CDCA2AD0024B0B2 /* Sources */,
-				C5C9562E1CDCA2AD0024B0B2 /* Frameworks */,
-				C5C9562F1CDCA2AD0024B0B2 /* Resources */,
-				C53B5DF31CDCA86A0005C98A /* ShellScript */,
+				C5140E561CE1D8B700B306FA /* Sources */,
+				C5140E571CE1D8B700B306FA /* Frameworks */,
+				C5140E581CE1D8B700B306FA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Overlap Alpha";
-			productName = Overlap;
+			productName = "Overlap Alpha";
+			productReference = C5140E5A1CE1D8B700B306FA /* Overlap Alpha.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C5C956381CDCA3520024B0B2 /* Overlap Beta */ = {
+		C5140E6C1CE1D8B700B306FA /* Overlap AlphaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5C956581CDCA3520024B0B2 /* Build configuration list for PBXNativeTarget "Overlap Beta" */;
+			buildConfigurationList = C5140E821CE1D8B800B306FA /* Build configuration list for PBXNativeTarget "Overlap AlphaTests" */;
 			buildPhases = (
-				C5C956391CDCA3520024B0B2 /* Sources */,
-				C5C956531CDCA3520024B0B2 /* Frameworks */,
-				C5C956541CDCA3520024B0B2 /* Resources */,
-				C53B5DF41CDCA86E0005C98A /* ShellScript */,
+				C5140E691CE1D8B700B306FA /* Sources */,
+				C5140E6A1CE1D8B700B306FA /* Frameworks */,
+				C5140E6B1CE1D8B700B306FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5140E6F1CE1D8B700B306FA /* PBXTargetDependency */,
+			);
+			name = "Overlap AlphaTests";
+			productName = "Overlap AlphaTests";
+			productReference = C5140E6D1CE1D8B700B306FA /* Overlap AlphaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5140E771CE1D8B700B306FA /* Overlap AlphaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5140E851CE1D8B800B306FA /* Build configuration list for PBXNativeTarget "Overlap AlphaUITests" */;
+			buildPhases = (
+				C5140E741CE1D8B700B306FA /* Sources */,
+				C5140E751CE1D8B700B306FA /* Frameworks */,
+				C5140E761CE1D8B700B306FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5140E7A1CE1D8B700B306FA /* PBXTargetDependency */,
+			);
+			name = "Overlap AlphaUITests";
+			productName = "Overlap AlphaUITests";
+			productReference = C5140E781CE1D8B700B306FA /* Overlap AlphaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C5140E8B1CE1D8C700B306FA /* Overlap Beta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5140EB11CE1D8C700B306FA /* Build configuration list for PBXNativeTarget "Overlap Beta" */;
+			buildPhases = (
+				C5140E881CE1D8C700B306FA /* Sources */,
+				C5140E891CE1D8C700B306FA /* Frameworks */,
+				C5140E8A1CE1D8C700B306FA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Overlap Beta";
-			productName = Overlap;
+			productName = "Overlap Beta";
+			productReference = C5140E8C1CE1D8C700B306FA /* Overlap Beta.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C5140E9E1CE1D8C700B306FA /* Overlap BetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5140EB41CE1D8C700B306FA /* Build configuration list for PBXNativeTarget "Overlap BetaTests" */;
+			buildPhases = (
+				C5140E9B1CE1D8C700B306FA /* Sources */,
+				C5140E9C1CE1D8C700B306FA /* Frameworks */,
+				C5140E9D1CE1D8C700B306FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5140EA11CE1D8C700B306FA /* PBXTargetDependency */,
+			);
+			name = "Overlap BetaTests";
+			productName = "Overlap BetaTests";
+			productReference = C5140E9F1CE1D8C700B306FA /* Overlap BetaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5140EA91CE1D8C700B306FA /* Overlap BetaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5140EB71CE1D8C700B306FA /* Build configuration list for PBXNativeTarget "Overlap BetaUITests" */;
+			buildPhases = (
+				C5140EA61CE1D8C700B306FA /* Sources */,
+				C5140EA71CE1D8C700B306FA /* Frameworks */,
+				C5140EA81CE1D8C700B306FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5140EAC1CE1D8C700B306FA /* PBXTargetDependency */,
+			);
+			name = "Overlap BetaUITests";
+			productName = "Overlap BetaUITests";
+			productReference = C5140EAA1CE1D8C700B306FA /* Overlap BetaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C55E1B021CB7B0CF0019D979 /* Project object */ = {
+		C5140E011CE1D80D00B306FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Maxim Pervushin";
 				TargetAttributes = {
-					C55E1B091CB7B0CF0019D979 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = FRM2L78456;
+					C5140E081CE1D80D00B306FA = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
-					C55E1B1D1CB7B0D00019D979 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = C55E1B091CB7B0CF0019D979;
+					C5140E1C1CE1D80D00B306FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C5140E081CE1D80D00B306FA;
 					};
-					C55E1B281CB7B0D00019D979 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = C55E1B091CB7B0CF0019D979;
+					C5140E271CE1D80D00B306FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C5140E081CE1D80D00B306FA;
 					};
-					C5C956381CDCA3520024B0B2 = {
-						DevelopmentTeam = FRM2L78456;
+					C5140E591CE1D8B700B306FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C5140E6C1CE1D8B700B306FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C5140E591CE1D8B700B306FA;
+					};
+					C5140E771CE1D8B700B306FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C5140E591CE1D8B700B306FA;
+					};
+					C5140E8B1CE1D8C700B306FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C5140E9E1CE1D8C700B306FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C5140E8B1CE1D8C700B306FA;
+					};
+					C5140EA91CE1D8C700B306FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C5140E8B1CE1D8C700B306FA;
 					};
 				};
 			};
-			buildConfigurationList = C55E1B051CB7B0CF0019D979 /* Build configuration list for PBXProject "Overlap" */;
+			buildConfigurationList = C5140E041CE1D80D00B306FA /* Build configuration list for PBXProject "Overlap" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -517,263 +761,287 @@
 				en,
 				Base,
 			);
-			mainGroup = C55E1B011CB7B0CF0019D979;
+			mainGroup = C5140E001CE1D80D00B306FA;
+			productRefGroup = C5140E0A1CE1D80D00B306FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C55E1B091CB7B0CF0019D979 /* Overlap */,
-				C5C956381CDCA3520024B0B2 /* Overlap Beta */,
-				C5C956131CDCA2AD0024B0B2 /* Overlap Alpha */,
-				C55E1B1D1CB7B0D00019D979 /* OverlapTests */,
-				C55E1B281CB7B0D00019D979 /* OverlapUITests */,
+				C5140E081CE1D80D00B306FA /* Overlap */,
+				C5140E1C1CE1D80D00B306FA /* OverlapTests */,
+				C5140E271CE1D80D00B306FA /* OverlapUITests */,
+				C5140E591CE1D8B700B306FA /* Overlap Alpha */,
+				C5140E6C1CE1D8B700B306FA /* Overlap AlphaTests */,
+				C5140E771CE1D8B700B306FA /* Overlap AlphaUITests */,
+				C5140E8B1CE1D8C700B306FA /* Overlap Beta */,
+				C5140E9E1CE1D8C700B306FA /* Overlap BetaTests */,
+				C5140EA91CE1D8C700B306FA /* Overlap BetaUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C55E1B081CB7B0CF0019D979 /* Resources */ = {
+		C5140E071CE1D80D00B306FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C55E1B181CB7B0CF0019D979 /* LaunchScreen.storyboard in Resources */,
-				C55E1B151CB7B0CF0019D979 /* Assets.xcassets in Resources */,
-				C55E1B131CB7B0CF0019D979 /* Main.storyboard in Resources */,
+				C5140F051CE1DAB800B306FA /* Main.storyboard in Resources */,
+				C5140E141CE1D80D00B306FA /* Assets.xcassets in Resources */,
+				C5140F021CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C55E1B1C1CB7B0D00019D979 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C55E1B271CB7B0D00019D979 /* Resources */ = {
+		C5140E1B1CE1D80D00B306FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5C9562F1CDCA2AD0024B0B2 /* Resources */ = {
+		C5140E261CE1D80D00B306FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5C956301CDCA2AD0024B0B2 /* LaunchScreen.storyboard in Resources */,
-				C5C956311CDCA2AD0024B0B2 /* Assets.xcassets in Resources */,
-				C5C956321CDCA2AD0024B0B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5C956541CDCA3520024B0B2 /* Resources */ = {
+		C5140E581CE1D8B700B306FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5C956551CDCA3520024B0B2 /* LaunchScreen.storyboard in Resources */,
-				C5C956561CDCA3520024B0B2 /* Assets.xcassets in Resources */,
-				C5C956571CDCA3520024B0B2 /* Main.storyboard in Resources */,
+				C5140F061CE1DAB800B306FA /* Main.storyboard in Resources */,
+				C5140E641CE1D8B700B306FA /* Assets.xcassets in Resources */,
+				C5140F031CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E6B1CE1D8B700B306FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E761CE1D8B700B306FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E8A1CE1D8C700B306FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5140F071CE1DAB800B306FA /* Main.storyboard in Resources */,
+				C5140E961CE1D8C700B306FA /* Assets.xcassets in Resources */,
+				C5140F041CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E9D1CE1D8C700B306FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140EA81CE1D8C700B306FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		C53B5DF21CDCA85C0005C98A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Overlap/Dependencies/Fabric.framework/run e83e0095e24774f93f86cd8f53b5743615ff236b ee344f57d2c4470643f18815f88b8e8f5665090f6cbe9dae15562ba9bd36fb4a";
-		};
-		C53B5DF31CDCA86A0005C98A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Overlap/Dependencies/Fabric.framework/run e83e0095e24774f93f86cd8f53b5743615ff236b ee344f57d2c4470643f18815f88b8e8f5665090f6cbe9dae15562ba9bd36fb4a";
-		};
-		C53B5DF41CDCA86E0005C98A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Overlap/Dependencies/Fabric.framework/run e83e0095e24774f93f86cd8f53b5743615ff236b ee344f57d2c4470643f18815f88b8e8f5665090f6cbe9dae15562ba9bd36fb4a";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		C55E1B061CB7B0CF0019D979 /* Sources */ = {
+		C5140E051CE1D80D00B306FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C55E1B3F1CB7B1560019D979 /* Overlap.swift in Sources */,
-				C55E1B431CB7B1700019D979 /* OverlapCell.swift in Sources */,
-				C55E1B0E1CB7B0CF0019D979 /* AppDelegate.swift in Sources */,
-				C55E1B441CB7B1700019D979 /* OverlapView.swift in Sources */,
-				C55E1B3D1CB7B1560019D979 /* Interval.swift in Sources */,
-				73BC6D5D9AC34F9A7C1A88DC /* RoundedView.swift in Sources */,
-				73BC61D215953837696ABB33 /* IntervalEditor.swift in Sources */,
-				73BC6BE36BED0841F2E37A58 /* OverlapEditor.swift in Sources */,
-				73BC67835E098C58CF928163 /* EditButton.swift in Sources */,
-				73BC614A44D0A484B03DC83E /* HorizontalLineView.swift in Sources */,
-				73BC6E9C58B8329E2D6E4A59 /* Double+Time.swift in Sources */,
-				73BC68D7A43C917D937096F0 /* TimePickerViewController.swift in Sources */,
-				73BC6BB0CC8662E53AFB27DB /* TimePickerNavigationController.swift in Sources */,
-				73BC6E3D554FD671965C7785 /* TimeZonePickerNavigationController.swift in Sources */,
-				73BC603E3D4FA26BEE516F9D /* TimeZonePickerViewController.swift in Sources */,
-				73BC6BCD98392761D3C702E9 /* TimeZoneCell.swift in Sources */,
-				73BC639AC02E04FB738A849D /* OverlapEditorViewController.swift in Sources */,
-				73BC687C2A4C8A4CDFF03A9E /* OverlapListViewController.swift in Sources */,
-				73BC6FAB711DE2EC4FB29D7A /* OverlapEditorNavigationController.swift in Sources */,
-				73BC606C0C6D49EA2F666351 /* DataManager.swift in Sources */,
-				73BC6DD8710431CDB7821349 /* Storage.swift in Sources */,
-				73BC6CA0D2E3FA1DF68B0651 /* PlistStorage.swift in Sources */,
-				73BC6A33E6203D1445706EA4 /* Interval+Dictionary.swift in Sources */,
-				73BC6727915A4AB83B9AB916 /* Overlap+Dictionary.swift in Sources */,
-				73BC6D43290921E84B983D39 /* UIStoryboardSegue+Identifier.swift in Sources */,
+				C5140F1D1CE1DAB800B306FA /* TimePickerNavigationController.swift in Sources */,
+				C5140EE41CE1DAB800B306FA /* AppDelegate.swift in Sources */,
+				C5140F1A1CE1DAB800B306FA /* OverlapListViewController.swift in Sources */,
+				C5140F201CE1DAB800B306FA /* TimePickerViewController.swift in Sources */,
+				C5140F231CE1DAB800B306FA /* TimezonePickerNavigationController.swift in Sources */,
+				C5140F321CE1DAB800B306FA /* OverlapView.swift in Sources */,
+				C5140F291CE1DAB800B306FA /* EditButton.swift in Sources */,
+				C5140F261CE1DAB800B306FA /* TimezonePickerViewController.swift in Sources */,
+				C5140F351CE1DAB800B306FA /* RoundedView.swift in Sources */,
+				C5140F171CE1DAB800B306FA /* OverlapEditorViewController.swift in Sources */,
+				C5140EED1CE1DAB800B306FA /* Overlap.swift in Sources */,
+				C5140F381CE1DAB800B306FA /* TimezoneCell.swift in Sources */,
+				C5140F0E1CE1DAB800B306FA /* PlistStorage.swift in Sources */,
+				C5140EF91CE1DAB800B306FA /* OverlapEditor.swift in Sources */,
+				C5140EE71CE1DAB800B306FA /* DataManager.swift in Sources */,
+				C5140F111CE1DAB800B306FA /* Storage.swift in Sources */,
+				C5140EFC1CE1DAB800B306FA /* Double+Time.swift in Sources */,
+				C5140F081CE1DAB800B306FA /* Interval+Dictionary.swift in Sources */,
+				C5140F141CE1DAB800B306FA /* OverlapEditorNavigationController.swift in Sources */,
+				C5140EF61CE1DAB800B306FA /* IntervalEditor.swift in Sources */,
+				C5140F2C1CE1DAB800B306FA /* HorizontalLineView.swift in Sources */,
+				C5140EEA1CE1DAB800B306FA /* Interval.swift in Sources */,
+				C5140F2F1CE1DAB800B306FA /* OverlapCell.swift in Sources */,
+				C5140EFF1CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift in Sources */,
+				C5140F0B1CE1DAB800B306FA /* Overlap+Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C55E1B1A1CB7B0D00019D979 /* Sources */ = {
+		C5140E191CE1D80D00B306FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C55E1B3E1CB7B1560019D979 /* Interval.swift in Sources */,
-				C57AFA321CD3635E008A6A99 /* OverlapEditorTests.swift in Sources */,
-				C55E1B401CB7B1560019D979 /* Overlap.swift in Sources */,
-				C55E1B231CB7B0D00019D979 /* OverlapTests.swift in Sources */,
-				C57AFA301CD3587B008A6A99 /* IntervalEditor.swift in Sources */,
-				73BC635EFFCCD2C5E06CBC4A /* IntervalEditorTests.swift in Sources */,
-				73BC6DDD7065530677E7CACA /* OverlapEditor.swift in Sources */,
+				C5140F421CE1E29900B306FA /* OverlapEditorTests.swift in Sources */,
+				C5140F3F1CE1E29900B306FA /* IntervalEditorTests.swift in Sources */,
+				C5140F451CE1E29900B306FA /* OverlapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C55E1B251CB7B0D00019D979 /* Sources */ = {
+		C5140E241CE1D80D00B306FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C55E1B2E1CB7B0D00019D979 /* OverlapUITests.swift in Sources */,
+				C5140F4A1CE1E31600B306FA /* OverlapUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5C956141CDCA2AD0024B0B2 /* Sources */ = {
+		C5140E561CE1D8B700B306FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5C956151CDCA2AD0024B0B2 /* Overlap.swift in Sources */,
-				C5C956161CDCA2AD0024B0B2 /* OverlapCell.swift in Sources */,
-				C5C956171CDCA2AD0024B0B2 /* AppDelegate.swift in Sources */,
-				C5C956181CDCA2AD0024B0B2 /* OverlapView.swift in Sources */,
-				C5C956191CDCA2AD0024B0B2 /* Interval.swift in Sources */,
-				C5C9561A1CDCA2AD0024B0B2 /* RoundedView.swift in Sources */,
-				C5C9561B1CDCA2AD0024B0B2 /* IntervalEditor.swift in Sources */,
-				C5C9561C1CDCA2AD0024B0B2 /* OverlapEditor.swift in Sources */,
-				C5C9561D1CDCA2AD0024B0B2 /* EditButton.swift in Sources */,
-				C5C9561E1CDCA2AD0024B0B2 /* HorizontalLineView.swift in Sources */,
-				C5C9561F1CDCA2AD0024B0B2 /* Double+Time.swift in Sources */,
-				C5C956201CDCA2AD0024B0B2 /* TimePickerViewController.swift in Sources */,
-				C5C956211CDCA2AD0024B0B2 /* TimePickerNavigationController.swift in Sources */,
-				C5C956221CDCA2AD0024B0B2 /* TimeZonePickerNavigationController.swift in Sources */,
-				C5C956231CDCA2AD0024B0B2 /* TimeZonePickerViewController.swift in Sources */,
-				C5C956241CDCA2AD0024B0B2 /* TimeZoneCell.swift in Sources */,
-				C5C956251CDCA2AD0024B0B2 /* OverlapEditorViewController.swift in Sources */,
-				C5C956261CDCA2AD0024B0B2 /* OverlapListViewController.swift in Sources */,
-				C5C956271CDCA2AD0024B0B2 /* OverlapEditorNavigationController.swift in Sources */,
-				C5C956281CDCA2AD0024B0B2 /* DataManager.swift in Sources */,
-				C5C956291CDCA2AD0024B0B2 /* Storage.swift in Sources */,
-				C5C9562A1CDCA2AD0024B0B2 /* PlistStorage.swift in Sources */,
-				C5C9562B1CDCA2AD0024B0B2 /* Interval+Dictionary.swift in Sources */,
-				C5C9562C1CDCA2AD0024B0B2 /* Overlap+Dictionary.swift in Sources */,
-				C5C9562D1CDCA2AD0024B0B2 /* UIStoryboardSegue+Identifier.swift in Sources */,
+				C5140F1E1CE1DAB800B306FA /* TimePickerNavigationController.swift in Sources */,
+				C5140EE51CE1DAB800B306FA /* AppDelegate.swift in Sources */,
+				C5140F1B1CE1DAB800B306FA /* OverlapListViewController.swift in Sources */,
+				C5140F211CE1DAB800B306FA /* TimePickerViewController.swift in Sources */,
+				C5140F241CE1DAB800B306FA /* TimezonePickerNavigationController.swift in Sources */,
+				C5140F331CE1DAB800B306FA /* OverlapView.swift in Sources */,
+				C5140F2A1CE1DAB800B306FA /* EditButton.swift in Sources */,
+				C5140F271CE1DAB800B306FA /* TimezonePickerViewController.swift in Sources */,
+				C5140F361CE1DAB800B306FA /* RoundedView.swift in Sources */,
+				C5140F181CE1DAB800B306FA /* OverlapEditorViewController.swift in Sources */,
+				C5140EEE1CE1DAB800B306FA /* Overlap.swift in Sources */,
+				C5140F391CE1DAB800B306FA /* TimezoneCell.swift in Sources */,
+				C5140F0F1CE1DAB800B306FA /* PlistStorage.swift in Sources */,
+				C5140EFA1CE1DAB800B306FA /* OverlapEditor.swift in Sources */,
+				C5140EE81CE1DAB800B306FA /* DataManager.swift in Sources */,
+				C5140F121CE1DAB800B306FA /* Storage.swift in Sources */,
+				C5140EFD1CE1DAB800B306FA /* Double+Time.swift in Sources */,
+				C5140F091CE1DAB800B306FA /* Interval+Dictionary.swift in Sources */,
+				C5140F151CE1DAB800B306FA /* OverlapEditorNavigationController.swift in Sources */,
+				C5140EF71CE1DAB800B306FA /* IntervalEditor.swift in Sources */,
+				C5140F2D1CE1DAB800B306FA /* HorizontalLineView.swift in Sources */,
+				C5140EEB1CE1DAB800B306FA /* Interval.swift in Sources */,
+				C5140F301CE1DAB800B306FA /* OverlapCell.swift in Sources */,
+				C5140F001CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift in Sources */,
+				C5140F0C1CE1DAB800B306FA /* Overlap+Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5C956391CDCA3520024B0B2 /* Sources */ = {
+		C5140E691CE1D8B700B306FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5C9563A1CDCA3520024B0B2 /* Overlap.swift in Sources */,
-				C5C9563B1CDCA3520024B0B2 /* OverlapCell.swift in Sources */,
-				C5C9563C1CDCA3520024B0B2 /* AppDelegate.swift in Sources */,
-				C5C9563D1CDCA3520024B0B2 /* OverlapView.swift in Sources */,
-				C5C9563E1CDCA3520024B0B2 /* Interval.swift in Sources */,
-				C5C9563F1CDCA3520024B0B2 /* RoundedView.swift in Sources */,
-				C5C956401CDCA3520024B0B2 /* IntervalEditor.swift in Sources */,
-				C5C956411CDCA3520024B0B2 /* OverlapEditor.swift in Sources */,
-				C5C956421CDCA3520024B0B2 /* EditButton.swift in Sources */,
-				C5C956431CDCA3520024B0B2 /* HorizontalLineView.swift in Sources */,
-				C5C956441CDCA3520024B0B2 /* Double+Time.swift in Sources */,
-				C5C956451CDCA3520024B0B2 /* TimePickerViewController.swift in Sources */,
-				C5C956461CDCA3520024B0B2 /* TimePickerNavigationController.swift in Sources */,
-				C5C956471CDCA3520024B0B2 /* TimeZonePickerNavigationController.swift in Sources */,
-				C5C956481CDCA3520024B0B2 /* TimeZonePickerViewController.swift in Sources */,
-				C5C956491CDCA3520024B0B2 /* TimeZoneCell.swift in Sources */,
-				C5C9564A1CDCA3520024B0B2 /* OverlapEditorViewController.swift in Sources */,
-				C5C9564B1CDCA3520024B0B2 /* OverlapListViewController.swift in Sources */,
-				C5C9564C1CDCA3520024B0B2 /* OverlapEditorNavigationController.swift in Sources */,
-				C5C9564D1CDCA3520024B0B2 /* DataManager.swift in Sources */,
-				C5C9564E1CDCA3520024B0B2 /* Storage.swift in Sources */,
-				C5C9564F1CDCA3520024B0B2 /* PlistStorage.swift in Sources */,
-				C5C956501CDCA3520024B0B2 /* Interval+Dictionary.swift in Sources */,
-				C5C956511CDCA3520024B0B2 /* Overlap+Dictionary.swift in Sources */,
-				C5C956521CDCA3520024B0B2 /* UIStoryboardSegue+Identifier.swift in Sources */,
+				C5140F431CE1E29900B306FA /* OverlapEditorTests.swift in Sources */,
+				C5140F401CE1E29900B306FA /* IntervalEditorTests.swift in Sources */,
+				C5140F461CE1E29900B306FA /* OverlapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E741CE1D8B700B306FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5140F4B1CE1E31600B306FA /* OverlapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E881CE1D8C700B306FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5140F1F1CE1DAB800B306FA /* TimePickerNavigationController.swift in Sources */,
+				C5140EE61CE1DAB800B306FA /* AppDelegate.swift in Sources */,
+				C5140F1C1CE1DAB800B306FA /* OverlapListViewController.swift in Sources */,
+				C5140F221CE1DAB800B306FA /* TimePickerViewController.swift in Sources */,
+				C5140F251CE1DAB800B306FA /* TimezonePickerNavigationController.swift in Sources */,
+				C5140F341CE1DAB800B306FA /* OverlapView.swift in Sources */,
+				C5140F2B1CE1DAB800B306FA /* EditButton.swift in Sources */,
+				C5140F281CE1DAB800B306FA /* TimezonePickerViewController.swift in Sources */,
+				C5140F371CE1DAB800B306FA /* RoundedView.swift in Sources */,
+				C5140F191CE1DAB800B306FA /* OverlapEditorViewController.swift in Sources */,
+				C5140EEF1CE1DAB800B306FA /* Overlap.swift in Sources */,
+				C5140F3A1CE1DAB800B306FA /* TimezoneCell.swift in Sources */,
+				C5140F101CE1DAB800B306FA /* PlistStorage.swift in Sources */,
+				C5140EFB1CE1DAB800B306FA /* OverlapEditor.swift in Sources */,
+				C5140EE91CE1DAB800B306FA /* DataManager.swift in Sources */,
+				C5140F131CE1DAB800B306FA /* Storage.swift in Sources */,
+				C5140EFE1CE1DAB800B306FA /* Double+Time.swift in Sources */,
+				C5140F0A1CE1DAB800B306FA /* Interval+Dictionary.swift in Sources */,
+				C5140F161CE1DAB800B306FA /* OverlapEditorNavigationController.swift in Sources */,
+				C5140EF81CE1DAB800B306FA /* IntervalEditor.swift in Sources */,
+				C5140F2E1CE1DAB800B306FA /* HorizontalLineView.swift in Sources */,
+				C5140EEC1CE1DAB800B306FA /* Interval.swift in Sources */,
+				C5140F311CE1DAB800B306FA /* OverlapCell.swift in Sources */,
+				C5140F011CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift in Sources */,
+				C5140F0D1CE1DAB800B306FA /* Overlap+Dictionary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140E9B1CE1D8C700B306FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5140F441CE1E29900B306FA /* OverlapEditorTests.swift in Sources */,
+				C5140F411CE1E29900B306FA /* IntervalEditorTests.swift in Sources */,
+				C5140F471CE1E29900B306FA /* OverlapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5140EA61CE1D8C700B306FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5140F4C1CE1E31600B306FA /* OverlapUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C55E1B201CB7B0D00019D979 /* PBXTargetDependency */ = {
+		C5140E1F1CE1D80D00B306FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C55E1B091CB7B0CF0019D979 /* Overlap */;
-			targetProxy = C55E1B1F1CB7B0D00019D979 /* PBXContainerItemProxy */;
+			target = C5140E081CE1D80D00B306FA /* Overlap */;
+			targetProxy = C5140E1E1CE1D80D00B306FA /* PBXContainerItemProxy */;
 		};
-		C55E1B2B1CB7B0D00019D979 /* PBXTargetDependency */ = {
+		C5140E2A1CE1D80D00B306FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C55E1B091CB7B0CF0019D979 /* Overlap */;
-			targetProxy = C55E1B2A1CB7B0D00019D979 /* PBXContainerItemProxy */;
+			target = C5140E081CE1D80D00B306FA /* Overlap */;
+			targetProxy = C5140E291CE1D80D00B306FA /* PBXContainerItemProxy */;
+		};
+		C5140E6F1CE1D8B700B306FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5140E591CE1D8B700B306FA /* Overlap Alpha */;
+			targetProxy = C5140E6E1CE1D8B700B306FA /* PBXContainerItemProxy */;
+		};
+		C5140E7A1CE1D8B700B306FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5140E591CE1D8B700B306FA /* Overlap Alpha */;
+			targetProxy = C5140E791CE1D8B700B306FA /* PBXContainerItemProxy */;
+		};
+		C5140EA11CE1D8C700B306FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5140E8B1CE1D8C700B306FA /* Overlap Beta */;
+			targetProxy = C5140EA01CE1D8C700B306FA /* PBXContainerItemProxy */;
+		};
+		C5140EAC1CE1D8C700B306FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5140E8B1CE1D8C700B306FA /* Overlap Beta */;
+			targetProxy = C5140EAB1CE1D8C700B306FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		C55E1B111CB7B0CF0019D979 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C55E1B121CB7B0CF0019D979 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C55E1B161CB7B0CF0019D979 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C55E1B171CB7B0CF0019D979 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		C55E1B301CB7B0D00019D979 /* Debug */ = {
+		C5140E2F1CE1D80D00B306FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -810,7 +1078,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -819,7 +1087,7 @@
 			};
 			name = Debug;
 		};
-		C55E1B311CB7B0D00019D979 /* Release */ = {
+		C5140E301CE1D80D00B306FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -850,7 +1118,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -858,15 +1126,13 @@
 			};
 			name = Release;
 		};
-		C55E1B331CB7B0D00019D979 /* Debug */ = {
+		C5140E321CE1D80D00B306FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Overlap/Dependencies",
+					"$(PROJECT_DIR)/App/Dependencies",
 				);
 				INFOPLIST_FILE = Overlap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -875,14 +1141,13 @@
 			};
 			name = Debug;
 		};
-		C55E1B341CB7B0D00019D979 /* Release */ = {
+		C5140E331CE1D80D00B306FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Overlap/Dependencies",
+					"$(PROJECT_DIR)/App/Dependencies",
 				);
 				INFOPLIST_FILE = Overlap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -891,7 +1156,7 @@
 			};
 			name = Release;
 		};
-		C55E1B361CB7B0D00019D979 /* Debug */ = {
+		C5140E351CE1D80D00B306FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -903,7 +1168,7 @@
 			};
 			name = Debug;
 		};
-		C55E1B371CB7B0D00019D979 /* Release */ = {
+		C5140E361CE1D80D00B306FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -915,7 +1180,7 @@
 			};
 			name = Release;
 		};
-		C55E1B391CB7B0D00019D979 /* Debug */ = {
+		C5140E381CE1D80D00B306FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = OverlapUITests/Info.plist;
@@ -926,7 +1191,7 @@
 			};
 			name = Debug;
 		};
-		C55E1B3A1CB7B0D00019D979 /* Release */ = {
+		C5140E391CE1D80D00B306FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = OverlapUITests/Info.plist;
@@ -937,132 +1202,243 @@
 			};
 			name = Release;
 		};
-		C5C956341CDCA2AD0024B0B2 /* Debug */ = {
+		C5140E801CE1D8B700B306FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Overlap/Dependencies",
+					"$(PROJECT_DIR)/App/Dependencies",
 				);
-				INFOPLIST_FILE = "Overlap/Overlap Alpha-Info.plist";
+				INFOPLIST_FILE = "Overlap Alpha/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-Alpha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		C5C956351CDCA2AD0024B0B2 /* Release */ = {
+		C5140E811CE1D8B700B306FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Overlap/Dependencies",
+					"$(PROJECT_DIR)/App/Dependencies",
 				);
-				INFOPLIST_FILE = "Overlap/Overlap Alpha-Info.plist";
+				INFOPLIST_FILE = "Overlap Alpha/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-Alpha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		C5C956591CDCA3520024B0B2 /* Debug */ = {
+		C5140E831CE1D8B800B306FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Overlap AlphaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-AlphaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Overlap Alpha.app/Overlap Alpha";
+			};
+			name = Debug;
+		};
+		C5140E841CE1D8B800B306FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Overlap AlphaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-AlphaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Overlap Alpha.app/Overlap Alpha";
+			};
+			name = Release;
+		};
+		C5140E861CE1D8B800B306FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Overlap AlphaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-AlphaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Overlap Alpha";
+			};
+			name = Debug;
+		};
+		C5140E871CE1D8B800B306FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Overlap AlphaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-AlphaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Overlap Alpha";
+			};
+			name = Release;
+		};
+		C5140EB21CE1D8C700B306FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Overlap/Dependencies",
+					"$(PROJECT_DIR)/App/Dependencies",
 				);
-				INFOPLIST_FILE = "Overlap/Overlap Beta-Info.plist";
+				INFOPLIST_FILE = "Overlap Beta/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-Beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		C5C9565A1CDCA3520024B0B2 /* Release */ = {
+		C5140EB31CE1D8C700B306FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Overlap/Dependencies",
+					"$(PROJECT_DIR)/App/Dependencies",
 				);
-				INFOPLIST_FILE = "Overlap/Overlap Beta-Info.plist";
+				INFOPLIST_FILE = "Overlap Beta/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-Beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C5140EB51CE1D8C700B306FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Overlap BetaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-BetaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Overlap Beta.app/Overlap Beta";
+			};
+			name = Debug;
+		};
+		C5140EB61CE1D8C700B306FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Overlap BetaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-BetaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Overlap Beta.app/Overlap Beta";
+			};
+			name = Release;
+		};
+		C5140EB81CE1D8C700B306FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Overlap BetaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-BetaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Overlap Beta";
+			};
+			name = Debug;
+		};
+		C5140EB91CE1D8C700B306FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Overlap BetaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maximpervushin.Overlap-BetaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Overlap Beta";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C55E1B051CB7B0CF0019D979 /* Build configuration list for PBXProject "Overlap" */ = {
+		C5140E041CE1D80D00B306FA /* Build configuration list for PBXProject "Overlap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C55E1B301CB7B0D00019D979 /* Debug */,
-				C55E1B311CB7B0D00019D979 /* Release */,
+				C5140E2F1CE1D80D00B306FA /* Debug */,
+				C5140E301CE1D80D00B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C55E1B321CB7B0D00019D979 /* Build configuration list for PBXNativeTarget "Overlap" */ = {
+		C5140E311CE1D80D00B306FA /* Build configuration list for PBXNativeTarget "Overlap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C55E1B331CB7B0D00019D979 /* Debug */,
-				C55E1B341CB7B0D00019D979 /* Release */,
+				C5140E321CE1D80D00B306FA /* Debug */,
+				C5140E331CE1D80D00B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		C55E1B351CB7B0D00019D979 /* Build configuration list for PBXNativeTarget "OverlapTests" */ = {
+		C5140E341CE1D80D00B306FA /* Build configuration list for PBXNativeTarget "OverlapTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C55E1B361CB7B0D00019D979 /* Debug */,
-				C55E1B371CB7B0D00019D979 /* Release */,
+				C5140E351CE1D80D00B306FA /* Debug */,
+				C5140E361CE1D80D00B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		C55E1B381CB7B0D00019D979 /* Build configuration list for PBXNativeTarget "OverlapUITests" */ = {
+		C5140E371CE1D80D00B306FA /* Build configuration list for PBXNativeTarget "OverlapUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C55E1B391CB7B0D00019D979 /* Debug */,
-				C55E1B3A1CB7B0D00019D979 /* Release */,
+				C5140E381CE1D80D00B306FA /* Debug */,
+				C5140E391CE1D80D00B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		C5C956331CDCA2AD0024B0B2 /* Build configuration list for PBXNativeTarget "Overlap Alpha" */ = {
+		C5140E7F1CE1D8B700B306FA /* Build configuration list for PBXNativeTarget "Overlap Alpha" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5C956341CDCA2AD0024B0B2 /* Debug */,
-				C5C956351CDCA2AD0024B0B2 /* Release */,
+				C5140E801CE1D8B700B306FA /* Debug */,
+				C5140E811CE1D8B700B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		C5C956581CDCA3520024B0B2 /* Build configuration list for PBXNativeTarget "Overlap Beta" */ = {
+		C5140E821CE1D8B800B306FA /* Build configuration list for PBXNativeTarget "Overlap AlphaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5C956591CDCA3520024B0B2 /* Debug */,
-				C5C9565A1CDCA3520024B0B2 /* Release */,
+				C5140E831CE1D8B800B306FA /* Debug */,
+				C5140E841CE1D8B800B306FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		C5140E851CE1D8B800B306FA /* Build configuration list for PBXNativeTarget "Overlap AlphaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5140E861CE1D8B800B306FA /* Debug */,
+				C5140E871CE1D8B800B306FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C5140EB11CE1D8C700B306FA /* Build configuration list for PBXNativeTarget "Overlap Beta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5140EB21CE1D8C700B306FA /* Debug */,
+				C5140EB31CE1D8C700B306FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C5140EB41CE1D8C700B306FA /* Build configuration list for PBXNativeTarget "Overlap BetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5140EB51CE1D8C700B306FA /* Debug */,
+				C5140EB61CE1D8C700B306FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C5140EB71CE1D8C700B306FA /* Build configuration list for PBXNativeTarget "Overlap BetaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5140EB81CE1D8C700B306FA /* Debug */,
+				C5140EB91CE1D8C700B306FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C55E1B021CB7B0CF0019D979 /* Project object */;
+	rootObject = C5140E011CE1D80D00B306FA /* Project object */;
 }
