@@ -114,6 +114,9 @@
 		C5B4A2401CE34BC7008135DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A2441CE34BC7008135DB /* Main.storyboard */; };
 		C5B4A2411CE34BC7008135DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A2441CE34BC7008135DB /* Main.storyboard */; };
 		C5B4A2421CE34BC7008135DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A2441CE34BC7008135DB /* Main.storyboard */; };
+		C5B4A2491CE352DF008135DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A2481CE352DF008135DB /* Images.xcassets */; };
+		C5B4A24A1CE352DF008135DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A2481CE352DF008135DB /* Images.xcassets */; };
+		C5B4A24B1CE352DF008135DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A2481CE352DF008135DB /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +233,7 @@
 		C5B4A2431CE34BC7008135DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5B4A2461CE34BCB008135DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		C5B4A2471CE34BF2008135DB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		C5B4A2481CE352DF008135DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,6 +442,7 @@
 				C5140ECB1CE1DAB800B306FA /* Storage */,
 				C5140ED11CE1DAB800B306FA /* View Controllers */,
 				C5140EDD1CE1DAB800B306FA /* Views */,
+				C5B4A2481CE352DF008135DB /* Images.xcassets */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -858,6 +863,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5B4A2401CE34BC7008135DB /* Main.storyboard in Resources */,
+				C5B4A2491CE352DF008135DB /* Images.xcassets in Resources */,
 				C5140E141CE1D80D00B306FA /* Assets.xcassets in Resources */,
 				C5140F021CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */,
 			);
@@ -882,6 +888,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5B4A2411CE34BC7008135DB /* Main.storyboard in Resources */,
+				C5B4A24A1CE352DF008135DB /* Images.xcassets in Resources */,
 				C5140E641CE1D8B700B306FA /* Assets.xcassets in Resources */,
 				C5140F031CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */,
 			);
@@ -906,6 +913,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5B4A2421CE34BC7008135DB /* Main.storyboard in Resources */,
+				C5B4A24B1CE352DF008135DB /* Images.xcassets in Resources */,
 				C5140E961CE1D8C700B306FA /* Assets.xcassets in Resources */,
 				C5140F041CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */,
 			);
@@ -1188,7 +1196,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1228,7 +1236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
