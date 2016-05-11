@@ -4,7 +4,6 @@ import UIKit
 
     @IBInspectable var sourceColor = UIColor(red:0.75, green:0.22, blue:0.17, alpha:1.00)
     @IBInspectable var destinationColor = UIColor(red:0.15, green:0.68, blue:0.38, alpha:1.00)
-//    @IBInspectable var overlapColor = UIColor(red:0.50, green:0.55, blue:0.55, alpha:1.00)
     @IBInspectable var overlapColor = UIColor(red:0.74, green:0.76, blue:0.78, alpha:1.00)
     @IBInspectable var rulerColor = UIColor(red:0.74, green:0.76, blue:0.78, alpha:1.00)
     @IBInspectable var cornerRadius: CGFloat {
@@ -30,7 +29,6 @@ import UIKit
         let topOffest = CGFloat(2)
         let bottomOffest = CGFloat(2)
         let height = bounds.height - topOffest - bottomOffest
-//        let rowHeight = height / 3
 
         let startOffest = CGFloat(12)
         let endOffest = CGFloat(12)
@@ -48,7 +46,6 @@ import UIKit
             let textAttributes = [
                     NSForegroundColorAttributeName: rulerColor,
                     NSFontAttributeName: UIFont.systemFontOfSize(8)
-//                NSFontAttributeName: UIFont.monospacedDigitSystemFontOfSize(8, weight: 0)// systemFontOfSize(8)
             ]
 
             let hourSize = width / 24
@@ -76,15 +73,9 @@ import UIKit
 
                 CGContextSetLineWidth(ctx, 2 / UIScreen.mainScreen().scale)
                 CGContextSetStrokeColorWithColor(ctx, color.CGColor)
-
-//                CGContextMoveToPoint(ctx, startX + 1, startY)
-//                CGContextAddLineToPoint(ctx, endX - 1, endY)
                 CGContextMoveToPoint(ctx, startX, startY)
                 CGContextAddLineToPoint(ctx, endX, endY)
                 CGContextStrokePath(ctx)
-
-//                CGContextStrokeEllipseInRect(ctx, CGRect(x: startX - 1, y: startY - 1, width: 2, height: 2))
-//                CGContextStrokeEllipseInRect(ctx, CGRect(x: endX - 1, y: endY - 1, width: 2, height: 2))
             }
 
             func drawOverlap(startX: CGFloat, endX: CGFloat, startText: String, endText: String) {
@@ -97,23 +88,9 @@ import UIKit
                 CGContextAddLineToPoint(ctx, endX, height - height / 6)
                 CGContextStrokePath(ctx)
 
-//                CGContextMoveToPoint(ctx, startX, height / 6 * 3)
-//                CGContextAddLineToPoint(ctx, startX, height - height / 6 - 1)
-//                CGContextStrokePath(ctx)
-
-//                CGContextStrokeEllipseInRect(ctx, CGRect(x: startX - 1, y: height - height / 6 - 1, width: 2, height: 2))
-
-//                CGContextMoveToPoint(ctx, endX, height / 6 * 3)
-//                CGContextAddLineToPoint(ctx, endX, height - height / 6 - 1)
-//                CGContextStrokePath(ctx)
-
-//                CGContextStrokeEllipseInRect(ctx, CGRect(x: endX - 1, y: height - height / 6 - 1, width: 2, height: 2))
-
-
                 let textAttributes = [
                         NSForegroundColorAttributeName: overlapColor,
                         NSFontAttributeName: UIFont.systemFontOfSize(8)
-//                        NSFontAttributeName: UIFont.monospacedDigitSystemFontOfSize(8, weight: 0)// systemFontOfSize(8)
                 ]
 
                 let startTextSize = startText.sizeWithAttributes(textAttributes)

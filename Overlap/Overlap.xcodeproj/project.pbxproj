@@ -46,9 +46,6 @@
 		C5140F021CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140EC91CE1DAB800B306FA /* LaunchScreen.storyboard */; };
 		C5140F031CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140EC91CE1DAB800B306FA /* LaunchScreen.storyboard */; };
 		C5140F041CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140EC91CE1DAB800B306FA /* LaunchScreen.storyboard */; };
-		C5140F051CE1DAB800B306FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140ECA1CE1DAB800B306FA /* Main.storyboard */; };
-		C5140F061CE1DAB800B306FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140ECA1CE1DAB800B306FA /* Main.storyboard */; };
-		C5140F071CE1DAB800B306FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5140ECA1CE1DAB800B306FA /* Main.storyboard */; };
 		C5140F081CE1DAB800B306FA /* Interval+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECD1CE1DAB800B306FA /* Interval+Dictionary.swift */; };
 		C5140F091CE1DAB800B306FA /* Interval+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECD1CE1DAB800B306FA /* Interval+Dictionary.swift */; };
 		C5140F0A1CE1DAB800B306FA /* Interval+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140ECD1CE1DAB800B306FA /* Interval+Dictionary.swift */; };
@@ -114,6 +111,9 @@
 		C5140F4C1CE1E31600B306FA /* OverlapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5140F491CE1E31600B306FA /* OverlapUITests.swift */; };
 		C546A83D1CE20E0D00B09E61 /* OverlapSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546A83C1CE20E0D00B09E61 /* OverlapSnapshots.swift */; };
 		C546A83F1CE20E1C00B09E61 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546A83E1CE20E1C00B09E61 /* SnapshotHelper.swift */; };
+		C5B4A2401CE34BC7008135DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A2441CE34BC7008135DB /* Main.storyboard */; };
+		C5B4A2411CE34BC7008135DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A2441CE34BC7008135DB /* Main.storyboard */; };
+		C5B4A2421CE34BC7008135DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A2441CE34BC7008135DB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,7 +202,6 @@
 		C5140EC71CE1DAB800B306FA /* Double+Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Time.swift"; sourceTree = "<group>"; };
 		C5140EC81CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboardSegue+Identifier.swift"; sourceTree = "<group>"; };
 		C5140EC91CE1DAB800B306FA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C5140ECA1CE1DAB800B306FA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C5140ECD1CE1DAB800B306FA /* Interval+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Interval+Dictionary.swift"; sourceTree = "<group>"; };
 		C5140ECE1CE1DAB800B306FA /* Overlap+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Overlap+Dictionary.swift"; sourceTree = "<group>"; };
 		C5140ECF1CE1DAB800B306FA /* PlistStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistStorage.swift; sourceTree = "<group>"; };
@@ -228,6 +227,9 @@
 		C546A8351CE20DBF00B09E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C546A83C1CE20E0D00B09E61 /* OverlapSnapshots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlapSnapshots.swift; sourceTree = "<group>"; };
 		C546A83E1CE20E1C00B09E61 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		C5B4A2431CE34BC7008135DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5B4A2461CE34BCB008135DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C5B4A2471CE34BF2008135DB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,7 +434,7 @@
 				C5140EC31CE1DAB800B306FA /* Editors */,
 				C5140EC61CE1DAB800B306FA /* Extensions */,
 				C5140EC91CE1DAB800B306FA /* LaunchScreen.storyboard */,
-				C5140ECA1CE1DAB800B306FA /* Main.storyboard */,
+				C5B4A2441CE34BC7008135DB /* Main.storyboard */,
 				C5140ECB1CE1DAB800B306FA /* Storage */,
 				C5140ED11CE1DAB800B306FA /* View Controllers */,
 				C5140EDD1CE1DAB800B306FA /* Views */,
@@ -855,7 +857,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5140F051CE1DAB800B306FA /* Main.storyboard in Resources */,
+				C5B4A2401CE34BC7008135DB /* Main.storyboard in Resources */,
 				C5140E141CE1D80D00B306FA /* Assets.xcassets in Resources */,
 				C5140F021CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */,
 			);
@@ -879,7 +881,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5140F061CE1DAB800B306FA /* Main.storyboard in Resources */,
+				C5B4A2411CE34BC7008135DB /* Main.storyboard in Resources */,
 				C5140E641CE1D8B700B306FA /* Assets.xcassets in Resources */,
 				C5140F031CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */,
 			);
@@ -903,7 +905,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5140F071CE1DAB800B306FA /* Main.storyboard in Resources */,
+				C5B4A2421CE34BC7008135DB /* Main.storyboard in Resources */,
 				C5140E961CE1D8C700B306FA /* Assets.xcassets in Resources */,
 				C5140F041CE1DAB800B306FA /* LaunchScreen.storyboard in Resources */,
 			);
@@ -1134,6 +1136,19 @@
 			targetProxy = C546A8361CE20DBF00B09E61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5B4A2441CE34BC7008135DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5B4A2431CE34BC7008135DB /* Base */,
+				C5B4A2461CE34BCB008135DB /* en */,
+				C5B4A2471CE34BF2008135DB /* ru */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C5140E2F1CE1D80D00B306FA /* Debug */ = {

@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "TIME ZONE"; ObjectID = "2HD-43-Wrl"; */
+"2HD-43-Wrl.text" = "Time Zone";
+
+/* Class = "UILabel"; text = "[Destination Interval]"; ObjectID = "8g3-ed-Sgb"; */
+"8g3-ed-Sgb.text" = "[Destination Interval]";
+
+/* Class = "UIButton"; normalTitle = "99:99"; ObjectID = "DpG-ot-a9Y"; */
+"DpG-ot-a9Y.normalTitle" = "99:99";
+
+/* Class = "UILabel"; text = "SOURCE INTERVAL"; ObjectID = "Hgi-fA-O13"; */
+"Hgi-fA-O13.text" = "Interval 1";
+
+/* Class = "UILabel"; accessibilityIdentifier = "Add"; ObjectID = "JVk-C2-gCj"; */
+"JVk-C2-gCj.accessibilityIdentifier" = "Add";
+
+/* Class = "UILabel"; text = "Add"; ObjectID = "JVk-C2-gCj"; */
+"JVk-C2-gCj.text" = "Add";
+
+/* Class = "UILabel"; text = "FROM"; ObjectID = "Jgy-of-S6q"; */
+"Jgy-of-S6q.text" = "Start";
+
+/* Class = "UILabel"; text = "FROM"; ObjectID = "QLl-sx-Pf4"; */
+"QLl-sx-Pf4.text" = "Start";
+
+/* Class = "UILabel"; text = "TO"; ObjectID = "Qi5-ed-zsY"; */
+"Qi5-ed-zsY.text" = "End";
+
+/* Class = "UILabel"; text = "TO"; ObjectID = "Rl0-hc-Iiu"; */
+"Rl0-hc-Iiu.text" = "End";
+
+/* Class = "UIButton"; normalTitle = "UTC"; ObjectID = "VNX-IA-Dt6"; */
+"VNX-IA-Dt6.normalTitle" = "UTC";
+
+/* Class = "UIBarButtonItem"; title = "Pick"; ObjectID = "ZOL-Xn-9mo"; */
+"ZOL-Xn-9mo.title" = "Pick";
+
+/* Class = "UIButton"; normalTitle = "99:99"; ObjectID = "bge-nv-OfO"; */
+"bge-nv-OfO.normalTitle" = "99:99";
+
+/* Class = "UIBarButtonItem"; title = "Pick"; ObjectID = "eHP-aA-EFp"; */
+"eHP-aA-EFp.title" = "Pick";
+
+/* Class = "UIButton"; normalTitle = "99:99"; ObjectID = "i6l-3b-Mqp"; */
+"i6l-3b-Mqp.normalTitle" = "99:99";
+
+/* Class = "UIButton"; normalTitle = "UTC"; ObjectID = "kCg-bR-8Y8"; */
+"kCg-bR-8Y8.normalTitle" = "UTC";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "no0-vk-QSz"; */
+"no0-vk-QSz.text" = "Title";
+
+/* Class = "UILabel"; text = "DESTINATION INTERVAL"; ObjectID = "qIQ-Bt-bsz"; */
+"qIQ-Bt-bsz.text" = "Interval 2";
+
+/* Class = "UILabel"; text = "TIME ZONE"; ObjectID = "sUn-Zg-4Jt"; */
+"sUn-Zg-4Jt.text" = "Time Zone";
+
+/* Class = "UIButton"; normalTitle = "99:99"; ObjectID = "uLT-Gh-D7W"; */
+"uLT-Gh-D7W.normalTitle" = "99:99";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "wCH-hb-P3p"; */
+"wCH-hb-P3p.text" = "Detail";
+
+/* Class = "UILabel"; text = "[Source Interval]"; ObjectID = "zqq-m4-8EG"; */
+"zqq-m4-8EG.text" = "[Source Interval]";

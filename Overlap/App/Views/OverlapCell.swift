@@ -22,8 +22,8 @@ class OverlapCell: UITableViewCell {
             sourceIntervalLabel?.textColor = overlapView?.sourceColor
             destinationIntervalLabel?.textColor = overlapView?.destinationColor
             if let overlap = overlap {
-                sourceIntervalLabel?.text = "\(overlap.interval1.start.timeString()) → \(overlap.interval1.end.timeString()) in \(overlap.interval1.timeZone.abbreviation!)"
-                destinationIntervalLabel?.text = "\(overlap.interval2.start.timeString()) → \(overlap.interval2.end.timeString()) in \(overlap.interval2.timeZone.abbreviation!)"
+                sourceIntervalLabel?.text = "\(overlap.interval1.start.timeString()) → \(overlap.interval1.end.timeString()), \(overlap.interval1.timeZone.localizedName(.Generic, locale: NSLocale.currentLocale())!)"
+                destinationIntervalLabel?.text = "\(overlap.interval2.start.timeString()) → \(overlap.interval2.end.timeString()), \(overlap.interval2.timeZone.localizedName(.Generic, locale: NSLocale.currentLocale())!)"
             } else {
                 sourceIntervalLabel?.text = ""
                 destinationIntervalLabel?.text = ""
