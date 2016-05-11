@@ -37,7 +37,7 @@ class OverlapListViewController: UIViewController {
         }
     }
 
-// MARK: override
+    // MARK: override
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -49,18 +49,18 @@ class OverlapListViewController: UIViewController {
         _unsubscribe()
     }
 
-// MARK: private
+    // MARK: private
 
     private var _overlaps: [Overlap] {
-        return DataManager.defaultManager.overlaps
+        return App.dataManager?.overlaps ?? []
     }
 
     private func _deleteOverlap(overlap: Overlap) -> Bool {
-        return DataManager.defaultManager.deleteOverlap(overlap)
+        return App.dataManager?.deleteOverlap(overlap) ?? false
     }
 
     private func _saveOverlap(overlap: Overlap) -> Bool {
-        return DataManager.defaultManager.saveOverlap(overlap)
+        return App.dataManager?.saveOverlap(overlap) ?? false
     }
 
     private func _subscribe() {

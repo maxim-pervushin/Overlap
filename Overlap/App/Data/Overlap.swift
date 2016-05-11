@@ -47,8 +47,8 @@ struct Overlap {
 extension Overlap {
 
     static func defaultOverlap() -> Overlap {
-        let interval1 = Interval(timeZone: NSTimeZone.localTimeZone(), start: 8, end: 17)
-        let interval2 = Interval(timeZone: NSTimeZone.localTimeZone(), start: 9, end: 18)
+        let interval1 = Interval(timeZone: NSTimeZone(forSecondsFromGMT: 0), start: 8, end: 17)
+        let interval2 = Interval(timeZone: NSTimeZone.localTimeZone(), start: 8, end: 17)
         return Overlap(interval1: interval1, interval2: interval2)
     }
 }

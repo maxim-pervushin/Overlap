@@ -8,7 +8,7 @@ import Foundation
 class DataManager {
 
     static let updatedNotificationName = "DataManagerUpdatedNotification"
-    static let defaultManager = DataManager(storage: PlistStorage())
+    // static let defaultManager = DataManager(storage: PlistStorage())
 
     var overlaps: [Overlap] {
         return _storage.overlaps
@@ -28,23 +28,29 @@ class DataManager {
             [weak self] in
             self?._updated()
         }
-//        let a = [
-//                Overlap(NSTimeZone(abbreviation: "MSK")!, 21.67, 6.5, NSTimeZone(abbreviation: "GMT")!, 8, 17),
-////                Overlap(NSTimeZone(abbreviation: "MSK")!, 20, 6, NSTimeZone(abbreviation: "GMT")!, 20, 6),
-////                Overlap(NSTimeZone(abbreviation: "MSK")!, 8, 17, NSTimeZone(abbreviation: "GMT")!, 20, 6),
-////                Overlap(NSTimeZone(abbreviation: "MSK")!, 8, 17, NSTimeZone(abbreviation: "GMT")!, 8, 17),
-////                Overlap(NSTimeZone(abbreviation: "MSK")!, 16, 9, NSTimeZone(abbreviation: "MSK")!, 8, 17),
-//        ]
-//
-//        for e in a {
-//            _overlapsById[e.id] = e
-//        }
+
+        if _isFirstLaunch {
+            saveOverlap(Overlap.defaultOverlap())
+        }
     }
 
+    static private let _firstLaunchDateDefaultsKey = "FirstLaunchDate"
     private let _storage: Storage
     private var _overlapsById = [String: Overlap]()
+    private var _isFirstLaunch: Bool {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let firstLaunchDate  = defaults.doubleForKey(DataManager._firstLaunchDateDefaultsKey)
+        if firstLaunchDate > 0 {
+            return false
+        } else {
+            defaults.setDouble(NSDate().timeIntervalSince1970, forKey: DataManager._firstLaunchDateDefaultsKey)
+            defaults.synchronize()
+            return true
+        }
+    }
 
     private func _updated() {
         NSNotificationCenter.defaultCenter().postNotificationName(DataManager.updatedNotificationName, object: self)
     }
+
 }
