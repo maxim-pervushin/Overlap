@@ -20,17 +20,17 @@ import UIKit
         backgroundColor = color.colorWithAlphaComponent(0.3)
         setTitleColor(color)
         tintColor = color
-        editImageView.tintColor = color
+        _editImageView.tintColor = color
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        commonInit()
+        _commonInit()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        commonInit()
+        _commonInit()
     }
 
     override func layoutSubviews() {
@@ -38,19 +38,19 @@ import UIKit
         let offset = CGFloat(4)
         let imageSize = CGSize(width: frame.size.height - 2 * offset, height: frame.size.height - 2 * offset)
         let imageOrigin = CGPoint(x: frame.size.width - imageSize.width - offset, y: offset)
-        editImageView.frame = CGRect(origin: imageOrigin, size: imageSize)
+        _editImageView.frame = CGRect(origin: imageOrigin, size: imageSize)
     }
 
-    private func commonInit() {
+    private func _commonInit() {
         setColor(UIColor.greenColor())
         tintColor = UIColor.greenColor()
-        editImageView.tintColor = UIColor.greenColor()
+        _editImageView.tintColor = UIColor.greenColor()
         cornerRadius = 2
         contentEdgeInsets = UIEdgeInsets(top: 4, left: 8, bottom: 4, right: 8)
-        addSubview(editImageView)
+        addSubview(_editImageView)
     }
 
-    private let editImageView = UIImageView(image: UIImage(named: "Edit")?.imageWithRenderingMode(.AlwaysTemplate))
+    private let _editImageView = UIImageView(image: UIImage(named: "Edit")?.imageWithRenderingMode(.AlwaysTemplate))
 }
 
 extension UIButton {

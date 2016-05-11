@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73BC65B8BA5542FD913E5EA8 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC66BE05E97E1B24D0B11B /* Label.swift */; };
+		73BC69B617A54455C4F2B52A /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC66BE05E97E1B24D0B11B /* Label.swift */; };
+		73BC6D080BC9FA5FE28E58F1 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BC66BE05E97E1B24D0B11B /* Label.swift */; };
 		C5140E141CE1D80D00B306FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5140E131CE1D80D00B306FA /* Assets.xcassets */; };
 		C5140E641CE1D8B700B306FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5140E631CE1D8B700B306FA /* Assets.xcassets */; };
 		C5140E961CE1D8C700B306FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5140E951CE1D8C700B306FA /* Assets.xcassets */; };
@@ -166,6 +169,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73BC66BE05E97E1B24D0B11B /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		C5140E091CE1D80D00B306FA /* Overlap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overlap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5140E131CE1D80D00B306FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5140E181CE1D80D00B306FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -547,6 +551,7 @@
 				C5140EE11CE1DAB800B306FA /* OverlapView.swift */,
 				C5140EE21CE1DAB800B306FA /* RoundedView.swift */,
 				C5140EE31CE1DAB800B306FA /* TimezoneCell.swift */,
+				73BC66BE05E97E1B24D0B11B /* Label.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -957,6 +962,7 @@
 				C5140F2F1CE1DAB800B306FA /* OverlapCell.swift in Sources */,
 				C5140EFF1CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift in Sources */,
 				C5140F0B1CE1DAB800B306FA /* Overlap+Dictionary.swift in Sources */,
+				73BC65B8BA5542FD913E5EA8 /* Label.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,6 +1013,7 @@
 				C5140F301CE1DAB800B306FA /* OverlapCell.swift in Sources */,
 				C5140F001CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift in Sources */,
 				C5140F0C1CE1DAB800B306FA /* Overlap+Dictionary.swift in Sources */,
+				73BC69B617A54455C4F2B52A /* Label.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,6 +1064,7 @@
 				C5140F311CE1DAB800B306FA /* OverlapCell.swift in Sources */,
 				C5140F011CE1DAB800B306FA /* UIStoryboardSegue+Identifier.swift in Sources */,
 				C5140F0D1CE1DAB800B306FA /* Overlap+Dictionary.swift in Sources */,
+				73BC6D080BC9FA5FE28E58F1 /* Label.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1165,7 +1173,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1205,7 +1213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

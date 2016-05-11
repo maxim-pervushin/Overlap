@@ -14,7 +14,7 @@ import Crashlytics
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var dataManager: DataManager?// = DataManager(storage: PlistStorage())
+    var dataManager: DataManager?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         _initAnalytics()

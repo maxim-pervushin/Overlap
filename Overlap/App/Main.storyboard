@@ -95,29 +95,23 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Overlap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVk-C2-gCj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVk-C2-gCj" customClass="Label" customModule="Overlap" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="8" width="584" height="34"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="Add">
+                                                        <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bqy-Oq-ll2" customClass="HorizontalLineView" customModule="Overlap" customModuleProvider="target">
-                                                    <rect key="frame" x="5" y="49" width="590" height="1"/>
-                                                    <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="1" placeholder="YES" id="OMT-1t-xvL"/>
-                                                    </constraints>
-                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="JVk-C2-gCj" firstAttribute="leading" secondItem="v9t-BH-ejY" secondAttribute="leadingMargin" id="80Y-Af-sHd"/>
-                                                <constraint firstItem="Bqy-Oq-ll2" firstAttribute="leading" secondItem="v9t-BH-ejY" secondAttribute="leading" constant="5" id="8N0-UR-bwJ"/>
                                                 <constraint firstItem="JVk-C2-gCj" firstAttribute="bottom" secondItem="v9t-BH-ejY" secondAttribute="bottomMargin" id="LpF-RQ-zXL"/>
                                                 <constraint firstItem="JVk-C2-gCj" firstAttribute="trailing" secondItem="v9t-BH-ejY" secondAttribute="trailingMargin" id="cmb-yC-eul"/>
                                                 <constraint firstItem="JVk-C2-gCj" firstAttribute="top" secondItem="v9t-BH-ejY" secondAttribute="topMargin" id="nKc-Vb-2Lw"/>
-                                                <constraint firstAttribute="bottom" secondItem="Bqy-Oq-ll2" secondAttribute="bottom" id="p0C-SI-o3Z"/>
-                                                <constraint firstAttribute="trailing" secondItem="Bqy-Oq-ll2" secondAttribute="trailing" constant="5" id="pJT-BV-o9H"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
