@@ -27,11 +27,11 @@ class OverlapSnapshots: XCTestCase {
         snapshot("01_Start")
         
         let app = XCUIApplication()
-        app.tables.staticTexts["Add Overlap"].tap()
+        app.buttons["Add"].tap()
         
         snapshot("02_Editor")
         
-        app.navigationBars["Overlap.OverlapEditorView"].buttons["Save"].tap()
+        app.buttons["Save"].tap()
 
         snapshot("03_List")
     }

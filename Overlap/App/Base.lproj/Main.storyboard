@@ -411,11 +411,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="hR8-xq-uZt">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="y0Z-Tl-ZGT">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="Cancel"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="cancel:" destination="UPO-rR-VJ1" id="foJ-pN-vRS"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Smq-X8-eCM">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="Save"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="save:" destination="UPO-rR-VJ1" id="fZ2-v3-Sy9"/>
                             </connections>
@@ -514,11 +520,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="Hs0-jP-MGG">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="2We-HJ-WxX">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="Cancel"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="cancelButtonAction:" destination="YXf-01-lTF" id="iOz-k7-yek"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Pick" id="ZOL-Xn-9mo">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="Pick"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="pickButtonAction:" destination="YXf-01-lTF" id="tdB-Ld-OPN"/>
                             </connections>
@@ -579,11 +591,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="2wV-EY-Ioc">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uhD-By-a6L">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="Cancel"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="cancelButtonAction:" destination="UbC-jJ-4NF" id="fBw-rp-4VV"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Pick" id="eHP-aA-EFp">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="Pick"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="pickButtonAction:" destination="UbC-jJ-4NF" id="5bE-qf-dwt"/>
                             </connections>
