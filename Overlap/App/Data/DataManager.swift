@@ -25,7 +25,8 @@ class DataManager {
     init(storage: Storage) {
         self._storage = storage
         self._storage.updated = {
-            self._updated()
+            [weak self] in
+            self?._updated()
         }
 //        let a = [
 //                Overlap(NSTimeZone(abbreviation: "MSK")!, 21.67, 6.5, NSTimeZone(abbreviation: "GMT")!, 8, 17),

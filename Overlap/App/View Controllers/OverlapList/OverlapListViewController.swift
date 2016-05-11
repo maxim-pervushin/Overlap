@@ -20,13 +20,15 @@ class OverlapListViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let overlapEditor = segue.destinationViewController as? OverlapEditorNavigationController {
             overlapEditor.finished = {
-                (overlap: Overlap?) in
-                if let overlap = overlap {
-                    if self._saveOverlap(overlap) {
-                        self.tableView?.reloadData()
-                    }
+                [weak self] (overlap: Overlap?) in
+                guard let `self` = self, overlap = overlap else {
+                    return
+                }
+                if self._saveOverlap(overlap) {
+                    self.tableView?.reloadData()
                 }
             }
+
             if let indexPath = tableView?.indexPathForSelectedRow where indexPath.section == 0 {
                 overlapEditor.overlap = _overlaps[indexPath.row]
             } else {
@@ -35,7 +37,7 @@ class OverlapListViewController: UIViewController {
         }
     }
 
-    // MARK: override
+// MARK: override
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -47,7 +49,7 @@ class OverlapListViewController: UIViewController {
         _unsubscribe()
     }
 
-    // MARK: private
+// MARK: private
 
     private var _overlaps: [Overlap] {
         return DataManager.defaultManager.overlaps
@@ -63,14 +65,15 @@ class OverlapListViewController: UIViewController {
 
     private func _subscribe() {
         NSNotificationCenter.defaultCenter().addObserverForName(DataManager.updatedNotificationName, object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: {
-            _ in
-            self.tableView?.reloadData()
+            [weak self] _ in
+            self?.tableView?.reloadData()
         })
     }
 
     private func _unsubscribe() {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: DataManager.updatedNotificationName, object: nil)
     }
+
 }
 
 extension OverlapListViewController: UITableViewDataSource {

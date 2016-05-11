@@ -98,7 +98,8 @@ class OverlapEditorViewController: UIViewController {
                     timePicker.minutes = minutes
                 }
                 timePicker.finished = {
-                    self.editor.interval1Editor.start = Double(hours: timePicker.hours, minutes: timePicker.minutes)
+                    [weak self] in
+                    self?.editor.interval1Editor.start = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
 
@@ -110,7 +111,8 @@ class OverlapEditorViewController: UIViewController {
                     timePicker.minutes = minutes
                 }
                 timePicker.finished = {
-                    self.editor.interval1Editor.end = Double(hours: timePicker.hours, minutes: timePicker.minutes)
+                    [weak self] in
+                    self?.editor.interval1Editor.end = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
 
@@ -122,7 +124,8 @@ class OverlapEditorViewController: UIViewController {
                     timePicker.minutes = minutes
                 }
                 timePicker.finished = {
-                    self.editor.interval2Editor.start = Double(hours: timePicker.hours, minutes: timePicker.minutes)
+                    [weak self] in
+                    self?.editor.interval2Editor.start = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
 
@@ -134,7 +137,8 @@ class OverlapEditorViewController: UIViewController {
                     timePicker.minutes = minutes
                 }
                 timePicker.finished = {
-                    self.editor.interval2Editor.end = Double(hours: timePicker.hours, minutes: timePicker.minutes)
+                    [weak self] in
+                    self?.editor.interval2Editor.end = Double(hours: timePicker.hours, minutes: timePicker.minutes)
                 }
                 break
 
@@ -152,7 +156,8 @@ class OverlapEditorViewController: UIViewController {
                     timezonePicker.timeZone = timeZone
                 }
                 timezonePicker.finished = {
-                    self.editor.interval1Editor.timeZone = timezonePicker.timeZone
+                    [weak self] in
+                    self?.editor.interval1Editor.timeZone = timezonePicker.timeZone
                 }
                 break
 
@@ -161,7 +166,8 @@ class OverlapEditorViewController: UIViewController {
                     timezonePicker.timeZone = timeZone
                 }
                 timezonePicker.finished = {
-                    self.editor.interval2Editor.timeZone = timezonePicker.timeZone
+                    [weak self] in
+                    self?.editor.interval2Editor.timeZone = timezonePicker.timeZone
                 }
                 break
 
