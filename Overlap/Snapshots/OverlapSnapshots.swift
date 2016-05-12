@@ -24,16 +24,23 @@ class OverlapSnapshots: XCTestCase {
     }
     
     func test_MakeSnapshots() {
-        snapshot("01_Start")
-        
         let app = XCUIApplication()
-        app.buttons["Add"].tap()
+        
+        let addButton = app.buttons.matchingIdentifier("Add") // ["Add"]
+        addButton.element.tap()
+        
+        let saveButton = app.buttons.matchingIdentifier("Save") // ["Save"]
+        if 0 == saveButton.count {
+            addButton.element.tap()
+        }
         
         snapshot("02_Editor")
         
-        app.buttons["Save"].tap()
+        saveButton.element.tap()
+        if 0 == addButton.count {
+            saveButton.element.tap()
+        }
 
-        snapshot("03_List")
+        snapshot("01_List")
     }
-    
 }
